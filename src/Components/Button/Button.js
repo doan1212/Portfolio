@@ -34,7 +34,7 @@ const BaseButton = ({ children, onClick, className, ...props }) => {
     )
 }
 
-const Button = ({ type, size, className, children, onClick, ...props }) => {
+const Button = ({ type, size, children, onClick, ...props }) => {
     const btnClass = ButtonType[type]
         ? ButtonType[type]
         : ButtonType['solid-primary']
@@ -42,7 +42,7 @@ const Button = ({ type, size, className, children, onClick, ...props }) => {
     return (
         <BaseButton
             onClick={onClick}
-            className={`${className} ${btnClass} ${sizeClass} basicTransition`}
+            className={`${btnClass} ${sizeClass} basicTransition`}
             {...props}
         >
             {children}
