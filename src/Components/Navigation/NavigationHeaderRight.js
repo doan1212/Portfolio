@@ -1,12 +1,12 @@
-import { Button } from '../Button/Button'
+import { OutlineGradientButton } from '../Button/Button'
 
 const NavigationHeaderRight = () => {
     return (
-        <div className='flex flex-row'>
-            <Button
-                type="gradient-outline"
-                color="primary"
-                children={<span>Hello</span>}
+        <div className="flex flex-row">
+            <OutlineGradientButton
+                type="primary"
+                size="sm"
+                children={'My Resume'}
             />
         </div>
     )

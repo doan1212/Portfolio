@@ -2,8 +2,9 @@
 
 @layer components {
     .navButton {
-        @apply font-eloquialight font-semibold hover:border-b-[2px] 
-                hover:border-wisteria-800 border-b-[2px] border-transparent
+        @apply font-eloquialight font-semibold border-b-2
+                hover:border-wisteria-800  
+                border-wisteria-200
                 px-2 py-1;
     }
 }
