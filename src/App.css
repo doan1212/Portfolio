@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@import './Components/Navigation/styles.css';
+
+@font-face {
+    font-family: 'Laviossa';
+    src: url('../public/fonts/Laviossa-Medium.otf');
+}
+
+@font-face {
+    font-family: 'Eloquia-ExtraBold';
+    src: url('../public/fonts/EloquiaDisplay-ExtraBold.otf');
+}
+
+@font-face {
+    font-family: 'Eloquia-ExtraLight';
+    src: url('../public/fonts/EloquiaText-ExtraLight.otf');
+}
+
 /* https://tailwindcss.com/docs/reusing-styles */
 @layer components {
     .btn-primary {

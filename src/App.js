@@ -2,35 +2,18 @@ import './App.css'
 import { Link, Route, Routes } from 'react-router-dom'
 import Home from './Tabs/Home/Home'
 import About from './Tabs/About/About'
+import {NavRoute} from './Constants/Routes'
+import NavigationBar from './Components/Navigation/NavigationBar'
 
 function App() {
     return (
         <div className="App">
             <div>
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'space-evenly',
-                        background: 'green',
-                        fontSize: '20px',
-                    }}
-                >
-                    <Link to={'/'} style={{ color: 'white' }}>
-                        Home
-                    </Link>
-                    <Link
-                        to={'/about'}
-                        style={{
-                            color: 'white',
-                        }}
-                    >
-                        About
-                    </Link>
-                </div>
+                <NavigationBar />
             </div>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                <Route path={NavRoute.home} element={<Home />} />
+                <Route path={NavRoute.about} element={<About />} />
             </Routes>
         </div>
     )

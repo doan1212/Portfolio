@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
  
 const Home = () => {
     return (
-        <div>
+        <div className='font-laviossa text-5xl'>
             This is home page
         </div>
     )
