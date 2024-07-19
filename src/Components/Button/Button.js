@@ -1,39 +1,48 @@
 const BaseButton = ({ children, onClick, className, ...props }) => {
     return (
-        <button
-            onClick={onClick}
-            className={`btnBasic group ${className}`}
-            {...props}
-        >
-            {children}
-        </button>
+        <div>
+            <button
+                onClick={onClick}
+                className={`btnBasic group ${className}`}
+                {...props}
+            >
+                {children}
+            </button>
+        </div>
     )
 }
 
 const ButtonType = {
     'solid-primary':
-        'px-5 py-2 bg-wisteria-600 hover:bg-wisteria-700 focus:bg-wisteria-800 text-white',
+        'bg-wisteria-600 hover:bg-wisteria-700 focus:bg-wisteria-800 text-white',
     'solid-secondary':
-        'px-5 py-2 bg-nypink-400 hover:bg-nypink-500 focus:bg-nypink-600 text-white',
+        'bg-nypink-400 hover:bg-nypink-500 focus:bg-nypink-600 text-white',
     'outline-primary':
-        'border-[2px] px-5 py-2 border-wisteria-600 hover:border-wisteria-700 hover:bg-wisteria-700 hover:text-white focus:bg-wisteria-800',
+        'border-[2px] border-wisteria-600 hover:border-wisteria-700 hover:bg-wisteria-700 hover:text-white focus:bg-wisteria-800',
     'outline-secondary':
-        'border-[2px] px-5 py-2 border-nypink-400 hover:border-nypink-500 hover:bg-nypink-500 hover:text-white focus:bg-nypink-600',
+        'border-[2px] border-nypink-400 hover:border-nypink-500 hover:bg-nypink-500 hover:text-white focus:bg-nypink-600',
     'gradient-primary':
-        'text-white px-5 py-2 bg-gradient-to-r from-wisteria-600 to-nypink-400',
+        'text-white bg-gradient-to-r from-wisteria-600 to-nypink-400',
     'gradient-secondary':
-        'text-white px-5 py-2 bg-gradient-to-r from-nypink-400 to-wisteria-600',
+        'text-white bg-gradient-to-r from-nypink-400 to-wisteria-600',
 }
 
-const Button = ({ type, className, children, onClick, ...props }) => {
+const ButtonSize = {
+    xs: 'px-2 py-1 text-xs',
+    sm: 'px-2 py-1 text-sm',
+    md: 'px-4 py-2 text-base',
+    lg: 'px-6 py-3 text-large',
+}
+
+const Button = ({ type, size, className, children, onClick, ...props }) => {
     const btnClass = ButtonType[type]
         ? ButtonType[type]
         : ButtonType['solid-primary']
-
+    const sizeClass = ButtonSize[size] ? ButtonSize[size] : ButtonSize['md']
     return (
         <BaseButton
             onClick={onClick}
-            className={`${className} ${btnClass} basicTransition`}
+            className={`${className} ${btnClass} ${sizeClass} basicTransition`}
             {...props}
         >
             {children}
@@ -51,6 +60,7 @@ const GradientButtonType = {
 const OutlineGradientButton = ({
     type,
     className,
+    size,
     children,
     onClick,
     ...props
@@ -58,6 +68,7 @@ const OutlineGradientButton = ({
     const btnClass = GradientButtonType[type]
         ? GradientButtonType[type]
         : GradientButtonType['primary']
+    const sizeClass = ButtonSize[size] ? ButtonSize[size] : ButtonSize['md']
 
     return (
         <BaseButton
@@ -65,7 +76,7 @@ const OutlineGradientButton = ({
             className={`${className} ${btnClass}`}
             {...props}
         >
-            <span className="basicTransition text-wisteria-950 block rounded-full bg-white px-5 py-2 font-eloquialight group-hover:bg-transparent group-hover:text-white">
+            <span className={`${sizeClass} basicTransition text-wisteria-950 block rounded-full bg-white font-eloquialight group-hover:bg-transparent group-hover:text-white`}>
                 {children}
             </span>
         </BaseButton>
