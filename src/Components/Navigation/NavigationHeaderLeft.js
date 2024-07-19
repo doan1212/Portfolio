@@ -1,5 +1,5 @@
 const NavigationHeaderLeft = () => {
-    return <div>I'm Left</div>
+    return <div className="font-brotherside text-[2.5em]">Doan</div>
 }
 
 export default NavigationHeaderLeft

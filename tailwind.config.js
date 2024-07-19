@@ -75,6 +75,7 @@ module.exports = {
             laviossa: ['Laviossa', 'sans-serif'],
             eloquiabold: ['Eloquia-ExtraBold', 'sans-serif'],
             eloquialight: ['Eloquia-ExtraLight', 'sans-serif'],
+            brotherside: ['BrothersideSignature', 'sans-serif'],
         },
     },
     plugins: [],

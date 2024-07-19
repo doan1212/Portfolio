@@ -21,6 +21,11 @@
     src: url('../public/fonts/EloquiaText-ExtraLight.otf');
 }
 
+@font-face {
+    font-family: 'BrothersideSignature';
+    src: url('../public/fonts/BrothersideSignature.otf');
+}
+
 /* https://tailwindcss.com/docs/reusing-styles */
 /* @layer components {
     .btn-primary {
