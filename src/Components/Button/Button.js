@@ -2,49 +2,71 @@ const BaseButton = ({ children, onClick, className, ...props }) => {
     return (
         <button
             onClick={onClick}
-            className={`${className} basic-btn`}
+            className={`btnBasic group ${className}`}
             {...props}
         >
-            {/* <span className="block rounded-full bg-white px-5 py-2 text-sm font-eloquialight group-hover:bg-transparent"> */}
-            <span>
-                {children}
-            </span>
+            {children}
         </button>
     )
 }
 
 const ButtonType = {
-    gradient: "btnGradient",
-    solid: "btnSolid",
-    outline: "btnOutline",
+    gradient: 'btnGradient',
+    solid: 'btnSolid',
+    outline: 'btnOutline',
+    'gradient-outline': 'btnGradientOutline',
 }
 
-const ButtonAnimation = {
-    pulse: "btnPulse",
-    shake: "btnShake",
-    bounce: "btnBounce",
+const ButtonColor = {
+    solid: {
+        primary: 'btnSolidPrimary',
+        secondary: 'btnSolidSecondary',
+    },
+    gradient: {
+        primary: 'btnGradientPrimary',
+    },
+    outline: {
+        primary: 'btnOutlinePrimary',
+        secondary: 'btnOutlineSecondary',
+    },
+    'gradient-outline': {
+        primary: 'btnGradientOutlinePrimary',
+    },
 }
 
+const ButtonTransition = {
+    basic: 'basicTransition',
+}
 
+const buttonClassGenerator = (type, color, transition) => {
+    let btnType = ButtonType[type] ? ButtonType[type] : ButtonType.solid
+    let btnColor = ButtonColor[type][color] ? ButtonColor[type][color] : ''
+    let btnTransition = ButtonTransition[transition]
+        ? ButtonTransition[transition]
+        : ''
+    return `${btnType} ${btnColor} ${btnTransition}`
+}
 
 /*
  * type: gradient, solid, outline
  * gradientFrom: color
  * gradientTo: color
  * color: color
- * animation: boolean
- * animationType: pulse, shake, bounce
+ * transition: basic
  */
-const Button = ({
-    type,
-    gradientFrom,
-    gradientTo,
-    color,
-    animation,
-    animationType,
-    children,
-    onClick,
-    ...props
-}) => {}
+const Button = ({ type, color, transition, children, onClick, ...props }) => {
+    const buttonClass = buttonClassGenerator(type, color, transition)
+    return (
+        <BaseButton onClick={onClick} className={buttonClass} {...props}>
+            {type === 'gradient-outline' ? (
+                <span className="textGradientOutlinePrimary basicTransition">
+                    {children}
+                </span>
+            ) : (
+                <span>{children}</span>
+            )}
+        </BaseButton>
+    )
+}
 
-export { BaseButton }
+export { BaseButton, Button }

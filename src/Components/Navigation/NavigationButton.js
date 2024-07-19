@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
-const NavigationButton = ({name, route}) => {
+const NavigationButton = ({ name, route }) => {
     return (
-        <div className='font-eloquialight font-semibold'>
+        <div className="navButton basicTransition">
             <Link to={route}>{name}</Link>
         </div>
     )
