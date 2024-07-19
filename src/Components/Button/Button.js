@@ -31,7 +31,7 @@ const ButtonSize = {
     xs: 'px-2 py-1 text-xs',
     sm: 'px-2 py-1 text-sm',
     md: 'px-4 py-2 text-base',
-    lg: 'px-6 py-3 text-large',
+    lg: 'px-6 py-3 text-md',
 }
 
 const Button = ({ type, size, className, children, onClick, ...props }) => {
@@ -76,7 +76,9 @@ const OutlineGradientButton = ({
             className={`${className} ${btnClass}`}
             {...props}
         >
-            <span className={`${sizeClass} basicTransition text-wisteria-950 block rounded-full bg-white font-eloquialight group-hover:bg-transparent group-hover:text-white`}>
+            <span
+                className={`${sizeClass} basicTransition text-wisteria-950 block rounded-full bg-white font-eloquialight group-hover:bg-transparent group-hover:text-white`}
+            >
                 {children}
             </span>
         </BaseButton>
