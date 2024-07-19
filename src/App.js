@@ -8,7 +8,7 @@ import NavigationBar from './Components/Navigation/NavigationBar'
 function App() {
     return (
         <div className="App">
-            <div>
+            <div className='w-full flex justify-center'>
                 <NavigationBar />
             </div>
             <Routes>
