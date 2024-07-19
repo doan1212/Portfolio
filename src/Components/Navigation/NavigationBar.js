@@ -5,7 +5,7 @@ import NavigationHeaderRight from './NavigationHeaderRight'
 
 const NavigationBar = () => {
     return (
-        <div className='grid grid-cols-9 gap-4 p-10'>
+        <div className='grid grid-cols-9 gap-4 p-10 items-center'>
             <div className='col-start-1 col-span-2 flex justify-start'>
                 <NavigationHeaderLeft />
             </div>

@@ -1,25 +1,50 @@
-const Button = ({children, onClick, className, ...props }) => {
+const BaseButton = ({ children, onClick, className, ...props }) => {
     return (
-        <button onClick={onClick} className={`${className}`} {...props}>
-            {children}
+        <button
+            onClick={onClick}
+            className={`${className} basic-btn`}
+            {...props}
+        >
+            {/* <span className="block rounded-full bg-white px-5 py-2 text-sm font-eloquialight group-hover:bg-transparent"> */}
+            <span>
+                {children}
+            </span>
         </button>
     )
 }
 
-const PrimaryButton = ({children, onClick }) => {
-    return (
-        <Button onClick={onClick} className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'>
-            {children}
-        </Button>
-    )
+const ButtonType = {
+    gradient: "btnGradient",
+    solid: "btnSolid",
+    outline: "btnOutline",
 }
 
-const SecondaryButton = ({children, onClick }) => {
-    return (
-        <Button onClick={onClick} className='bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded'>
-            {children}
-        </Button>
-    )
+const ButtonAnimation = {
+    pulse: "btnPulse",
+    shake: "btnShake",
+    bounce: "btnBounce",
 }
 
-export { Button, PrimaryButton, SecondaryButton }
+
+
+/*
+ * type: gradient, solid, outline
+ * gradientFrom: color
+ * gradientTo: color
+ * color: color
+ * animation: boolean
+ * animationType: pulse, shake, bounce
+ */
+const Button = ({
+    type,
+    gradientFrom,
+    gradientTo,
+    color,
+    animation,
+    animationType,
+    children,
+    onClick,
+    ...props
+}) => {}
+
+export { BaseButton }

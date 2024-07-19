@@ -1,8 +1,8 @@
-import { PrimaryButton } from "../Button/Button"
+import { BaseButton } from "../Button/Button"
 
 const NavigationHeaderRight = () => {
     return <div>
-        <PrimaryButton>Sign Up</PrimaryButton>
+        <BaseButton>Sign Up</BaseButton>
     </div>
 }
 
