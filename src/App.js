@@ -3,13 +3,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and sa mve to reload.
-        </p>
-      </header>
+    <div>
+      <h1 class="text-2xl font-bold underline">Hello Doan!</h1>
     </div>
   );
 }
