@@ -11,7 +11,7 @@ const Home = () => {
         <div>
             <SectionPrimary>
             <div className="flex flex-row justify-evenly ">
-                <div className="py-10 px-10 items-center w-1/2 justify-center ">
+                <div className=" px-10 items-center justify-center ">
                     <span className="font-eloquialight text-emperor-700 text-4xl">
                         Hello there, I'm
                     </span>{' '}
@@ -44,7 +44,7 @@ const Home = () => {
                         scrambled it to specimen book.
                     </span>
                 </div>
-                <div className='w-96 h-96'>
+                <div >
                     <img
                         src={avatar}
                         alt="avatar"
