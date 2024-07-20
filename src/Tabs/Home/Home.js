@@ -1,11 +1,15 @@
 import React from 'react'
 import { Button, OutlineGradientButton } from '../../Components/Button/Button'
-import avatar from '../../Assets/Image/avatar.png';
-
+import avatar from '../../Assets/Image/avatar.png'
+import {
+    SectionPrimary,
+    SectionSecondary,
+} from '../../Components/Section/Section'
 
 const Home = () => {
     return (
-        <div className="flex flex-col gap-3">
+        <div>
+            <SectionPrimary>
             <div className="flex flex-row justify-evenly ">
                 <div className="py-10 px-10 items-center w-1/2 justify-center ">
                     <span className="font-eloquialight text-emperor-700 text-4xl">
@@ -48,6 +52,13 @@ const Home = () => {
                     />
                 </div>
             </div>
+            </SectionPrimary>
+            <SectionSecondary>
+                <div>Hello Doan</div>
+            </SectionSecondary>
+            <SectionPrimary>
+                <div>Hello Doan</div>
+            </SectionPrimary>
         </div>
     )
 }

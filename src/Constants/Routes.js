@@ -5,5 +5,5 @@ import Project from '../Tabs/Project/Project'
 export const NavRoute = {
     home: "/",
     about: "/about",
-    project: "/project",
+    component: "/component"
 }
