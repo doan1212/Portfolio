@@ -42,54 +42,52 @@ const Home = () => {
     return (
         <div>
             <SectionPrimary>
-            <div className="flex flex-row justify-evenly ">
-                <div className=" px-10 items-center justify-center ">
-                    <span className="font-eloquialight text-emperor-700 text-4xl">
-                        Hello there, I'm
-                    </span>{' '}
-                    <span className="font-laviossa text-7xl p-4 bg-gradient-to-r from-wisteria-500 to-nypink-400 text-transparent bg-clip-text font-bold">
-                        Doan
-                    </span>{' '}
-                    <br />
-                    <span className="font-eloquiabold text-nypink-400 text-4xl">
-                        Frontend
-                    </span>{' '}
-                    <span className="font-eloquiabold stroke text-fantasy-50 text-4xl">
-                        Developer
-                    </span>{' '}
-                    <br />
-                    <span className="font-eloquiabold stroke text-fantasy-50 text-4xl">
-                        {' '}
-                        UI/UX
-                    </span>{' '}
-                    <span className="font-eloquiabold text-nypink-400 text-4xl">
-                        Designer.
-                    </span>
-                    <br />
-                    <br />
-                    <span className="font-eloquialight text-emperor-500">
-                        {' '}
-                        I'm Flora Sheen Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to specimen book.
-                    </span>
+                <div className="flex flex-col md:flex-row items-center gap-5">
+                    <div className="order-2 md:order-1 px-10 items-center justify-center ">
+                        <span className="font-eloquialight text-emperor-700 text-4xl">
+                            Hello there, I'm
+                        </span>{' '}
+                        <span className="font-laviossa text-7xl p-4 bg-gradient-to-r from-wisteria-500 to-nypink-400 text-transparent bg-clip-text font-bold">
+                            Doan
+                        </span>{' '}
+                        <br />
+                        <span className="font-eloquiabold text-nypink-400 text-4xl">
+                            Frontend
+                        </span>{' '}
+                        <span className="font-eloquiabold stroke text-fantasy-50 text-4xl">
+                            Developer
+                        </span>{' '}
+                        <br />
+                        <span className="font-eloquiabold stroke text-fantasy-50 text-4xl">
+                            {' '}
+                            UI/UX
+                        </span>{' '}
+                        <span className="font-eloquiabold text-nypink-400 text-4xl">
+                            Designer.
+                        </span>
+                        <br />
+                        <br />
+                        <span className="font-eloquialight text-emperor-500">
+                            {' '}
+                            I'm Flora Sheen Lorem Ipsum is simply dummy text of
+                            the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to specimen book.
+                        </span>
+                    </div>
+                    <div className='order-1 md:order-2 w-1/2 h-1/2 md:w-full md:h-full'>
+                        <img
+                            src={avatar}
+                            alt="avatar"
+                            className="rounded-full"
+                        />
+                    </div>
                 </div>
-                <div >
-                    <img
-                        src={avatar}
-                        alt="avatar"
-                        className="rounded-full"
-                    />
-                </div>
-            </div>
             </SectionPrimary>
-            <SectionSecondary>
-                
-            </SectionSecondary>
+            <SectionSecondary></SectionSecondary>
             <SectionPrimary>
-            <InfoCard
+                <InfoCard
                     title={<IndexTitle index="01" title={projects[0].title} />}
                     content={projects[0].content}
                     image={projects[0].image}
