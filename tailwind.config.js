@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+
+
 module.exports = {
     content: ['./src/**/*.{html,js}'],
     theme: {
@@ -69,6 +71,7 @@ module.exports = {
                     900: '#3f3c3b',
                     950: '#2a2727',
                 },
+            
             },
         },
         fontFamily: {
@@ -76,7 +79,9 @@ module.exports = {
             eloquiabold: ['Eloquia-ExtraBold', 'sans-serif'],
             eloquialight: ['Eloquia-ExtraLight', 'sans-serif'],
             brotherside: ['BrothersideSignature', 'sans-serif'],
+            amsterdam: ['Amsterdam', 'sans-serif'],
         },
     },
-    plugins: [],
+    plugins: [
+    ],
 }

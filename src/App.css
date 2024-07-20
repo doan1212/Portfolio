@@ -4,6 +4,7 @@
 
 @import './Components/Navigation/styles.css';
 @import './Components/Button/styles.css';
+@import './Tabs/Home/style.css';
 
 
 @font-face {
@@ -25,6 +26,12 @@
     font-family: 'BrothersideSignature';
     src: url('../public/fonts/BrothersideSignature.otf');
 }
+
+@font-face {
+    font-family: 'Amsterdam';
+    src: url('../public/fonts/Amsterdam.otf');
+}
+
 
 /* https://tailwindcss.com/docs/reusing-styles */
 /* @layer components {

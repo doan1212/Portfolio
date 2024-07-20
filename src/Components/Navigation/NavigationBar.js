@@ -9,9 +9,10 @@ const NavigationBar = () => {
             <div className='col-start-1 col-span-2 flex justify-start'>
                 <NavigationHeaderLeft />
             </div>
-            <div className="flex flex-row justify-center gap-10 col-start-3 col-span-5">
+            <div className="flex flex-row justify-center gap-10 col-start-3 col-span-5 text-emperor-700">
                 <NavigationButton name="Home" route={NavRoute.home} />
                 <NavigationButton name="About" route={NavRoute.about} />
+                <NavigationButton name="Project" route={NavRoute.project} />
             </div>
             <div className='col-end-10 col-span-2 flex justify-end'>
                 <NavigationHeaderRight />

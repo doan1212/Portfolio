@@ -3,7 +3,7 @@
 @layer components {
     .navButton {
         @apply font-eloquialight font-semibold border-b-2
-                hover:border-wisteria-800  
+                hover:border-wisteria-600
                 border-wisteria-200
                 px-2 py-1;
     }

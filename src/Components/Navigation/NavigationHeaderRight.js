@@ -6,6 +6,7 @@ const NavigationHeaderRight = () => {
             <OutlineGradientButton
                 type="primary"
                 size="sm"
+                color = "emperor-700"
                 children={'My Resume'}
             />
         </div>

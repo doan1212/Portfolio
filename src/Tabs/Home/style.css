@@ -1,0 +1,9 @@
+@tailwind components;
+
+@layer components {
+    .stroke {
+      -webkit-text-stroke: 2px #E48586;
+
+  }
+}
+  

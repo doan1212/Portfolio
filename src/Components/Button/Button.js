@@ -52,9 +52,9 @@ const Button = ({ type, size, children, onClick, ...props }) => {
 
 const GradientButtonType = {
     primary:
-        'text-white p-[2px] bg-gradient-to-r from-wisteria-600 to-nypink-400',
+        'text-fantasy-50 p-[2px] bg-gradient-to-r from-wisteria-600 to-nypink-400',
     secondary:
-        'text-white p-[2px] bg-gradient-to-r from-nypink-400 to-wisteria-600',
+        'text-fantasy-50 p-[2px] bg-gradient-to-r from-nypink-400 to-wisteria-600',
 }
 
 const OutlineGradientButton = ({
@@ -77,7 +77,7 @@ const OutlineGradientButton = ({
             {...props}
         >
             <span
-                className={`${sizeClass} basicTransition text-wisteria-950 block rounded-full bg-white font-eloquialight group-hover:bg-transparent group-hover:text-white`}
+                className={`${sizeClass} basicTransition text-wisteria-950 block rounded-full bg-fantasy-50 font-eloquialight group-hover:bg-transparent group-hover:text-white`}
             >
                 {children}
             </span>
