@@ -4,4 +4,5 @@ import Home from '../Tabs/Home/Home'
 export const NavRoute = {
     home: "/",
     about: "/about",
+    component: "/component"
 }

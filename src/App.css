@@ -5,6 +5,20 @@
 @import './Components/Navigation/styles.css';
 @import './Components/Button/styles.css';
 
+:root {
+    --bgColor: #fff8f5;
+}
+
+body::before {
+    content: "";
+    height: 140px;
+    display: block;
+    background-color: var(--bgColor);
+}
+
+body {
+    background-color: var(--bgColor);
+}
 
 @font-face {
     font-family: 'Laviossa';
