@@ -12,17 +12,17 @@ const NavigationBar = () => {
     return (
         <nav id="navbar" className="w-full flex justify-center fixed top-0 basicTransition">
             <div className={`
-                grid grid-cols-9 gap-4 px-10 py-5 items-center
+                md:grid grid-rows-3 md:grid-rows-1 md:grid-cols-9 gap-4 px-10 py-5 items-center flex flex-col
                 ${defaultStyle}
                 ${mdStyle}
                 ${lgStyle}
                 ${xlStyle}
                 ${xxlStyle}
                 `}>
-                <div className="col-start-1 col-span-2 flex justify-start">
+                <div className="md:col-start-1 md:col-span-2 flex justify-start">
                     <NavigationHeaderLeft />
                 </div>
-                <div className="flex flex-row justify-center gap-10 col-start-3 col-span-5">
+                <ul className="flex flex-row justify-center gap-10 md:col-start-3 md:col-span-5">
                     {[
                         {
                             title: 'Home',
@@ -43,8 +43,8 @@ const NavigationBar = () => {
                             route={item.route}
                         />
                     ))}
-                </div>
-                <div className="col-end-10 col-span-2 flex justify-end">
+                </ul>
+                <div className="md:col-end-10 md:col-span-2 flex justify-end">
                     <NavigationHeaderRight />
                 </div>
             </div>

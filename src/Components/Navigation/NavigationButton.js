@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 const NavigationButton = ({ name, route }) => {
     return (
-        <div className="navButton basicTransition">
+        <li className="navButton basicTransition">
             <Link to={route}>{name}</Link>
-        </div>
+        </li>
     )
 }
 
