@@ -1,21 +1,32 @@
 import Container from '../Container/Container'
 
-const Section = ({ children, className }) => {
+const Section = ({ title, children, className }) => {
     return (
         <section
             className={`${className} flex flex-fow justify-center items-center`}
         >
-            <Container>{children}</Container>
+            <Container>
+                {title && <div className='text-wisteria-900 text-4xl flex justify-center font-abrilfatface'>{title}</div>}
+                {children}
+            </Container>
         </section>
     )
 }
 
-const SectionPrimary = ({ children }) => {
-    return <Section className="bg-transparent w-full">{children}</Section>
+const SectionPrimary = ({ title, children }) => {
+    return (
+        <Section title={title} className="bg-transparent w-full">
+            {children}
+        </Section>
+    )
 }
 
-const SectionSecondary = ({ children }) => {
-    return <Section className="bg-white w-full">{children}</Section>
+const SectionSecondary = ({ title, children }) => {
+    return (
+        <Section title={title} className="bg-white w-full">
+            {children}
+        </Section>
+    )
 }
 
 export { SectionPrimary, SectionSecondary }

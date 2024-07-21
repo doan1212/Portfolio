@@ -76,7 +76,7 @@ const Home = () => {
                             galley of type and scrambled it to specimen book.
                         </span>
                     </div>
-                    <div className='order-1 md:order-2 w-1/2 h-1/2 md:w-full md:h-full'>
+                    <div className="order-1 md:order-2 w-1/2 h-1/2 md:w-full md:h-full">
                         <img
                             src={avatar}
                             alt="avatar"
@@ -86,7 +86,7 @@ const Home = () => {
                 </div>
             </SectionPrimary>
             <SectionSecondary></SectionSecondary>
-            <SectionPrimary>
+            <SectionPrimary title={'My Project'}>
                 <InfoCard
                     title={<IndexTitle index="01" title={projects[0].title} />}
                     content={projects[0].content}

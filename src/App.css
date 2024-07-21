@@ -46,6 +46,11 @@ body {
     src: url('../public/fonts/Amsterdam.otf');
 }
 
+@font-face {
+    font-family: 'AbrilFatface';
+    src: url('../public/fonts/AbrilFatface.ttf');
+}
+
 
 /* https://tailwindcss.com/docs/reusing-styles */
 /* @layer components {
