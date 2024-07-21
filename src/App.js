@@ -4,7 +4,7 @@ import Home from './Tabs/Home/Home'
 import About from './Tabs/About/About'
 import { NavRoute } from './Constants/Routes'
 import NavigationBar from './Components/Navigation/NavigationBar'
-import Component from './Tabs/Component/Component'
+import Projects from './Tabs/Projects/Projects'
 import { useEffect } from 'react'
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
             <Routes>
                 <Route path={NavRoute.home} element={<Home />} />
                 <Route path={NavRoute.about} element={<About />} />
-                <Route path={NavRoute.component} element={<Component />} />
+                <Route path={NavRoute.projects} element={<Projects/>} />
             </Routes>
         </div>
     )

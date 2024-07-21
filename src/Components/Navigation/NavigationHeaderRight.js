@@ -2,7 +2,7 @@ import { OutlineGradientButton } from '../Button/Button'
 
 const NavigationHeaderRight = () => {
     return (
-        <div className="flex flex-row">
+        <div className="flex flex-row basic transition">
             <OutlineGradientButton
                 type="primary"
                 size="sm"

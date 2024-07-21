@@ -12,12 +12,9 @@ const NavigationBar = () => {
     return (
         <nav id="navbar" className="w-full flex justify-center fixed top-0 basicTransition">
             <div className={`
-                md:grid grid-rows-3 md:grid-rows-1 md:grid-cols-9 gap-4 px-10 py-5 items-center flex flex-col
+                md:grid grid-rows-3 md:grid-rows-1 md:grid-cols-9 gap-4 px-36 py-5 items-center flex flex-col
                 ${defaultStyle}
-                ${mdStyle}
-                ${lgStyle}
-                ${xlStyle}
-                ${xxlStyle}
+                
                 `}>
                 <div className="md:col-start-1 md:col-span-2 flex justify-start">
                     <NavigationHeaderLeft />
@@ -33,8 +30,8 @@ const NavigationBar = () => {
                             route: NavRoute.about,
                         },
                         {
-                            title: 'Component',
-                            route: NavRoute.component,
+                            title: 'Projects',
+                            route: NavRoute.projects,
                         },
                     ].map((item, index) => (
                         <NavigationButton

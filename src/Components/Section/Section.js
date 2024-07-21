@@ -6,7 +6,7 @@ const Section = ({ title, children, className }) => {
             className={`${className} flex flex-fow justify-center items-center`}
         >
             <Container>
-                {title && <div className='text-wisteria-900 text-4xl flex justify-center font-abrilfatface'>{title}</div>}
+                {title && <div className='text-wisteria-600 text-4xl flex justify-center font-abrilfatface'>{title}</div>}
                 {children}
             </Container>
         </section>
