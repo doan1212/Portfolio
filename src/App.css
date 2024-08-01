@@ -51,6 +51,11 @@ body {
     src: url('../public/fonts/AbrilFatface.ttf');
 }
 
+@font-face {
+    font-family: 'Arsenal';
+    src: url('../public/fonts/ArsenalSC-Regular.ttf');
+}
+
 
 /* https://tailwindcss.com/docs/reusing-styles */
 /* @layer components {

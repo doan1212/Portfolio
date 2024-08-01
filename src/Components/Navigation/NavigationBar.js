@@ -10,7 +10,8 @@ const NavigationBar = () => {
     const xlStyle = 'xl:w-9/12';
     const xxlStyle = '2xl:w-7/12';
     return (
-        <nav id="navbar" className="w-full flex justify-center fixed top-0 basicTransition">
+        <nav id="navbar" className="w-full flex justify-center fixed top-0 basicTransition z-[9999]">
+            
             <div className={`
                 md:grid grid-rows-3 md:grid-rows-1 md:grid-cols-9 gap-4 px-36 py-5 items-center flex flex-col
                 ${defaultStyle}

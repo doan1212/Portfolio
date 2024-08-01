@@ -79,7 +79,8 @@ module.exports = {
             brotherside: ['BrothersideSignature', 'sans-serif'],
             amsterdam: ['Amsterdam', 'sans-serif'],
             abrilfatface: ['AbrilFatface', 'sans-serif'],
+            Arsenal: ['Arsenal', 'sans-serif'],
         },
     },
-    plugins: [],
+    plugins: ["prettier-plugin-tailwindcss"],
 }

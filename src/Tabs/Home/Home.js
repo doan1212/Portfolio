@@ -7,26 +7,25 @@ import {
 } from '../../Components/Section/Section'
 import { InfoCard, ReverseInfoCard } from '../../Components/InfoCard/InfoCard'
 import { IndexTitle } from '../../Components/InfoCard/Title'
-import MockImage1 from '../../Assets/mock_1.jpg'
-import MockImage2 from '../../Assets/mock_2.jpg'
+import MockImage1 from '../../Assets/mock_1.png'
+import MockImage2 from '../../Assets/mock_2.png'
 import MockImage3 from '../../Assets/mock_3.jpg'
+import { NavRoute } from '../../Constants/Routes'
 
 
 const Home = () => {
 
     const projects = [
         {
-            title: 'Project 1',
+            title: 'ILUVUS Application',
             image: MockImage1,
-            link: 'https://www.google.com',
-            content: `I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to specimen book.`,
+            link: NavRoute.project1 ,
+            content: `UI/UX Design | Frontend Development | A mobile app create a space for users to connect, share, and celebrate achievements.`,
         },
         {
-            title: 'Project 2',
+            title: 'Traveloka',
             image: MockImage2,
-            link: 'https://www.google.com',
+            link: NavRoute.project2,
             content: `I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to specimen book.`,
@@ -34,7 +33,7 @@ const Home = () => {
         {
             title: 'Project 3',
             image: MockImage3,
-            link: 'https://www.google.com',
+            link: NavRoute.project3,
             content: `I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to specimen book.`,
@@ -50,23 +49,23 @@ const Home = () => {
                         <span className="md:text-3xl text-xl font-eloquialight text-emperor-700 align-text-bottom">
                             Hello there, I'm
                         </span>
-                        <span className="align-text-bottom w-fit -mb-[2px] md:text-6xl text-4xl font-laviossa bg-gradient-to-r from-wisteria-500 to-nypink-400 text-transparent bg-clip-text font-bold">
+                        <span className="align-text-bottom w-fit -mb-[2px] md:text-7xl text-4xl font-laviossa bg-gradient-to-r from-wisteria-500 to-nypink-400 text-transparent bg-clip-text font-bold">
                             Doan
                         </span>
                         </div>
                         <br />
-                        <span className="font-eloquiabold text-nypink-400 md:text-4xl text-3xl ">
+                        <span className="font-eloquiabold text-nypink-400 md:text-5xl text-3xl ">
                             Frontend
                         </span>{' '}
-                        <span className="font-eloquiabold stroke text-fantasy-50 md:text-4xl text-3xl ">
+                        <span className="font-eloquiabold stroke text-fantasy-50 md:text-5xl text-3xl ">
                             Developer
                         </span>{' '}
                         <br />
-                        <span className="font-eloquiabold stroke text-fantasy-50 md:text-4xl text-3xl">
+                        <span className="font-eloquiabold stroke text-fantasy-50 md:text-5xl text-3xl">
                             {' '}
                             UI/UX
                         </span>{' '}
-                        <span className="font-eloquiabold text-nypink-400 md:text-4xl text-3xl">
+                        <span className="font-eloquiabold text-nypink-400 md:text-5xl text-3xl">
                             Designer.
                         </span>
                         <br />

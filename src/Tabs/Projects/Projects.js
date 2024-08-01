@@ -2,27 +2,26 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { InfoCard, ReverseInfoCard } from '../../Components/InfoCard/InfoCard'
 import { IndexTitle } from '../../Components/InfoCard/Title'
-import MockImage1 from '../../Assets/mock_1.jpg'
-import MockImage2 from '../../Assets/mock_2.jpg'
+import MockImage1 from '../../Assets/mock_1.png'
+import MockImage2 from '../../Assets/mock_2.png'
 import MockImage3 from '../../Assets/mock_3.jpg'
 import { SectionPrimary, SectionSecondary } from '../../Components/Section/Section'
+import { NavRoute } from '../../Constants/Routes'
 
  
 const Projects = () => {
 
     const projects = [
         {
-            title: 'Project 1',
+            title: 'ILUVUS Application',
             image: MockImage1,
-            link: 'https://www.google.com',
-            content: `I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to specimen book.`,
+            link: NavRoute.project1,
+            content: `UI/UX Design | Frontend Development | A mobile app create a space for users to connect, share, and celebrate achievements.`,
         },
         {
-            title: 'Project 2',
+            title: 'Traveloka',
             image: MockImage2,
-            link: 'https://www.google.com',
+            link: NavRoute.project2,
             content: `I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to specimen book.`,
@@ -30,7 +29,7 @@ const Projects = () => {
         {
             title: 'Project 3',
             image: MockImage3,
-            link: 'https://www.google.com',
+            link: NavRoute.project3,
             content: `I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it to specimen book.`,
@@ -38,7 +37,7 @@ const Projects = () => {
     ]
 
     return (
-        <div >
+        <div>
             <SectionPrimary title={''}>
 
             </SectionPrimary>

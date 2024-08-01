@@ -1,17 +1,24 @@
+import NavigationButton from '../Navigation/NavigationButton'
+import { Link } from 'react-router-dom'
+
 const InfoCard = ({ title, content, image, ...props }) => {
     return (
-        <div className="flex flex-col md:flex-row md:gap-20 gap-10">
+        <div className="p-5 flex flex-col md:flex-row md:gap-20 gap-10 hover:scale-110 hover:transform hover:transition hover:duration-300 hover:ease-in-out hover:shadow-2xl rounded-xl hover:shadow-wisteria-300 ">
             <div className="flex justify-center items-center md:w-1/2 w-full">
-                <div className="w-fit h-fit">
-                    <img
-                        src={image}
-                        alt="info card"
-                        className="rounded-xl shadow"
-                    />
+                <div className="w-fit h-fit ">
+                    <Link to={props.link}>
+                        <img
+                            src={image}
+                            alt="info card"
+                            className="rounded-xl shadow "
+                        />
+                    </Link>
                 </div>
             </div>
             <div className="flex flex-col gap-5 justify-center md:w-1/2 w-full">
-                <div>{title}</div>
+                <Link to={props.link}>
+                    <div>{title}</div>
+                </Link>
                 <div className="font-eloquialight text-base text-gray-500">
                     {content}
                 </div>
@@ -34,7 +41,7 @@ const InfoCard = ({ title, content, image, ...props }) => {
 
 const ReverseInfoCard = ({ title, content, image, ...props }) => {
     return (
-        <div className="flex flex-col md:flex-row md:gap-20 gap-10">
+        <div className="p-5 flex flex-col md:flex-row md:gap-20 gap-10  hover:scale-110 hover:transform hover:transition hover:duration-300 hover:ease-in-out hover:shadow-2xl rounded-xl hover:shadow-wisteria-300">
             <div className="md:order-1 order-2 flex flex-col gap-5 justify-center md:w-1/2 w-full">
                 <div>{title}</div>
                 <div className="font-eloquialight text-base text-gray-500">
@@ -55,11 +62,13 @@ const ReverseInfoCard = ({ title, content, image, ...props }) => {
             </div>
             <div className="md:order-2 order-1 flex justify-center items-center md:w-1/2 w-full">
                 <div className="w-fit h-fit">
-                    <img
-                        src={image}
-                        alt="info card"
-                        className="rounded-xl shadow"
-                    />
+                    <Link to={props.link}>
+                        <img
+                            src={image}
+                            alt="info card"
+                            className="rounded-xl shadow"
+                        />
+                    </Link>
                 </div>
             </div>
         </div>
