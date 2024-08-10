@@ -1,8 +1,7 @@
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css'
 
-export const Slider = ({images}) => {
-    
+export const Slider = ({ images }) => {
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -32,11 +31,14 @@ export const Slider = ({images}) => {
                     className="flex items-center justify-evenly"
                 >
                     {images.map((image, index) => (
-                        <div key={index} className=" w-1/2 h-1/2 md:w-full md:h-full px-2">
+                        <div
+                            key={index}
+                            className="h-1/2 w-1/2 px-2 md:h-full md:w-full"
+                        >
                             <img
                                 src={image.src}
                                 alt={image.alt}
-                                className="w-full h-auto"
+                                className="h-auto w-full"
                             />
                         </div>
                     ))}

@@ -1,0 +1,65 @@
+{
+    "name": "ILUVUS",
+    "shortDescription": "A social media platform provide a unique user experience that celebrates diversity.",
+    "overview": "ILUVUS was inspired to develop <b>a social mobile app</b> dedicated to posting categorical content, commenting, and <b>celebrating the achievements</b>, and stories of <b>LGBTQ individuals</b> and <b>diverse communities</b>.",
+    "refinedScope": "Our focus to create a space that <b>prioritizes</b> these communities' accomplishments, offering a <b>unique user experience</b> while ensuring a safe and positive environment.",
+    "roles": [
+        "UX Designer",
+        "UI Designer",
+        "Front End Developer"
+    ],
+    "timeline": [
+        "3 week sprint",
+        "Research 3+ weeks",
+        "Design 4+ weeks"
+    ],
+    "tools": [
+        "Figma",
+        "React Native",
+        "MongoDB",
+        "Spring Boot",
+        "Cloud Firestore"
+    ],
+    "process": [
+        "Discovery",
+        "Ideation",
+        "Design",
+        "Development",
+        "Relection"
+    ],
+    "platform": [
+        "iOS",
+        "Android"
+    ],
+    "sections": [
+        {
+            "discovery": [
+                {
+                    "clientResearch": {
+                        "title": "Client Research",
+                        "description": "After meetings with our client, our team thoroughly discuss the users' needs, along with the vision that the client had for this project. We learned we need to identify what matters most to our users. Do they prioritize diversity, user-friendliness, content quality, or something else? This question will help us to polish the application’s user experience to align with their preferences."
+                    },
+                    "userResearch": {
+                        "title": "User Research",
+                        "description": "We conducted a user interview and survey to understand the users' needs, preferences, and pain points. The research findings we collected from the compilation of the survey revealed that our users want a platform that prioritizes a user-friendly interface, effective content moderation, and robust privacy settings, offers a unique user experience, and ensures a safe and positive environment."
+                    }
+                }
+            ],
+            "ideation": {
+                "userStories": {
+                    "description": "We focused on the main five user stories to guide our design and development process. These stories helped us to understand the user's needs and expectations, and how they would interact with the application.",
+                    "stories": [
+                        "As a user, I want to create an account to personalize my experience.",
+                        "As a user, I want to post content to share my stories and achievements.",
+                        "As a user, I want to comment on posts to engage with the community.",
+                        "As a user, I want to report inappropriate content to keep the community safe.",
+                        "As a user, I want to search for specific content to find relevant posts."
+                    ]
+                }
+            },
+            "design": {},
+            "development": {},
+            "reflection": {}
+        }
+    ]
+}

@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { SectionPrimary, SectionSecondary } from '../../Components/Section/Section'
+import {
+    SectionPrimary,
+    SectionSecondary,
+} from '../../Components/Section/Section'
 import doan from '../../Assets/Image/doan.png'
 import Slider from '../../Components/Slider/Slider'
 import js from '../../Assets/Image/js.png'
@@ -26,8 +29,6 @@ import aframe from '../../Assets/Image/aframe.png'
 import post from '../../Assets/Image/post.png'
 import processing from '../../Assets/Image/processing.png'
 
-
-
 const About = () => {
     const images = [
         { src: js, alt: 'JavaScript' },
@@ -37,7 +38,7 @@ const About = () => {
         { src: html, alt: 'HTML' },
         { src: reactjs, alt: 'React' },
         { src: c, alt: 'C' },
-      ];
+    ]
 
     const skills = [
         { src: figma, alt: 'Figma' },
@@ -55,49 +56,41 @@ const About = () => {
         { src: aframe, alt: 'A-Frame' },
         { src: post, alt: 'Postman' },
         { src: processing, alt: 'Processing' },
-        ];
+    ]
 
     return (
         <div>
             <SectionPrimary className="bg-gradient-to-r from-wisteria-500 to-nypink-400">
-                <div className=" flex flex-col md:flex-row items-center md:items-start gap-5">
-                    <div className="justify-start w-1/2 h-1/2 md:w-max md:h-max">
+                <div className="flex flex-col items-center gap-5 md:flex-row md:items-start">
+                    <div className="h-1/2 w-1/2 justify-start md:h-max md:w-max">
                         <img src={doan} alt="doan" />
                     </div>
-                    <div className=" px-10 flex flex-col justify-center gap-6">
-                        <div className="md:text-4xl text-lg font-laviossa text-wisteria-600 align-text-bottom">
+                    <div className="flex flex-col justify-center gap-6 px-10">
+                        <div className="align-text-bottom font-laviossa text-lg text-wisteria-600 md:text-4xl">
                             About Me
                         </div>
-           
-                        <div className="md:text-xl text-sm font-eloquialight text-emperor-700 align-text-bottom">
-                        I'm Flora Sheen Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to specimen book.
+
+                        <div className="align-text-bottom font-eloquialight text-sm text-emperor-700 md:text-xl">
+                            I'm Flora Sheen Lorem Ipsum is simply dummy text of
+                            the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever
+                            since the 1500s, when an unknown printer took a
+                            galley of type and scrambled it to specimen book.
                         </div>
-                        <div className="md:text-xl text-sm font-eloquialight text-emperor-700 align-text-bottom" >
-                        I'm Flora Sheen Lorem Ipsum is simply dummy text of the
-                        printing and typesetting industry. 
+                        <div className="align-text-bottom font-eloquialight text-sm text-emperor-700 md:text-xl">
+                            I'm Flora Sheen Lorem Ipsum is simply dummy text of
+                            the printing and typesetting industry.
                         </div>
                     </div>
                 </div>
             </SectionPrimary>
             <SectionSecondary title={'a little more about me...'}>
-                <Slider 
-                images={images}
-                className='justify-center'>    
-                </Slider>
+                <Slider images={images} className="justify-center"></Slider>
             </SectionSecondary>
             <SectionSecondary>
-            <Slider 
-                images={skills}
-                className='justify-center'>    
-                </Slider>
+                <Slider images={skills} className="justify-center"></Slider>
             </SectionSecondary>
-            <SectionPrimary>
-
-            </SectionPrimary>
+            <SectionPrimary></SectionPrimary>
         </div>
     )
 }

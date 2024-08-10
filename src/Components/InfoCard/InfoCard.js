@@ -3,19 +3,19 @@ import { Link } from 'react-router-dom'
 
 const InfoCard = ({ title, content, image, ...props }) => {
     return (
-        <div className="p-5 flex flex-col md:flex-row md:gap-20 gap-10 hover:scale-110 hover:transform hover:transition hover:duration-300 hover:ease-in-out hover:shadow-2xl rounded-xl hover:shadow-wisteria-300 ">
-            <div className="flex justify-center items-center md:w-1/2 w-full">
-                <div className="w-fit h-fit ">
+        <div className="flex flex-col gap-10 rounded-xl p-5 hover:scale-110 hover:transform hover:shadow-2xl hover:shadow-wisteria-300 hover:transition hover:duration-300 hover:ease-in-out md:flex-row md:gap-20">
+            <div className="flex w-full items-center justify-center md:w-1/2">
+                <div className="h-fit w-fit">
                     <Link to={props.link}>
                         <img
                             src={image}
                             alt="info card"
-                            className="rounded-xl shadow "
+                            className="rounded-xl shadow"
                         />
                     </Link>
                 </div>
             </div>
-            <div className="flex flex-col gap-5 justify-center md:w-1/2 w-full">
+            <div className="flex w-full flex-col justify-center gap-5 md:w-1/2">
                 <Link to={props.link}>
                     <div>{title}</div>
                 </Link>
@@ -25,7 +25,7 @@ const InfoCard = ({ title, content, image, ...props }) => {
                 {props.link && (
                     <a href={props.link} className="text-nypink-400">
                         <svg
-                            className="w-4 h-4"
+                            className="h-4 w-4"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                             fill="currentColor"
@@ -41,8 +41,8 @@ const InfoCard = ({ title, content, image, ...props }) => {
 
 const ReverseInfoCard = ({ title, content, image, ...props }) => {
     return (
-        <div className="p-5 flex flex-col md:flex-row md:gap-20 gap-10  hover:scale-110 hover:transform hover:transition hover:duration-300 hover:ease-in-out hover:shadow-2xl rounded-xl hover:shadow-wisteria-300">
-            <div className="md:order-1 order-2 flex flex-col gap-5 justify-center md:w-1/2 w-full">
+        <div className="flex flex-col gap-10 rounded-xl p-5 hover:scale-110 hover:transform hover:shadow-2xl hover:shadow-wisteria-300 hover:transition hover:duration-300 hover:ease-in-out md:flex-row md:gap-20">
+            <div className="order-2 flex w-full flex-col justify-center gap-5 md:order-1 md:w-1/2">
                 <div>{title}</div>
                 <div className="font-eloquialight text-base text-gray-500">
                     {content}
@@ -50,7 +50,7 @@ const ReverseInfoCard = ({ title, content, image, ...props }) => {
                 {props.link && (
                     <a href={props.link} className="text-nypink-400">
                         <svg
-                            className="w-4 h-4"
+                            className="h-4 w-4"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512"
                             fill="currentColor"
@@ -60,8 +60,8 @@ const ReverseInfoCard = ({ title, content, image, ...props }) => {
                     </a>
                 )}
             </div>
-            <div className="md:order-2 order-1 flex justify-center items-center md:w-1/2 w-full">
-                <div className="w-fit h-fit">
+            <div className="order-1 flex w-full items-center justify-center md:order-2 md:w-1/2">
+                <div className="h-fit w-fit">
                     <Link to={props.link}>
                         <img
                             src={image}

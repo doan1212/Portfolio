@@ -4,23 +4,23 @@ import NavigationHeaderLeft from './NavigationHeaderLeft'
 import NavigationHeaderRight from './NavigationHeaderRight'
 
 const NavigationBar = () => {
-    const defaultStyle = 'w-full';
-    const mdStyle = 'md:w-10/12';
-    const lgStyle = 'lg:w-9/12';
-    const xlStyle = 'xl:w-9/12';
-    const xxlStyle = '2xl:w-7/12';
+    const defaultStyle = 'w-full'
+    const mdStyle = 'md:w-10/12'
+    const lgStyle = 'lg:w-9/12'
+    const xlStyle = 'xl:w-9/12'
+    const xxlStyle = '2xl:w-7/12'
     return (
-        <nav id="navbar" className="w-full flex justify-center fixed top-0 basicTransition z-[9999]">
-            
-            <div className={`
-                md:grid grid-rows-3 md:grid-rows-1 md:grid-cols-9 gap-4 px-36 py-5 items-center flex flex-col
-                ${defaultStyle}
-                
-                `}>
-                <div className="md:col-start-1 md:col-span-2 flex justify-start">
+        <nav
+            id="navbar"
+            className="basicTransition fixed top-0 z-[9999] flex w-full justify-center"
+        >
+            <div
+                className={`flex grid-rows-3 flex-col items-center gap-4 px-36 py-5 md:grid md:grid-cols-9 md:grid-rows-1 ${defaultStyle} `}
+            >
+                <div className="flex justify-start md:col-span-2 md:col-start-1">
                     <NavigationHeaderLeft />
                 </div>
-                <ul className="flex flex-row justify-center gap-10 md:col-start-3 md:col-span-5">
+                <ul className="flex flex-row justify-center gap-10 md:col-span-5 md:col-start-3">
                     {[
                         {
                             title: 'Home',
@@ -42,7 +42,7 @@ const NavigationBar = () => {
                         />
                     ))}
                 </ul>
-                <div className="md:col-end-10 md:col-span-2 flex justify-end">
+                <div className="flex justify-end md:col-span-2 md:col-end-10">
                     <NavigationHeaderRight />
                 </div>
             </div>

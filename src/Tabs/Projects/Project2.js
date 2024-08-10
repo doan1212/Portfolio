@@ -1,4 +1,4 @@
-import { SectionPrimary } from "../../Components/Section/Section"
+import { SectionPrimary } from '../../Components/Section/Section'
 
 const Project2 = () => {
     return (

@@ -5,12 +5,13 @@ import { IndexTitle } from '../../Components/InfoCard/Title'
 import MockImage1 from '../../Assets/mock_1.png'
 import MockImage2 from '../../Assets/mock_2.png'
 import MockImage3 from '../../Assets/mock_3.jpg'
-import { SectionPrimary, SectionSecondary } from '../../Components/Section/Section'
+import {
+    SectionPrimary,
+    SectionSecondary,
+} from '../../Components/Section/Section'
 import { NavRoute } from '../../Constants/Routes'
 
- 
 const Projects = () => {
-
     const projects = [
         {
             title: 'ILUVUS Application',
@@ -38,9 +39,7 @@ const Projects = () => {
 
     return (
         <div>
-            <SectionPrimary title={''}>
-
-            </SectionPrimary>
+            <SectionPrimary title={''}></SectionPrimary>
             <SectionSecondary title={'My Projects'}>
                 <InfoCard
                     title={<IndexTitle index="01" title={projects[0].title} />}
@@ -60,7 +59,7 @@ const Projects = () => {
                     image={projects[2].image}
                     link={projects[2].link}
                 />
-            </SectionSecondary>   
+            </SectionSecondary>
         </div>
     )
 }

@@ -68,7 +68,7 @@ const OutlineGradientButton = ({
     const btnClass = GradientButtonType[type]
         ? GradientButtonType[type]
         : GradientButtonType['primary']
-    const sizeClass = ButtonSize[size] ? ButtonSize[size] : ButtonSize['md']
+    const sizeClass = ButtonSize[size] ? ButtonSize[size] : ButtonSize['lg']
 
     return (
         <BaseButton
@@ -77,7 +77,7 @@ const OutlineGradientButton = ({
             {...props}
         >
             <span
-                className={`${sizeClass} basicTransition text-wisteria-950 block rounded-full bg-fantasy-50 font-eloquialight group-hover:bg-transparent group-hover:text-white`}
+                className={`${sizeClass} basicTransition block rounded-full bg-fantasy-50 font-eloquialight text-wisteria-950 group-hover:bg-transparent group-hover:text-white`}
             >
                 {children}
             </span>

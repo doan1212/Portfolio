@@ -3,10 +3,14 @@ import Container from '../Container/Container'
 const Section = ({ title, children, className }) => {
     return (
         <section
-            className={`${className} flex flex-fow justify-center items-center w-fit`}
+            className={`${className} flex-fow flex w-fit items-center justify-center`}
         >
             <Container>
-                {title && <div className='text-wisteria-600 text-4xl flex justify-center font-abrilfatface'>{title}</div>}
+                {title && (
+                    <div className="flex justify-center font-abrilfatface text-5xl text-wisteria-600">
+                        {title}
+                    </div>
+                )}
                 {children}
             </Container>
         </section>
@@ -15,7 +19,7 @@ const Section = ({ title, children, className }) => {
 
 const SectionPrimary = ({ title, children }) => {
     return (
-        <Section title={title} className="bg-transparent w-full">
+        <Section title={title} className="w-full bg-transparent">
             {children}
         </Section>
     )
@@ -23,7 +27,7 @@ const SectionPrimary = ({ title, children }) => {
 
 const SectionSecondary = ({ title, children }) => {
     return (
-        <Section title={title} className="bg-white w-full">
+        <Section title={title} className="w-full bg-white">
             {children}
         </Section>
     )

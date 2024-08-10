@@ -6,14 +6,7 @@ const Container = ({ children }) => {
     const xxlStyle = '2xl:w-7/12 2xl:px-10'
     return (
         <div
-            className={`
-                flex flex-col gap-16
-                ${defaultStyle}
-                ${mdStyle}
-                ${lgStyle}
-                ${xlStyle}
-                ${xxlStyle}
-            `}
+            className={`flex flex-col gap-16 ${defaultStyle} ${mdStyle} ${lgStyle} ${xlStyle} ${xxlStyle} `}
         >
             {children}
         </div>

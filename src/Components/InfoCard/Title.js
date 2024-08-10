@@ -1,8 +1,8 @@
 const IndexTitle = ({ index, title }) => {
     return (
-        <div className="flex-col gap-3 flex text-nypink-400">
-            <div className=" text-5xl font-eloquiabold">{index}</div>
-            <div className="font-bold text-3xl font-laviossa">{title}</div>
+        <div className="flex flex-col gap-3 text-nypink-400">
+            <div className="font-eloquiabold text-5xl">{index}</div>
+            <div className="font-laviossa text-3xl font-bold">{title}</div>
         </div>
     )
 }

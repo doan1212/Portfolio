@@ -1,5 +1,9 @@
 const NavigationHeaderLeft = () => {
-    return <div className="font-amsterdam text-[1.5em] justify-start text-emperor-700 items-start">Doan</div>
+    return (
+        <div className="items-start justify-start font-amsterdam text-[1.5em] text-emperor-700">
+            Doan
+        </div>
+    )
 }
 
 export default NavigationHeaderLeft

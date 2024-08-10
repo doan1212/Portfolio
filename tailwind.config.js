@@ -82,5 +82,5 @@ module.exports = {
             Arsenal: ['Arsenal', 'sans-serif'],
         },
     },
-    plugins: ["prettier-plugin-tailwindcss"],
+    plugins: ['prettier-plugin-tailwindcss'],
 }

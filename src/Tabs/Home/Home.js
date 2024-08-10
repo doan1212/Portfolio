@@ -12,14 +12,12 @@ import MockImage2 from '../../Assets/mock_2.png'
 import MockImage3 from '../../Assets/mock_3.jpg'
 import { NavRoute } from '../../Constants/Routes'
 
-
 const Home = () => {
-
     const projects = [
         {
             title: 'ILUVUS Application',
             image: MockImage1,
-            link: NavRoute.project1 ,
+            link: NavRoute.project1,
             content: `UI/UX Design | Frontend Development | A mobile app create a space for users to connect, share, and celebrate achievements.`,
         },
         {
@@ -39,38 +37,38 @@ const Home = () => {
                         when an unknown printer took a galley of type and scrambled it to specimen book.`,
         },
     ]
-    
+
     return (
         <div>
             <SectionPrimary>
-                <div className="flex flex-col md:flex-row items-center gap-5">
-                    <div className="order-2 md:order-1 px-10 items-center justify-center ">
-                        <div className=' flex flex-row items-end gap-3'>
-                        <span className="md:text-3xl text-xl font-eloquialight text-emperor-700 align-text-bottom">
-                            Hello there, I'm
-                        </span>
-                        <span className="align-text-bottom w-fit -mb-[2px] md:text-7xl text-4xl font-laviossa bg-gradient-to-r from-wisteria-500 to-nypink-400 text-transparent bg-clip-text font-bold">
-                            Doan
-                        </span>
+                <div className="flex flex-col items-center gap-5 md:flex-row">
+                    <div className="order-2 items-center justify-center px-10 md:order-1">
+                        <div className="flex flex-row items-end gap-3">
+                            <span className="align-text-bottom font-eloquialight text-xl text-emperor-700 md:text-3xl">
+                                Hello there, I'm
+                            </span>
+                            <span className="-mb-[2px] w-fit bg-gradient-to-r from-wisteria-500 to-nypink-400 bg-clip-text align-text-bottom font-laviossa text-4xl font-bold text-transparent md:text-7xl">
+                                Doan
+                            </span>
                         </div>
                         <br />
-                        <span className="font-eloquiabold text-nypink-400 md:text-5xl text-3xl ">
+                        <span className="font-eloquiabold text-3xl text-nypink-400 md:text-5xl">
                             Frontend
                         </span>{' '}
-                        <span className="font-eloquiabold stroke text-fantasy-50 md:text-5xl text-3xl ">
+                        <span className="stroke font-eloquiabold text-3xl text-fantasy-50 md:text-5xl">
                             Developer
                         </span>{' '}
                         <br />
-                        <span className="font-eloquiabold stroke text-fantasy-50 md:text-5xl text-3xl">
+                        <span className="stroke font-eloquiabold text-3xl text-fantasy-50 md:text-5xl">
                             {' '}
                             UI/UX
                         </span>{' '}
-                        <span className="font-eloquiabold text-nypink-400 md:text-5xl text-3xl">
+                        <span className="font-eloquiabold text-3xl text-nypink-400 md:text-5xl">
                             Designer.
                         </span>
                         <br />
                         <br />
-                        <span className="font-eloquialight text-emperor-500 md:text-base text-sm">
+                        <span className="font-eloquialight text-sm text-emperor-500 md:text-base">
                             {' '}
                             I'm Flora Sheen Lorem Ipsum is simply dummy text of
                             the printing and typesetting industry. Lorem Ipsum
@@ -79,7 +77,7 @@ const Home = () => {
                             galley of type and scrambled it to specimen book.
                         </span>
                     </div>
-                    <div className="order-1 md:order-2 w-1/2 h-1/2 md:w-full md:h-full">
+                    <div className="order-1 h-1/2 w-1/2 md:order-2 md:h-full md:w-full">
                         <img
                             src={avatar}
                             alt="avatar"
@@ -108,8 +106,7 @@ const Home = () => {
                     image={projects[2].image}
                     link={projects[2].link}
                 />
-            </SectionPrimary>   
-    
+            </SectionPrimary>
         </div>
     )
 }
