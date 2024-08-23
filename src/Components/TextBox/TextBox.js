@@ -1,6 +1,6 @@
 export const VerticalTextBox = ({ title, content }) => {
     return (
-        <div className="items-center justify-start p-5">
+        <div className="items-center flex flex-row justify-start p-5 gap-5">
             <div className="font-laviossa text-2xl text-nypink-400">
                 {title}
             </div>

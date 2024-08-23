@@ -3,16 +3,46 @@ import {
     SectionSecondary,
 } from '../../Components/Section/Section'
 import banner from '../../Assets/Image/banner.png'
-import ScollToSection from '../../Components/ScollToSection/ScollToSection'
-import sketch from '../../Assets/Image/2.5D_Sketch.drawio.png'
+import ScrollToSection from '../../Components/Section/ScrollToSection'
+import personas1 from '../../Assets/Image/Persona1.png'
+import personas2 from '../../Assets/Image/Persona2.png'
+import dynamic from '../../Assets/Image/dynamic.png'
 import DATA from '../../Assets/Projects/project1.json'
 import { formatString } from '../../Utils/stringHelper'
 import {
     VerticalTextBox,
     HorizontalTextBox,
 } from '../../Components/TextBox/TextBox'
+import { ImageCardWithDescription } from '../../Components/ImageCard/ImageCard'
+import { TwoImageCardWithDescription } from '../../Components/ImageCard/ImageCard'
+import { ImageSlider } from '../../Components/ImageCard/ImageSlider'
+import userflow1 from '../../Assets/Image/userflow1.png'
+import userflow2 from '../../Assets/Image/userflow2.png'
+import userflow3 from '../../Assets/Image/userflow3.png'
+import userflow4 from '../../Assets/Image/userflow4.png'
+import guide1 from '../../Assets/Image/guide1.png'
+import guide2 from '../../Assets/Image/guide2.png'
+import guide3 from '../../Assets/Image/guide3.png'
+import guide4 from '../../Assets/Image/guide4.png'
+import guide5 from '../../Assets/Image/guide5.png'
+import { iFrame } from '../../Components/Frame/iFrame'
 
 const Project1 = () => {
+    const images = [
+        { src: userflow1, alt: 'Userflow1' },
+        { src: userflow2, alt: 'Userflow2' },
+        { src: userflow3, alt: 'Userflow3' },
+        { src: userflow4, alt: 'Userflow4' },
+    ]
+
+    const guides = [
+        { src: guide1, alt: 'Guide1' },
+        { src: guide2, alt: 'Guide2' },
+        { src: guide3, alt: 'Guide3' },
+        { src: guide4, alt: 'Guide4' },
+        { src: guide5, alt: 'Guide5' },
+    ]
+
     return (
         <div>
             <SectionPrimary>
@@ -34,11 +64,11 @@ const Project1 = () => {
             </SectionPrimary>
             <SectionSecondary>
                 <div className="grid grid-cols-1 items-start md:grid-cols-2 md:flex-row">
-                    <VerticalTextBox
+                    <HorizontalTextBox
                         title="Overview"
                         content={formatString(DATA.overview)}
                     />
-                    <VerticalTextBox
+                    <HorizontalTextBox
                         title="A Refined Scope"
                         content={formatString(DATA.refinedScope)}
                     />
@@ -87,7 +117,7 @@ const Project1 = () => {
                         }
                     />
                     <HorizontalTextBox
-                        title="platform"
+                        title="Platform"
                         content={
                             <ul>
                                 {DATA.platform.map((role, index) => (
@@ -96,174 +126,127 @@ const Project1 = () => {
                             </ul>
                         }
                     />
-                    {/* <div className=" p-5 items-center justify-start ">
-                        <div className="font-laviossa text-2xl text-nypink-400">
-                            Role
-                        </div>
-                        <div className="font-eloquialight text-md text-emperor-700 w-48">
-                            UX Design
-                            <br />
-                            Visual Design
-                            <br />
-                            Frontend Development
-                            <br />
-                            (Team of Five)
-                        </div>
-                    </div>
-                    <div className=" p-5 items-center justify-start ">
-                        <div className="font-laviossa text-2xl text-nypink-400">
-                            Timeline
-                        </div>
-                        <div className="font-eloquialight text-md text-emperor-700 w-48">
-                            3 week sprint
-                            <br />
-                            Research 3+ weeks
-                            <br />
-                            Design 4+ weeks
-                        </div>
-                    </div>
-                    <div className=" p-5 items-center justify-start ">
-                        <div className="font-laviossa text-2xl text-nypink-400">
-                            Tools
-                        </div>
-                        <div className="font-eloquialight text-md text-emperor-700 w-48">
-                            Figma
-                            <br />
-                            React Native
-                            <br />
-                            MongoDB
-                            <br />
-                            Spring Boot
-                            <br />
-                            Cloud Firestore
-                        </div>
-                    </div>
-                    <div className=" p-5 items-center justify-start">
-                        <div className="font-laviossa text-2xl text-nypink-400">
-                            Process
-                        </div>
-                        <div className="font-eloquialight text-md text-emperor-700 w-48">
-                            Discovery
-                            <br />
-                            Ideation
-                            <br />
-                            Design
-                            <br />
-                            Development
-                            <br />
-                            Relection
-                        </div>
-                    </div>
-                    <div className=" p-5 items-center justify-start ">
-                        <div className="font-laviossa text-2xl text-nypink-400">
-                            Platform
-                        </div>
-                        <div className="font-eloquialight text-md text-emperor-700 w-48">
-                            iOS
-                            <br />
-                            Android
-                        </div>
-                    </div> */}
                 </div>
             </SectionSecondary>
             <SectionPrimary>
-                <ScollToSection />
+                <ScrollToSection
+                    sections={[
+                        {
+                            id: DATA.sections.discovery.id,
+                            name: DATA.sections.discovery.title,
+                        },
+                        {
+                            id: DATA.sections.ideation.id,
+                            name: DATA.sections.ideation.title,
+                        },
+                        {
+                            id: DATA.sections.design.id,
+                            name: DATA.sections.design.title,
+                        },
+                        {
+                            id: DATA.sections.development.id,
+                            name: DATA.sections.development.title,
+                        },
+                        {
+                            id: DATA.sections.reflection.id,
+                            name: DATA.sections.reflection.title,
+                        },
+                    ]}
+                />
             </SectionPrimary>
-            <SectionSecondary id="section1" title={'Discovery'}>
-                <div className="flex flex-col items-center justify-start gap-5 md:flex-row">
-                    <div className="font-laviossa text-2xl text-nypink-400">
-                        Client Research
-                    </div>
-                    <div className="text-md font-eloquialight text-emperor-700">
-                        After meetings with our client, our team thoroughly
-                        discuss the users' needs, along with the vision that the
-                        client had for this project. We learned we need to
-                        identify what matters most to our users. Do they
-                        prioritize diversity, user-friendliness, content
-                        quality, or something else? This question will help us
-                        to polish the application’s user experience to align
-                        with their preferences.
-                    </div>
-                </div>
-                <div className="flex flex-col items-center justify-start gap-5 md:flex-row">
-                    <div className="font-laviossa text-2xl text-nypink-400">
-                        User Research
-                    </div>
-                    <div className="text-md font-eloquialight text-emperor-700">
-                        We conducted a user interview and survey to understand
-                        the users' needs, preferences, and pain points. The
-                        research findings we collected from the compilation of
-                        the survey revealed that our users want a platform that
-                        prioritizes a user-friendly interface, effective content
-                        moderation, and robust privacy settings, offers a unique
-                        user experience, and ensures a safe and positive
-                        environment.
-                    </div>
-                </div>
-                <div className="flex flex-col items-center justify-start gap-5">
-                    <div>
-                        <div className="font-laviossa text-2xl text-nypink-400">
-                            2.5D Sketch
-                        </div>
-                        <img
-                            src={sketch}
-                            alt="sketch"
-                            className="h-fit w-fit p-5"
+            <SectionSecondary
+                id={DATA.sections.discovery.id}
+                title={DATA.sections.discovery.title}
+            >
+                <VerticalTextBox
+                    title={DATA.sections.discovery.clientResearch.title}
+                    content={formatString(
+                        DATA.sections.discovery.clientResearch.description
+                    )}
+                />
+                <VerticalTextBox
+                    title={DATA.sections.discovery.userResearch.title}
+                    content={formatString(
+                        DATA.sections.discovery.userResearch.description
+                    )}
+                />
+
+                
+            </SectionSecondary>
+            <SectionSecondary
+                id={DATA.sections.ideation.id}
+                title={DATA.sections.ideation.title}
+            >
+                <HorizontalTextBox
+                    title={DATA.sections.ideation['personas'].title}
+                    content={
+                        <TwoImageCardWithDescription
+                            content={formatString(
+                                DATA.sections.ideation['personas'].description
+                            )}
+                            img1={personas1}
+                            img2={personas2}
                         />
-                        <div className="text-md font-eloquialight text-emperor-700">
-                            Our insights gathered from research led to the
-                            creation of the following 2.5D sketch based on the
-                            target audience for our product.
-                        </div>
-                    </div>
-                </div>
+
+                    }
+                />
+                <HorizontalTextBox
+                    title={DATA.sections.ideation['dynamic'].title}
+                    content={
+                        <ImageCardWithDescription
+                            content={formatString(
+                                DATA.sections.ideation['dynamic'].description
+                            )}
+                            img={dynamic}
+                        />
+                    }
+                />
+
             </SectionSecondary>
-            <SectionSecondary id="section2" title={'Ideation'}>
-                <div>
-                    <div className="font-laviossa text-2xl text-nypink-400">
-                        User Stories
-                    </div>
-                    <div className="text-md font-eloquialight text-emperor-700">
-                        We focused on the main five user stories to guide our
-                        design and development process. These stories helped us
-                        to understand the user's needs and expectations, and how
-                        they would interact with the application.
-                        <br />
-                        <ol className="list-inside list-decimal">
-                            <li>
-                                As a user, I want to create an account to
-                                personalize my experience.
-                            </li>
-                            <li>
-                                As a user, I want to post content to share my
-                                stories and achievements.
-                            </li>
-                            <li>
-                                As a user, I want to comment on posts to engage
-                                with the community.
-                            </li>
-                            <li>
-                                As a user, I want to report inappropriate
-                                content to keep the community safe.
-                            </li>
-                            <li>
-                                As a user, I want to search for specific content
-                                to find relevant posts.
-                            </li>
-                        </ol>
-                    </div>
-                </div>
+            <SectionSecondary
+                id={DATA.sections.design.id}
+                title={DATA.sections.design.title}
+            >
+                <HorizontalTextBox
+                    title={DATA.sections.design['sketches'].title}
+                    content={formatString(
+                        DATA.sections.design['sketches'].description
+                    )}
+                />
+                <ImageSlider images={images}> </ImageSlider>
+
+                <HorizontalTextBox
+                    title={DATA.sections.design['styleGuide'].title}
+                    content={formatString(
+                        DATA.sections.design['styleGuide'].description
+                    )}
+                />
+                <ImageSlider images={guides}> </ImageSlider>
+
             </SectionSecondary>
-            <SectionSecondary id="section3" title={'Design'}></SectionSecondary>
 
             <SectionSecondary
-                id="section4"
-                title={'Development'}
-            ></SectionSecondary>
+                id={DATA.sections.development.id}
+                title={DATA.sections.development.title}
+            >
+            <HorizontalTextBox
+                    title={DATA.sections.development['prototype'].title}
+                    content={formatString(
+                        DATA.sections.development['prototype'].description
+                    )}
+                />
+            <iframe
+            src={DATA.sections.development.prototype.src}
+            className="flex w-full"
+            height={700}
+            title="iframe"
+            allowfullscreen="true"
+        />
+            </SectionSecondary>
 
             <SectionSecondary
-                id="section5"
-                title={'Reflection'}
+                id={DATA.sections.reflection.id}
+                title={DATA.sections.reflection.title}
             ></SectionSecondary>
         </div>
     )

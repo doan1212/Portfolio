@@ -1,9 +1,10 @@
 import Container from '../Container/Container'
 
-const Section = ({ title, children, className }) => {
+const Section = ({ title, id, children, className }) => {
     return (
         <section
             className={`${className} flex-fow flex w-fit items-center justify-center`}
+            id={id}
         >
             <Container>
                 {title && (
@@ -17,17 +18,17 @@ const Section = ({ title, children, className }) => {
     )
 }
 
-const SectionPrimary = ({ title, children }) => {
+const SectionPrimary = ({ title, id, children }) => {
     return (
-        <Section title={title} className="w-full bg-transparent">
+        <Section title={title} id={id} className="w-full bg-transparent">
             {children}
         </Section>
     )
 }
 
-const SectionSecondary = ({ title, children }) => {
+const SectionSecondary = ({ title, id, children }) => {
     return (
-        <Section title={title} className="w-full bg-white">
+        <Section title={title} id={id} className="w-full bg-white">
             {children}
         </Section>
     )
