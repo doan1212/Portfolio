@@ -59,6 +59,14 @@
                 "title": "Prototype",
                 "description": "I created a high-fidelity prototype to demonstrate the app's functionality and user flow. The prototype was used to test the app's usability and gather feedback from the client and potential users.",
                 "src": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F69hpY77FJXsQwIhoRzQVNe%2FILUVUS-on-iOS%3Fnode-id%3D2972-1717%26t%3DvQFmbzQkldB9iIGn-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D2303%253A6898%26starting-point-node-id%3D2972%253A1717%26show-proto-sidebar%3D1"
+            },
+            "heuristic": {
+                "title": "Heuristic Evaluation",
+                "description": "We conducted a heuristic evaluation to identify usability issues and areas for improvement. The evaluation was based on Nielsen's heuristics, which helped us to identify and prioritize usability issues that could affect the app's user experience."
+            },
+            "final": {
+                "title": "Final Product",
+                "description": "The final product was developed using React Native, MongoDB, and Spring Boot. The app was designed to be user-friendly, offer a unique user experience, and ensure a safe and positive environment for LGBTQ+ individuals and diverse communities. The app was launched on both iOS and Android platforms."
             }
             
         },

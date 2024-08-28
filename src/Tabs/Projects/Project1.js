@@ -25,7 +25,8 @@ import guide2 from '../../Assets/Image/guide2.png'
 import guide3 from '../../Assets/Image/guide3.png'
 import guide4 from '../../Assets/Image/guide4.png'
 import guide5 from '../../Assets/Image/guide5.png'
-import { iFrame } from '../../Components/Frame/iFrame'
+import heuristic from '../../Assets/Image/heuristic.png'
+
 
 const Project1 = () => {
     const images = [
@@ -170,8 +171,6 @@ const Project1 = () => {
                         DATA.sections.discovery.userResearch.description
                     )}
                 />
-
-                
             </SectionSecondary>
             <SectionSecondary
                 id={DATA.sections.ideation.id}
@@ -187,7 +186,6 @@ const Project1 = () => {
                             img1={personas1}
                             img2={personas2}
                         />
-
                     }
                 />
                 <HorizontalTextBox
@@ -201,7 +199,6 @@ const Project1 = () => {
                         />
                     }
                 />
-
             </SectionSecondary>
             <SectionSecondary
                 id={DATA.sections.design.id}
@@ -222,26 +219,42 @@ const Project1 = () => {
                     )}
                 />
                 <ImageSlider images={guides}> </ImageSlider>
-
             </SectionSecondary>
 
             <SectionSecondary
                 id={DATA.sections.development.id}
                 title={DATA.sections.development.title}
             >
-            <HorizontalTextBox
+                <HorizontalTextBox
                     title={DATA.sections.development['prototype'].title}
                     content={formatString(
                         DATA.sections.development['prototype'].description
                     )}
                 />
-            <iframe
-            src={DATA.sections.development.prototype.src}
-            className="flex w-full"
-            height={700}
-            title="iframe"
-            allowfullscreen="true"
-        />
+                <iframe
+                    src={DATA.sections.development.prototype.src}
+                    className="flex w-full"
+                    height={700}
+                    title="iframe"
+                    allowfullscreen="true"
+                />
+                <HorizontalTextBox
+                    title={DATA.sections.development['heuristic'].title}
+                    content={
+                        <ImageCardWithDescription
+                            content={formatString(
+                                DATA.sections.development['heuristic'].description
+                            )}
+                            img={heuristic}
+                        />
+                    }
+                />
+                <HorizontalTextBox
+                    title={DATA.sections.development['final'].title}
+                    content={formatString(
+                        DATA.sections.development['final'].description
+                    )}
+                />
             </SectionSecondary>
 
             <SectionSecondary
