@@ -70,14 +70,14 @@ const About = () => {
                             About Me
                         </div>
 
-                        <div className="align-text-bottom font-eloquialight text-sm text-emperor-700 md:text-xl">
+                        <div className="align-text-bottom font-eloquialight text-base text-emperor-700 md:text-xl">
                             I'm Flora Sheen Lorem Ipsum is simply dummy text of
                             the printing and typesetting industry. Lorem Ipsum
                             has been the industry's standard dummy text ever
                             since the 1500s, when an unknown printer took a
                             galley of type and scrambled it to specimen book.
                         </div>
-                        <div className="align-text-bottom font-eloquialight text-sm text-emperor-700 md:text-xl">
+                        <div className="align-text-bottom font-eloquialight text-base text-emperor-700 md:text-xl">
                             I'm Flora Sheen Lorem Ipsum is simply dummy text of
                             the printing and typesetting industry.
                         </div>

@@ -12,6 +12,7 @@ import { formatString } from '../../Utils/stringHelper'
 import {
     VerticalTextBox,
     HorizontalTextBox,
+    QuoteTextBox,
 } from '../../Components/TextBox/TextBox'
 import { ImageCardWithDescription } from '../../Components/ImageCard/ImageCard'
 import { TwoImageCardWithDescription } from '../../Components/ImageCard/ImageCard'
@@ -26,7 +27,7 @@ import guide3 from '../../Assets/Image/guide3.png'
 import guide4 from '../../Assets/Image/guide4.png'
 import guide5 from '../../Assets/Image/guide5.png'
 import heuristic from '../../Assets/Image/heuristic.png'
-
+import final from '../../Assets/video/Final.mp4'
 
 const Project1 = () => {
     const images = [
@@ -233,21 +234,26 @@ const Project1 = () => {
                 />
                 <iframe
                     src={DATA.sections.development.prototype.src}
-                    className="flex w-full"
+                    className="flex md:w-full"
                     height={700}
                     title="iframe"
                     allowfullscreen="true"
                 />
-                <HorizontalTextBox
+
+                <QuoteTextBox
                     title={DATA.sections.development['heuristic'].title}
-                    content={
-                        <ImageCardWithDescription
-                            content={formatString(
-                                DATA.sections.development['heuristic'].description
-                            )}
-                            img={heuristic}
-                        />
-                    }
+                    content={DATA.sections.development.heuristic.feedback.map(
+                        (role, index) => (
+                            <ul key={index}>{formatString(role)}</ul>
+                        )
+                    )}
+                />
+
+                <ImageCardWithDescription
+                    content={formatString(
+                        DATA.sections.development['heuristic'].description
+                    )}
+                    img={heuristic}
                 />
                 <HorizontalTextBox
                     title={DATA.sections.development['final'].title}
@@ -255,6 +261,17 @@ const Project1 = () => {
                         DATA.sections.development['final'].description
                     )}
                 />
+                <div
+                    style={{
+                        display: 'flex',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                    }}
+                >
+                    <video width="320" height="240" controls>
+                        <source src={final} type="video/mp4" />
+                    </video>
+                </div>
             </SectionSecondary>
 
             <SectionSecondary

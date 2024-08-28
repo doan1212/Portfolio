@@ -68,7 +68,7 @@ const Home = () => {
                         </span>
                         <br />
                         <br />
-                        <span className="font-eloquialight text-sm text-emperor-500 md:text-base">
+                        <span className="font-eloquialight text-base text-emperor-500 md:text-base">
                             {' '}
                             I'm Flora Sheen Lorem Ipsum is simply dummy text of
                             the printing and typesetting industry. Lorem Ipsum

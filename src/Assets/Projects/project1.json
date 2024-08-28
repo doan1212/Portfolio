@@ -62,11 +62,16 @@
             },
             "heuristic": {
                 "title": "Heuristic Evaluation",
-                "description": "We conducted a heuristic evaluation to identify usability issues and areas for improvement. The evaluation was based on Nielsen's heuristics, which helped us to identify and prioritize usability issues that could affect the app's user experience."
+                "description": "After we conducted a heuristic evaluation, the prototype needed a little adjustment to enhance the usability and user experience of the system and make it more user-friendly.",
+                "feedback": [
+                    "However, some buttons were <b>difficult</b> to initially find. For example, the “Add Post” button was not seen during the first to attempt to complete the first task. ”",
+                    "“ The aesthetic of the app is <b>intuitive</b>, and <b>realistic</b>, coinciding with real-world social media applications the white, purple, and soft yellow accents work well together, creating a <b>clean</b>, and <b>welcoming</b> social media platform. ”",
+                    "“ In most cases, <b>user control</b> and <b>freedom</b> were implemented well. There were multiple cases in which mistakes and incorrect navigation could be reversed easily.  ”"
+                ]
             },
             "final": {
                 "title": "Final Product",
-                "description": "The final product was developed using React Native, MongoDB, and Spring Boot. The app was designed to be user-friendly, offer a unique user experience, and ensure a safe and positive environment for LGBTQ+ individuals and diverse communities. The app was launched on both iOS and Android platforms."
+                "description": " After working with my team, the final product was developed using React Native, with backend features in Java SpringBoot and a user-friendly interface designed with Tailwind CSS. The app was launched on both iOS and Android platforms."
             }
             
         },

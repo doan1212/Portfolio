@@ -8,7 +8,7 @@ const Section = ({ title, id, children, className }) => {
         >
             <Container>
                 {title && (
-                    <div className="flex justify-center font-abrilfatface text-5xl text-wisteria-600">
+                    <div className="flex justify-center font-laviossa text-4xl text-wisteria-600">
                         {title}
                     </div>
                 )}
