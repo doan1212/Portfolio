@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 
 const InfoCard = ({ title, content, image, ...props }) => {
     return (
-        <div className="flex flex-col gap-10 rounded-xl p-5 transition duration-300 ease-out md:hover:scale-110 md:hover:transform md:hover:shadow-2xl md:hover:shadow-wisteria-300 md:hover:ease-in md:flex-row md:gap-20">
+        <div className="flex flex-col gap-10 rounded-xl p-5 transition duration-300 ease-out md:hover:scale-110 md:hover:transform md:hover:shadow-2xl md:hover:shadow-wisteria-300 md:hover:ease-in md:flex-row md:gap-20 ">
             <div className="flex w-full items-center justify-center md:w-1/2">
                 <div className="h-fit w-fit">
                     <Link to={props.link}>
                         <img
                             src={image}
                             alt="info card"
-                            className="rounded-xl shadow"
+                            className="rounded-xl "
                         />
                     </Link>
                 </div>
@@ -66,7 +66,7 @@ const ReverseInfoCard = ({ title, content, image, ...props }) => {
                         <img
                             src={image}
                             alt="info card"
-                            className="rounded-xl shadow"
+                            className="rounded-xl "
                         />
                     </Link>
                 </div>

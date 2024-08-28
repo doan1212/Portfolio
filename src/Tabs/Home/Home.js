@@ -24,18 +24,8 @@ const Home = () => {
             title: 'Traveloka',
             image: MockImage2,
             link: NavRoute.project2,
-            content: `I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to specimen book.`,
-        },
-        {
-            title: 'Project 3',
-            image: MockImage3,
-            link: NavRoute.project3,
-            content: `I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to specimen book.`,
-        },
+            content: `UI/UX Design | Redesigned |An website travel agency offering a comprehensive platform for booking flights, hotels, vacation packages, and other travel-related products.`,
+        }
     ]
 
     return (
@@ -87,7 +77,7 @@ const Home = () => {
                 </div>
             </SectionPrimary>
             <SectionPrimary></SectionPrimary>
-            <SectionPrimary title={''}>
+            <SectionPrimary title={''} className="projects">
                 <InfoCard
                     title={<IndexTitle index="01" title={projects[0].title} />}
                     content={projects[0].content}
@@ -99,12 +89,6 @@ const Home = () => {
                     content={projects[1].content}
                     image={projects[1].image}
                     link={projects[1].link}
-                />
-                <InfoCard
-                    title={<IndexTitle index="03" title={projects[2].title} />}
-                    content={projects[2].content}
-                    image={projects[2].image}
-                    link={projects[2].link}
                 />
             </SectionPrimary>
         </div>

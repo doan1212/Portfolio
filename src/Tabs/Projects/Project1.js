@@ -28,6 +28,7 @@ import guide4 from '../../Assets/Image/guide4.png'
 import guide5 from '../../Assets/Image/guide5.png'
 import heuristic from '../../Assets/Image/heuristic.png'
 import final from '../../Assets/video/Final.mp4'
+import demo from '../../Assets/Image/Demo.png'
 
 const Project1 = () => {
     const images = [
@@ -282,7 +283,35 @@ const Project1 = () => {
             <SectionSecondary
                 id={DATA.sections.reflection.id}
                 title={DATA.sections.reflection.title}
-            ></SectionSecondary>
+            >
+                 <div className="grid grid-cols-1 items-start md:grid-cols-2 md:flex-row">
+                <HorizontalTextBox
+                    title={DATA.sections.reflection['lookingback'].title}
+                    content={formatString(
+                        DATA.sections.reflection['lookingback'].description
+                    )}
+                />
+                <HorizontalTextBox
+                    title={DATA.sections.reflection['lookingforward'].title}
+                    content={formatString(
+                        DATA.sections.reflection['lookingforward'].description
+                    )}
+                />
+                </div>
+
+                <div className="flex items-center justify-center">
+
+                <ImageCardWithDescription
+                    content={formatString(
+                                DATA.sections.reflection['demo'].description
+                            )}
+                            img={demo}
+                        />
+
+                </div>
+                
+                
+            </SectionSecondary>
         </div>
     )
 }

@@ -1,7 +1,7 @@
 export const ImageCardWithDescription = ({ content, img }) => {
     return (
         <div className="flex flex-col items-center justify-center">
-            <img src={img} alt="sketch" className="h-fit w-fit p-5" />
+            <img src={img} alt="sketch" className="w-1/2 h-1/2 md:h-fit md:w-fit p-5" />
             <div className="text-md font-eloquialight text-emperor-700">
                 {content}
             </div>

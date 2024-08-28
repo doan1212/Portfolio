@@ -71,13 +71,27 @@
             },
             "final": {
                 "title": "Final Product",
-                "description": " After working with my team, the final product was developed using React Native, with backend features in Java SpringBoot and a user-friendly interface designed with Tailwind CSS. The app was launched on both iOS and Android platforms."
+                "description": " After working with my team, the final product was developed using React Native, with backend features in Java SpringBoot and a user-friendly interface designed with Tailwind CSS. The app was launched on both iOS and Android platforms. Feel free to explore the app and see the features we developed."
             }
             
         },
         "reflection": {
             "id": "reflection",
-            "title": "Reflection"
+            "title": "Reflection",
+            "lookingback": {
+                "title": "Looking Back",
+                "description": "Looking back at the project, I am proud of the work we accomplished. We were able to create a unique social media platform that celebrates diversity and prioritizes the achievements and stories of LGBTQ individuals and diverse communities. I am proud of the user-centered approach we took throughout the project, ensuring that the app's design and functionality align with the users' needs and preferences."
+            },
+            "lookingforward": {
+                "title": "Looking Forward",
+                "description": "Looking forward, I hope to see ILUVUS grow and expand its user base. I believe that the app has the potential to make a positive impact on the LGBTQ community and diverse communities by providing a safe and supportive space to share their stories and celebrate their achievements. I am excited to see how the app evolves and grows in the future."
+
+            },
+            "demo": {
+                "title": "Demo",
+                "description": "Expo day for demo the app to the client and potential users."
+            }
+
         }
     }
 }
