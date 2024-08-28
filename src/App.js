@@ -5,12 +5,15 @@ import About from './Tabs/About/About'
 import { NavRoute } from './Constants/Routes'
 import NavigationBar from './Components/Navigation/NavigationBar'
 import Projects from './Tabs/Projects/Projects'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Project1 from './Tabs/Projects/Project1'
 import Project2 from './Tabs/Projects/Project2'
 import Project3 from './Tabs/Projects/Project3'
+import Overlay from './Components/Overlay/Overlay'
 
 function App() {
+    const [isOverlayVisible, setIsOverlayVisible] = useState(false)
+
     const handleScroll = () => {
         const navBar = document.getElementById('navbar')
         const navBarHeight = navBar.clientHeight
@@ -32,9 +35,13 @@ function App() {
         }
     }, [])
 
+    const toggleOverlay = () => {
+        setIsOverlayVisible(!isOverlayVisible)
+    }
+
     return (
         <div>
-            <NavigationBar />
+            <NavigationBar onResumeClick={toggleOverlay}/>
             <Routes>
                 <Route path={NavRoute.home} element={<Home />} />
                 <Route path={NavRoute.about} element={<About />} />
@@ -43,6 +50,7 @@ function App() {
                 <Route path={NavRoute.project2} element={<Project2 />} />
                 <Route path={NavRoute.project3} element={<Project3 />} />
             </Routes>
+            {isOverlayVisible && <Overlay onClose={toggleOverlay} />}
         </div>
     )
 }
