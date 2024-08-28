@@ -27,7 +27,6 @@ import guide4 from '../../Assets/Image/guide4.png'
 import guide5 from '../../Assets/Image/guide5.png'
 import heuristic from '../../Assets/Image/heuristic.png'
 
-
 const Project1 = () => {
     const images = [
         { src: userflow1, alt: 'Userflow1' },
@@ -47,7 +46,7 @@ const Project1 = () => {
     return (
         <div>
             <SectionPrimary>
-                <div className="flex flex-col items-center justify-start gap-5 md:flex-row">
+                {/* <div className="flex flex-col items-center justify-start gap-5 md:flex-row">
                     <div className="items-center justify-start p-5">
                         <div className="font-laviossa text-5xl text-wisteria-600">
                             {DATA.name}
@@ -57,10 +56,29 @@ const Project1 = () => {
                         </div>
                     </div>
                     <img
-                        className="h-3/4 w-3/4 justify-center"
+                        className="h-3/4 w-3/4"
                         src={banner}
                         alt="ILUVUS"
                     />
+                </div> */}
+                <div className="lg:grid lg:grid-cols-8 gap-5">
+                    <div className="lg:col-span-3 lg:col-start-1">
+                        <div className="flex h-full flex-col items-start justify-center p-5">
+                            <div className="font-laviossa text-5xl text-wisteria-600">
+                                {DATA.name}
+                            </div>
+                            <div className="w-96 font-eloquialight text-xl text-emperor-700">
+                                {DATA.shortDescription}
+                            </div>
+                        </div>
+                    </div>
+                    <div className="lg:col-span-5 lg:col-start-4 flex items-center justify-center">
+                        <img
+                            className="h-3/4 w-auto"
+                            src={banner}
+                            alt="ILUVUS"
+                        />
+                    </div>
                 </div>
             </SectionPrimary>
             <SectionSecondary>
@@ -218,6 +236,7 @@ const Project1 = () => {
                         DATA.sections.design['styleGuide'].description
                     )}
                 />
+                
                 <ImageSlider images={guides}> </ImageSlider>
             </SectionSecondary>
 
@@ -243,7 +262,8 @@ const Project1 = () => {
                     content={
                         <ImageCardWithDescription
                             content={formatString(
-                                DATA.sections.development['heuristic'].description
+                                DATA.sections.development['heuristic']
+                                    .description
                             )}
                             img={heuristic}
                         />

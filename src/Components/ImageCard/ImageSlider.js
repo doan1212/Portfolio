@@ -3,11 +3,6 @@ import 'react-multi-carousel/lib/styles.css'
 
 export const ImageSlider = ({ images }) => {
     const responsive = {
-        superLargeDesktop: {
-            // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 3000 },
-            items: 1,
-        },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
             items: 1,
@@ -23,17 +18,16 @@ export const ImageSlider = ({ images }) => {
     }
 
     return (
-        <div className="items-center gap-10">
-            <div className="gap-10">
+        <div className="flex justify-center">
+            <div className="h-fit w-full lg:w-[900px]">
                 <Carousel
                     responsive={responsive}
                     infinite={true}
-                    className="flex items-center justify-evenly "
                 >
                     {images.map((image, index) => (
                         <div
                             key={index}
-                            className="h-3/4 w-3/4 px-2 md:h-full md:w-full items-center justify-center flex"
+                            className="flex h-full w-full items-center justify-center px-2"
                         >
                             <img
                                 src={image.src}
