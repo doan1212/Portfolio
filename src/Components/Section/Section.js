@@ -3,7 +3,7 @@ import Container from '../Container/Container'
 const Section = ({ title, id, children, className }) => {
     return (
         <section
-            className={`${className} flex-fow flex w-fit items-center justify-center`}
+            className={`${className} flex w-fit items-center justify-center`}
             id={id}
         >
             <Container>

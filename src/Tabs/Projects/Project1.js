@@ -48,20 +48,24 @@ const Project1 = () => {
     return (
         <div>
             <SectionPrimary>
-                <div className="flex flex-col items-center justify-start gap-5 md:flex-row">
-                    <div className="items-center justify-start p-5">
-                        <div className="font-laviossa text-5xl text-wisteria-600">
-                            {DATA.name}
-                        </div>
-                        <div className="w-96 font-eloquialight text-xl text-emperor-700">
-                            {DATA.shortDescription}
+                <div className="gap-5 lg:grid lg:grid-cols-8">
+                    <div className="lg:col-span-3 lg:col-start-1">
+                        <div className="flex h-full flex-col items-center justify-center p-5 lg:items-start">
+                            <div className="font-laviossa text-5xl text-wisteria-600">
+                                {DATA.name}
+                            </div>
+                            <div className="w-96 font-eloquialight text-xl text-emperor-700">
+                                {DATA.shortDescription}
+                            </div>
                         </div>
                     </div>
-                    <img
-                        className="h-3/4 w-3/4 justify-center"
-                        src={banner}
-                        alt="ILUVUS"
-                    />
+                    <div className="flex items-center justify-center lg:col-span-5 lg:col-start-4">
+                        <img
+                            className="h-3/4 w-auto"
+                            src={banner}
+                            alt="ILUVUS"
+                        />
+                    </div>
                 </div>
             </SectionPrimary>
             <SectionSecondary>
@@ -219,6 +223,7 @@ const Project1 = () => {
                         DATA.sections.design['styleGuide'].description
                     )}
                 />
+
                 <ImageSlider images={guides}> </ImageSlider>
             </SectionSecondary>
 
