@@ -253,6 +253,7 @@ const Project1 = () => {
                             <ul key={index}>{formatString(role)}</ul>
                         )
                     )}
+                    className={'italic'}
                 />
 
                 <ImageCardWithDescription
@@ -284,33 +285,45 @@ const Project1 = () => {
                 id={DATA.sections.reflection.id}
                 title={DATA.sections.reflection.title}
             >
-                 <div className="grid grid-cols-1 items-start md:grid-cols-2 md:flex-row">
-                <HorizontalTextBox
-                    title={DATA.sections.reflection['lookingback'].title}
-                    content={formatString(
-                        DATA.sections.reflection['lookingback'].description
-                    )}
-                />
-                <HorizontalTextBox
-                    title={DATA.sections.reflection['lookingforward'].title}
-                    content={formatString(
-                        DATA.sections.reflection['lookingforward'].description
-                    )}
-                />
+                <div className="grid grid-cols-1 items-start md:grid-cols-2 md:flex-row gap-5">
+                    <HorizontalTextBox
+                        title={DATA.sections.reflection['lookingback'].title}
+                        content={
+                            <div className='gap-5'>
+                                {formatString(
+                                    DATA.sections.reflection['lookingback']
+                                        .description
+                                )}
+                                <ul className='mx-10 list-disc'>
+                                    {DATA.sections.reflection[
+                                        'lookingback'
+                                    ].list.map((role, index) => (
+                                        <li key={index}>{formatString(role)}</li>
+                                    ))}
+                                </ul>
+                                {formatString(
+                                    DATA.sections.reflection['lookingback']
+                                        .reflection)}
+                            </div>
+                        }
+                    />
+                    <HorizontalTextBox
+                        title={DATA.sections.reflection['lookingforward'].title}
+                        content={formatString(
+                            DATA.sections.reflection['lookingforward']
+                                .description
+                        )}
+                    />
                 </div>
 
                 <div className="flex items-center justify-center">
-
-                <ImageCardWithDescription
-                    content={formatString(
-                                DATA.sections.reflection['demo'].description
-                            )}
-                            img={demo}
-                        />
-
+                    <ImageCardWithDescription
+                        content={formatString(
+                            DATA.sections.reflection['demo'].description
+                        )}
+                        img={demo}
+                    />
                 </div>
-                
-                
             </SectionSecondary>
         </div>
     )

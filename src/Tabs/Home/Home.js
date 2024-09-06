@@ -24,7 +24,7 @@ const Home = () => {
             title: 'Traveloka',
             image: MockImage2,
             link: NavRoute.project2,
-            content: `UI/UX Design | Redesigned |An website travel agency offering a comprehensive platform for booking flights, hotels, vacation packages, and other travel-related products.`,
+            content: `UI/UX Design | Redesigned |An website travel agency offering a comprehensive platform for booking flights, hotels, and vacation packages.`,
         }
     ]
 

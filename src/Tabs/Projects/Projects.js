@@ -10,43 +10,21 @@ import {
     SectionSecondary,
 } from '../../Components/Section/Section'
 import { NavRoute } from '../../Constants/Routes'
+import { TwoImageCardWithDescription } from '../../Components/ImageCard/ImageCard'
 
 const Projects = () => {
-    const projects = [
-        {
-            title: 'ILUVUS Application',
-            image: MockImage1,
-            link: NavRoute.project1,
-            content: `UI/UX Design | Frontend Development | A mobile app create a space for users to connect, share, and celebrate achievements.`,
-        },
-        {
-            title: 'Traveloka',
-            image: MockImage2,
-            link: NavRoute.project2,
-            content: `I'm Flora Sheen Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to specimen book.`,
-        }
-    ]
+    
 
     return (
-        <div>
-            <SectionPrimary title={''}></SectionPrimary>
-            <SectionSecondary title={'My Projects'}>
-                <InfoCard
-                    title={<IndexTitle index="01" title={projects[0].title} />}
-                    content={projects[0].content}
-                    image={projects[0].image}
-                    link={projects[0].link}
-                />
-                <ReverseInfoCard
-                    title={<IndexTitle index="02" title={projects[1].title} />}
-                    content={projects[1].content}
-                    image={projects[1].image}
-                    link={projects[1].link}
-                />
-            </SectionSecondary>
-        </div>
+        <SectionPrimary>
+            <TwoImageCardWithDescription
+                content="This is a project that I did for a client."
+                img1={MockImage1}
+                img2={MockImage2}
+            />
+            
+        </SectionPrimary>
+       
     )
 }
 export default Projects

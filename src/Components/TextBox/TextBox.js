@@ -34,7 +34,7 @@ export const QuoteTextBox = ({ title, content, className }) => {
             <div className="font-laviossa text-2xl text-nypink-400">
                 {title}
             </div>
-            <div className="text-md font-eloquialight italic text-emperor-700 grid grid-flow-row grid-cols-3 items-start justify-center gap-5">
+            <div className="text-md font-eloquialight text-emperor-700 grid grid-flow-row grid-cols-3 items-start justify-center gap-5">
                 {content}
             </div>
         </div>
