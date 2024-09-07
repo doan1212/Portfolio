@@ -16,8 +16,26 @@ import {
 import BrandIdentity from '../../Assets/Image/BrandIdentity.png'
 import Expedia from '../../Assets/Image/Expedia.png'
 import Expedia2 from '../../Assets/Image/Expedia2.png'
+import logo1 from '../../Assets/Image/logo1.jpg'
+import { ImageSlider } from '../../Components/ImageCard/ImageSlider'
+import guide_t1 from '../../Assets/Image/guide_t1.png'
+import guide_t2 from '../../Assets/Image/guide_t2.png'
+import guide_t3 from '../../Assets/Image/guide_t3.png'
+import guide_t4 from '../../Assets/Image/guide_t4.png'
+import guide_t5 from '../../Assets/Image/guide_t5.png'
+import personas from '../../Assets/Image/personas3.png'
+import Mockup from '../../Components/Frame/Mockup'
+import laptop from '../../Assets/Image/laptop1.png'
 
 const Project2 = () => {
+    const guides = [
+        { src: guide_t1, alt: 'Guide1' },
+        { src: guide_t2, alt: 'Guide2' },
+        { src: guide_t3, alt: 'Guide3' },
+        { src: guide_t4, alt: 'Guide4' },
+        { src: guide_t5, alt: 'Guide5' },
+    ]
+
     return (
         <div>
             <SectionPrimary>
@@ -133,7 +151,7 @@ const Project2 = () => {
                 id={DATA.sections.discovery.id}
                 title={DATA.sections.discovery.title}
             >
-                <HorizontalTextBox
+                <VerticalTextBox
                     title={DATA.sections.discovery.heuristic.title}
                     content={formatString(
                         DATA.sections.discovery.heuristic.description
@@ -154,7 +172,7 @@ const Project2 = () => {
                 />
 
                 <img
-                    className="h-3/4 w-auto shadow"
+                    className="h-3/4 w-auto justify-center shadow"
                     src={BrandIdentity}
                     alt="Traveloka"
                 />
@@ -163,6 +181,10 @@ const Project2 = () => {
                     title={DATA.sections.discovery.competitiveAnalysis.title}
                     content={
                         <TwoImageCardWithDescription
+                            content={
+                                DATA.sections.discovery.competitiveAnalysis
+                                    .description
+                            }
                             img1={Expedia}
                             img2={Expedia2}
                         />
@@ -172,7 +194,68 @@ const Project2 = () => {
             <SectionSecondary
                 id={DATA.sections.ideation.id}
                 title={DATA.sections.ideation.title}
-            ></SectionSecondary>
+            >
+                <HorizontalTextBox
+                    title={DATA.sections.ideation.personas.title}
+                    content={formatString(
+                        DATA.sections.ideation.personas.description
+                    )}
+                />
+                <img
+                    className="h-3/4 w-auto justify-center shadow"
+                    src={personas}
+                />
+                <HorizontalTextBox
+                    title={DATA.sections.ideation.logo.title}
+                    content={
+                        <ImageCardWithDescription
+                            content={DATA.sections.ideation.logo.description}
+                            img={logo1}
+                        />
+                    }
+                />
+            </SectionSecondary>
+            <SectionSecondary
+                id={DATA.sections.design.id}
+                title={DATA.sections.design.title}
+            >
+                <HorizontalTextBox
+                    title={DATA.sections.design.styleGuide.title}
+                    content={formatString(
+                        DATA.sections.design.styleGuide.description
+                    )}
+                />
+                <ImageSlider images={guides} />
+
+                <HorizontalTextBox
+                    title={DATA.sections.design.finalDesign.title}
+                    content={formatString(
+                        DATA.sections.design.finalDesign.description
+                    )}
+                />
+                <Mockup img={laptop} />
+            </SectionSecondary>
+            <SectionSecondary
+                id={DATA.sections.reflection.id}
+                title={DATA.sections.reflection.title}
+            >
+                <div className="grid grid-cols-1 items-start md:grid-cols-2 md:flex-row gap-5">
+                    <HorizontalTextBox
+                        title={DATA.sections.reflection.challenges.title}
+                        content={formatString(
+                            DATA.sections.reflection.challenges.description
+                        )
+                        }
+                    />
+                    <HorizontalTextBox
+                        title={DATA.sections.reflection.learnings.title}
+                        content={formatString(
+                            DATA.sections.reflection.learnings
+                                .description
+                        )}
+                    />
+                </div>
+            </SectionSecondary>
         </div>
     )
 }

@@ -51,6 +51,7 @@ function App() {
                 <Route path={NavRoute.project3} element={<Project3 />} />
             </Routes>
             {isOverlayVisible && <Overlay onClose={toggleOverlay} />}
+            
         </div>
     )
 }

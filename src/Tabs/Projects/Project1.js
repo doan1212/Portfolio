@@ -29,6 +29,7 @@ import guide5 from '../../Assets/Image/guide5.png'
 import heuristic from '../../Assets/Image/heuristic.png'
 import final from '../../Assets/video/Final.mp4'
 import demo from '../../Assets/Image/Demo.png'
+import { useState } from 'react'
 
 const Project1 = () => {
     const images = [
@@ -45,6 +46,29 @@ const Project1 = () => {
         { src: guide4, alt: 'Guide4' },
         { src: guide5, alt: 'Guide5' },
     ]
+
+    const [isFlying, setIsFlying] = useState(true)
+
+    // const handleScroll = () => {
+    //     const navBar = document.getElementById('navbar')
+    //     const navBarHeight = navBar.clientHeight
+    //     if (
+    //         document.body.scrollTop > navBarHeight ||
+    //         document.documentElement.scrollTop > navBarHeight
+    //     ) {
+    //         navBar.classList.add('bg-white')
+    //         navBar.classList.add('shadow-md')
+    //     } else {
+    //         navBar.classList.remove('bg-white')
+    //         navBar.classList.remove('shadow-md')
+    //     }
+    // }
+
+    // useEffect(() => {
+    //     window.onscroll = () => {
+    //         handleScroll()
+    //     }
+    // }, [])
 
     return (
         <div>
@@ -135,8 +159,9 @@ const Project1 = () => {
                     />
                 </div>
             </SectionSecondary>
-            <SectionPrimary>
+            <SectionPrimary isFlying={isFlying}>
                 <ScrollToSection
+                    isFlying={isFlying}
                     sections={[
                         {
                             id: DATA.sections.discovery.id,
@@ -285,25 +310,28 @@ const Project1 = () => {
                 id={DATA.sections.reflection.id}
                 title={DATA.sections.reflection.title}
             >
-                <div className="grid grid-cols-1 items-start md:grid-cols-2 md:flex-row gap-5">
+                <div className="grid grid-cols-1 items-start gap-5 md:grid-cols-2 md:flex-row">
                     <HorizontalTextBox
                         title={DATA.sections.reflection['lookingback'].title}
                         content={
-                            <div className='gap-5'>
+                            <div className="gap-5">
                                 {formatString(
                                     DATA.sections.reflection['lookingback']
                                         .description
                                 )}
-                                <ul className='mx-10 list-disc'>
+                                <ul className="mx-10 list-disc">
                                     {DATA.sections.reflection[
                                         'lookingback'
                                     ].list.map((role, index) => (
-                                        <li key={index}>{formatString(role)}</li>
+                                        <li key={index}>
+                                            {formatString(role)}
+                                        </li>
                                     ))}
                                 </ul>
                                 {formatString(
                                     DATA.sections.reflection['lookingback']
-                                        .reflection)}
+                                        .reflection
+                                )}
                             </div>
                         }
                     />

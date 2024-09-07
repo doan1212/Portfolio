@@ -1,12 +1,16 @@
 import Container from '../Container/Container'
 
-const Section = ({ title, id, children, className }) => {
+const Section = ({ title, id, children, className, isFlying }) => {
     return (
         <section
-            className={`${className} flex w-fit items-center justify-center`}
+            className={`${className} flex justify-center ${
+                isFlying
+                    ? 'fixed bottom-0 left-0 right-0 z-[2000]'
+                    : `w-fit items-center`
+            }`}
             id={id}
         >
-            <Container>
+            <Container isFlying={isFlying}>
                 {title && (
                     <div className="flex justify-center font-laviossa text-4xl text-wisteria-600">
                         {title}
@@ -17,10 +21,18 @@ const Section = ({ title, id, children, className }) => {
         </section>
     )
 }
-
-const SectionPrimary = ({ title, id, children }) => {
+const SectionPrimary = ({ title, id, children, isFlying }) => {
     return (
-        <Section title={title} id={id} className="w-full bg-transparent">
+        <Section
+            title={title}
+            id={id}
+            className={`w-full ${
+                isFlying
+                    ? 'bg-white shadow-[rgba(145,109,179,0.3)_0px_-5px_20px_0px]'
+                    : 'bg-transparent'
+            }`}
+            isFlying={isFlying}
+        >
             {children}
         </Section>
     )

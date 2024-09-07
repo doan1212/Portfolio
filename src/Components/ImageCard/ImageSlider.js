@@ -27,12 +27,12 @@ export const ImageSlider = ({ images }) => {
                     {images.map((image, index) => (
                         <div
                             key={index}
-                            className="flex h-full w-full items-center justify-center px-2"
+                            className="flex h-full w-full items-center justify-center px-2 "
                         >
                             <img
                                 src={image.src}
                                 alt={image.alt}
-                                className="h-auto w-full"
+                                className="h-auto w-full shadow-md"
                             />
                         </div>
                     ))}

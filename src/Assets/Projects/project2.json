@@ -29,7 +29,7 @@
             },
             "competitiveAnalysis": {
                 "title": "Competitive Analysis",
-                "description": "I conducted a competitive analysis to understand the brand's competitors and identify Traveloka's unique selling points. I also analyzed the brand's current logo and website to identify areas for improvement and align the brand's visual identity with its core values and objectives."
+                "description": "I chose Expedia to conduct a competitive analysis because it is one of Traveloka's main competitors. I analyzed Expedia's logo and website to identify areas for improvement and gain insights into how Traveloka could differentiate itself from its competitors. I discovered Traveloka can focus on improving logo recognition, streamlining its user interface, and offering enhanced personalization and loyalty programs to stand out in the competitive travel industry."
             }
         },
         "ideation": {
@@ -37,11 +37,11 @@
             "title": "Ideation",
             "personas": {
                 "title": "Persona",
-                "description": "After grouping similar responses from the survey and meeting with the client to discuss why ILUVUS was created. Our team focused on two main user groups: professional users and regular users. Our insights gathered from research led to the creation of the following personas with our user-centered approach."
+                "description": "To understand more about the user needs, I created a persona named Sarah, a 25-year-old traveler who enjoys exploring new destinations and booking flights and hotels online. Sarah is tech-savvy and values convenience and efficiency when planning her trips. I used Sarah's persona to guide my design decisions and ensure that the redesigned website meets the needs and preferences of Traveloka's target audience."
             },
-            "dynamic": {
-                "title": "Dynamic Diagram",
-                "description": "We also created a dynamic diagram to illustrate the step-by-step process of creating a new community, a main feature available exclusively to professional users. The diagram highlights the interactions between the user interface, controller, and database, understanding the app's flow and how users would interact with the app."
+            "logo": {
+                "title": "Logo Redesign",
+                "description": "At first, I brainstormed and sketched many variations of the logo that reflect the brand's core values and objectives. Traveloka's main logo is the blue bird icon doesn’t immediately evoke travel for users unfamiliar with the brand. Many users might associate the bird symbol with the old Twitter logo. I wanted to create a simple, memorable, and versatile logo that makes the logo’s purpose clearer to new users while maintaining its modern design. "
             }
         },
         "design": {
@@ -49,59 +49,25 @@
             "title": "Design",
             "styleGuide": {
                 "title": "Style Guide",
-                "description": "As a designer in the team, I worked on the mood board to gather unique ideas and optimize a color palette through a style guide that authentically represents the core value of celebrating LGBTQ+ individuals and diverse communities. I wanted to make the calm and supportive UI to evoke the desired emotions and create a compelling user experience aligned with the brand's values and objectives."
+                "description": "For the brand identity, I chose a vibrant and pastel color scheme inspired by the blue of the ocean, reflecting the excitement of vacation and travel. I'm focusing on using bold, dynamic shapes that evoke a sense of movement and adventure. I want the typography to be clean and highly readable, featuring a sans-serif font to give the brand a modern, contemporary feel while ensuring clarity and professionalism."
             },
-            "sketches": {
-                "title": "Sketches & Wireframe",
-                "description": "We created sketches to visualize the app's layout and features. I made low-fidelity wireframes for 3-4 other screens based on the main user flow.  We used these sketches to discuss the app's flow and functionality with the client and team members. "
+            "finalDesign": {
+                "title": "Final Design",
+                "description": "I created a high-fidelity prototype of the redesigned website using Figma. The final design features a new logo that is more visually appealing and user-friendly, a cleaner and more modern layout, and a more visually appealing color scheme. The redesigned website aims to enhance user engagement and offer a more visually appealing and user-friendly experience."
             }
-        },
-        "development": {
-            "id": "development",
-            "title": "Development",
-            "prototype": {
-                "title": "Prototype",
-                "description": "I created a high-fidelity prototype to demonstrate the app's functionality and user flow. The prototype was used to test the app's usability and gather feedback from the client and potential users.",
-                "src": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F69hpY77FJXsQwIhoRzQVNe%2FILUVUS-on-iOS%3Fnode-id%3D2972-1717%26t%3DvQFmbzQkldB9iIGn-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D2303%253A6898%26starting-point-node-id%3D2972%253A1717%26show-proto-sidebar%3D1"
-            },
-            "heuristic": {
-                "title": "Heuristic Evaluation",
-                "description": "After we conducted a heuristic evaluation, the prototype needed a little adjustment to enhance the usability and user experience of the system and make it more user-friendly.",
-                "feedback": [
-                    "“However, some buttons were <b>difficult</b> to initially find. For example, the “Add Post” button was not seen during the first to attempt to complete the first task. ”",
-                    "“ The aesthetic of the app is <b>intuitive</b>, and <b>realistic</b>, coinciding with real-world social media applications the white, purple, and soft yellow accents work well together, creating a <b>clean</b>, and <b>welcoming</b> social media platform. ”",
-                    "“ In most cases, <b>user control</b> and <b>freedom</b> were implemented well. There were multiple cases in which mistakes and incorrect navigation could be reversed easily.  ”"
-                ]
-            },
-            "final": {
-                "title": "Final Product",
-                "description": " After working with my team, the final product was developed using React Native, with backend features in Java SpringBoot and a user-friendly interface designed with Tailwind CSS. The app was launched on both iOS and Android platforms. Feel free to explore the app and see the features we developed."
-            }
-            
         },
         "reflection": {
             "id": "reflection",
             "title": "Reflection",
-            "lookingback": {
-                "title": "Looking Back.",
-                "description": "In a 2-week design & a 5-week sprint:",
-                "list": [
-                    "I designed a <b>style guide</b> and <b>wireframes</b>",
-                    "I produced a <b>high-fidelity prototype</b>",
-                    "We conducted <b>30 team meetings</b>",
-                    "We developed the app on both <b>iOS</b> and <b>Android</b> platforms"
-                ],
-                "reflection": "I am proud of the work we accomplished. We were able to create a unique social media platform that start from scratch. This is my first time using React Native to build the front-end to integrate with the backend StringBoot. It was challenging, but the learning curve was rewarding as I gained a deeper understanding of how these technologies work together to create a seamless user experience. I am grateful for the opportunity to work on this project and collaborate with my team to bring the client's vision to life."
+            "challenges": {
+                "title": "Challenges",
+                "description": "One of the main challenges I faced during this project was finding a balance between maintaining Traveloka's existing brand identity and introducing new elements to enhance the brand's visual appeal and user engagement. I also had to ensure that the redesigned website was user-friendly and easy to navigate while offering a visually appealing and engaging experience."
             },
-            "lookingforward": {
-                "title": "Looking Forward.",
-                "description": "At the moment, we already hand off to the project to client and I hope to see ILUVUS grow and expand its scope. Through this group project, I learned to always learn. "
-            },
-            "demo": {
-                "title": "Demo",
-                "description": "Expo day for demo the app to the client and potential users."
-            }
+            "learnings": {
+                "title": "Learnings",
+                "description": "Through this project, I learned the importance of conducting thorough research and analysis to understand a brand's core values and objectives. I also learned the importance of creating user personas to guide design decisions and ensure that the redesigned website meets the needs and preferences of the target audience. Overall, this project helped me develop my skills as a UX/UI designer and gain valuable experience in branding and visual design."
 
+            }
         }
     }
 }

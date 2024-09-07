@@ -1,5 +1,5 @@
-const Container = ({ children }) => {
-    const defaultStyle = 'px-4 w-full py-16'
+const Container = ({ children, isFlying }) => {
+    const defaultStyle = isFlying ? 'px-4 w-full py-0' : 'px-4 w-full py-16'
     const mdStyle = 'md:w-11/12 md:px-10'
     return (
         <div
