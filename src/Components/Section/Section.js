@@ -6,7 +6,7 @@ const Section = ({ title, id, children, className, isFlying }) => {
             className={`${className} flex justify-center ${
                 isFlying
                     ? 'fixed bottom-0 left-0 right-0 z-[2000]'
-                    : `w-fit items-center`
+                    : `w-fit items-center py-10`
             }`}
             id={id}
         >

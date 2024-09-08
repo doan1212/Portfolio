@@ -58,13 +58,9 @@ const Home = () => {
                         </span>
                         <br />
                         <br />
-                        <span className="font-eloquialight text-base text-emperor-500 md:text-base">
+                        <span className="font-eloquialight text-lg text-emperor-500 md:text-base">
                             {' '}
-                            I'm Flora Sheen Lorem Ipsum is simply dummy text of
-                            the printing and typesetting industry. Lorem Ipsum
-                            has been the industry's standard dummy text ever
-                            since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to specimen book.
+                            I'm passionate about creating seamless, user-centered designs that blend creativity with functionality, always exploring new ways to enhance the user experience through innovative solutions. 
                         </span>
                     </div>
                     <div className="order-1 h-1/2 w-1/2 md:order-2 md:h-full md:w-full">
@@ -76,8 +72,7 @@ const Home = () => {
                     </div>
                 </div>
             </SectionPrimary>
-            <SectionPrimary></SectionPrimary>
-            <SectionPrimary title={''} className="projects">
+            <SectionPrimary title={'Projects'} className="projects">
                 <InfoCard
                     title={<IndexTitle index="01" title={projects[0].title} />}
                     content={projects[0].content}

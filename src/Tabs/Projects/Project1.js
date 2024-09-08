@@ -29,7 +29,7 @@ import guide5 from '../../Assets/Image/guide5.png'
 import heuristic from '../../Assets/Image/heuristic.png'
 import final from '../../Assets/video/Final.mp4'
 import demo from '../../Assets/Image/Demo.png'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Project1 = () => {
     const images = [
@@ -49,26 +49,34 @@ const Project1 = () => {
 
     const [isFlying, setIsFlying] = useState(true)
 
-    // const handleScroll = () => {
-    //     const navBar = document.getElementById('navbar')
-    //     const navBarHeight = navBar.clientHeight
-    //     if (
-    //         document.body.scrollTop > navBarHeight ||
-    //         document.documentElement.scrollTop > navBarHeight
-    //     ) {
-    //         navBar.classList.add('bg-white')
-    //         navBar.classList.add('shadow-md')
-    //     } else {
-    //         navBar.classList.remove('bg-white')
-    //         navBar.classList.remove('shadow-md')
-    //     }
-    // }
+    useEffect(() => {
+        const flyingBarHeight =
+            document.getElementById('flyingBar').clientHeight
+        document.body.style.marginBottom = `${flyingBarHeight}px`
+    }, [])
 
-    // useEffect(() => {
-    //     window.onscroll = () => {
-    //         handleScroll()
-    //     }
-    // }, [])
+    const sectionsDetails = [
+        {
+            id: DATA.sections.discovery.id,
+            name: DATA.sections.discovery.title,
+        },
+        {
+            id: DATA.sections.ideation.id,
+            name: DATA.sections.ideation.title,
+        },
+        {
+            id: DATA.sections.design.id,
+            name: DATA.sections.design.title,
+        },
+        {
+            id: DATA.sections.development.id,
+            name: DATA.sections.development.title,
+        },
+        {
+            id: DATA.sections.reflection.id,
+            name: DATA.sections.reflection.title,
+        },
+    ]
 
     return (
         <div>
@@ -105,7 +113,7 @@ const Project1 = () => {
                     />
                 </div>
             </SectionSecondary>
-            <SectionSecondary>
+            <SectionPrimary>
                 <div className="grid grid-flow-row grid-cols-2 items-start justify-center gap-5 md:grid-cols-3 md:flex-row lg:grid-cols-5">
                     <HorizontalTextBox
                         title="Role"
@@ -158,34 +166,15 @@ const Project1 = () => {
                         }
                     />
                 </div>
-            </SectionSecondary>
-            <SectionPrimary isFlying={isFlying}>
+            </SectionPrimary>
+
+            <SectionPrimary id="flyingBar" isFlying={isFlying}>
                 <ScrollToSection
                     isFlying={isFlying}
-                    sections={[
-                        {
-                            id: DATA.sections.discovery.id,
-                            name: DATA.sections.discovery.title,
-                        },
-                        {
-                            id: DATA.sections.ideation.id,
-                            name: DATA.sections.ideation.title,
-                        },
-                        {
-                            id: DATA.sections.design.id,
-                            name: DATA.sections.design.title,
-                        },
-                        {
-                            id: DATA.sections.development.id,
-                            name: DATA.sections.development.title,
-                        },
-                        {
-                            id: DATA.sections.reflection.id,
-                            name: DATA.sections.reflection.title,
-                        },
-                    ]}
+                    sections={sectionsDetails}
                 />
             </SectionPrimary>
+
             <SectionSecondary
                 id={DATA.sections.discovery.id}
                 title={DATA.sections.discovery.title}

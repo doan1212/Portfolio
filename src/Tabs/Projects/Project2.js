@@ -26,6 +26,7 @@ import guide_t5 from '../../Assets/Image/guide_t5.png'
 import personas from '../../Assets/Image/personas3.png'
 import Mockup from '../../Components/Frame/Mockup'
 import laptop from '../../Assets/Image/laptop1.png'
+import { useEffect, useState } from 'react'
 
 const Project2 = () => {
     const guides = [
@@ -34,6 +35,34 @@ const Project2 = () => {
         { src: guide_t3, alt: 'Guide3' },
         { src: guide_t4, alt: 'Guide4' },
         { src: guide_t5, alt: 'Guide5' },
+    ]
+
+
+    const [isFlying, setIsFlying] = useState(true)
+
+    useEffect(() => {
+        const flyingBarHeight =
+            document.getElementById('flyingBar').clientHeight
+        document.body.style.marginBottom = `${flyingBarHeight}px`
+    }, [])
+
+    const sectionsDetails = [
+        {
+            id: DATA.sections.discovery.id,
+            name: DATA.sections.discovery.title,
+        },
+        {
+            id: DATA.sections.ideation.id,
+            name: DATA.sections.ideation.title,
+        },
+        {
+            id: DATA.sections.design.id,
+            name: DATA.sections.design.title,
+        },
+        {
+            id: DATA.sections.reflection.id,
+            name: DATA.sections.reflection.title,
+        },
     ]
 
     return (
@@ -71,7 +100,7 @@ const Project2 = () => {
                     />
                 </div>
             </SectionSecondary>
-            <SectionSecondary>
+            <SectionPrimary>
                 <div className="grid grid-flow-row grid-cols-2 items-start justify-center gap-5 md:grid-cols-3 md:flex-row lg:grid-cols-5">
                     <HorizontalTextBox
                         title="Role"
@@ -124,29 +153,15 @@ const Project2 = () => {
                         }
                     />
                 </div>
-            </SectionSecondary>
-            <SectionPrimary>
+            </SectionPrimary>
+
+            <SectionPrimary id="flyingBar" isFlying={isFlying}>
                 <ScrollToSection
-                    sections={[
-                        {
-                            id: DATA.sections.discovery.id,
-                            name: DATA.sections.discovery.title,
-                        },
-                        {
-                            id: DATA.sections.ideation.id,
-                            name: DATA.sections.ideation.title,
-                        },
-                        {
-                            id: DATA.sections.design.id,
-                            name: DATA.sections.design.title,
-                        },
-                        {
-                            id: DATA.sections.reflection.id,
-                            name: DATA.sections.reflection.title,
-                        },
-                    ]}
+                    isFlying={isFlying}
+                    sections={sectionsDetails}
                 />
             </SectionPrimary>
+
             <SectionSecondary
                 id={DATA.sections.discovery.id}
                 title={DATA.sections.discovery.title}

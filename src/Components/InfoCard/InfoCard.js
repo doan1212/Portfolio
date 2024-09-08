@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const InfoCard = ({ title, content, image, ...props }) => {
     return (
-        <div className="flex flex-col gap-10 rounded-xl p-5 transition duration-300 ease-out md:hover:scale-110 md:hover:transform md:hover:shadow-2xl md:hover:shadow-wisteria-300 md:hover:ease-in md:flex-row md:gap-20 ">
+        <div className="flex flex-col gap-10 rounded-xl p-5 transition duration-300 ease-out md:hover:scale-110 md:hover:transform md:hover:shadow-2xl md:hover:shadow-wisteria-300 md:hover:ease-in md:flex-row md:gap-20 h-[450px] ">
             <div className="flex w-full items-center justify-center md:w-1/2">
                 <div className="h-fit w-fit">
                     <Link to={props.link}>
@@ -41,7 +41,7 @@ const InfoCard = ({ title, content, image, ...props }) => {
 
 const ReverseInfoCard = ({ title, content, image, ...props }) => {
     return (
-        <div className="flex flex-col gap-10 rounded-xl p-5 transition duration-300 ease-out md:hover:scale-110 md:hover:transform md:hover:shadow-2xl md:hover:shadow-wisteria-300 md:hover:ease-in md:flex-row md:gap-20">
+        <div className="flex flex-col gap-10 rounded-xl p-5 transition duration-300 ease-out md:hover:scale-110 md:hover:transform md:hover:shadow-2xl md:hover:shadow-wisteria-300 md:hover:ease-in md:flex-row md:gap-20 h-[450px]">
             <div className="order-2 flex w-full flex-col justify-center gap-5 md:order-1 md:w-1/2">
                 <div>{title}</div>
                 <div className="font-eloquialight text-base text-gray-500">

@@ -4,7 +4,7 @@ export const VerticalTextBox = ({ title, content }) => {
             <div className="font-laviossa text-2xl text-nypink-400">
                 {title}
             </div>
-            <div className="text-md font-eloquialight text-emperor-700">
+            <div className="text-lg font-eloquialight text-emperor-700">
                 {content}
             </div>
         </div>
@@ -19,7 +19,7 @@ export const HorizontalTextBox = ({ title, content, className }) => {
             <div className="font-laviossa text-2xl text-nypink-400">
                 {title}
             </div>
-            <div className="text-md font-eloquialight text-emperor-700">
+            <div className="text-lg font-eloquialight text-emperor-700">
                 {content}
             </div>
         </div>
@@ -34,7 +34,7 @@ export const QuoteTextBox = ({ title, content, className }) => {
             <div className="font-laviossa text-2xl text-nypink-400">
                 {title}
             </div>
-            <div className="text-md font-eloquialight text-emperor-700 grid grid-flow-row grid-cols-3 items-start justify-center gap-5">
+            <div className="text-lg font-eloquialight text-emperor-700 grid grid-flow-row grid-cols-3 items-start justify-center gap-5">
                 {content}
             </div>
         </div>
