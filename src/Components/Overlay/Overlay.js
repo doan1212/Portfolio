@@ -1,7 +1,23 @@
-import React from 'react'
-import resume from '../../Assets/Documents/sample.pdf'
+import { useEffect, useState } from 'react'
 
-const Overlay = ({ onClose }) => {
+
+const Overlay = ({ onClose, type, data, children }) => {
+    const image = new Image()
+    const [isLandscape, setIsLandscape] = useState(false)
+
+    useEffect(() => {
+        if (type === 'img') {
+            image.src = data
+            if (image.width > image.height) {
+                setIsLandscape(true)
+            } else if (image.width == image.height) {
+                setIsLandscape(false)
+            } else {
+                setIsLandscape(false)
+            }
+        }
+    }, [data, type])
+
     return (
         <div className="fixed bottom-0 left-0 right-0 top-0 z-20 flex flex-col items-start justify-center bg-white">
             <div className="flex w-full justify-end bg-nypink-50 px-5 py-3">
@@ -13,14 +29,21 @@ const Overlay = ({ onClose }) => {
                 </button>
             </div>
             <div className="h-full w-full">
-                <iframe
-                    width="100%"
-                    height="100%"
-                    src={resume}
-                    type="application/pdf"
-                >
-                    {' '}
-                </iframe>
+                {type === 'img' ? (
+                    <div className="flex h-full w-full items-center justify-center">
+                        <img
+                            src={data}
+                            alt=""
+                            className={
+                                isLandscape
+                                    ? 'w-[100vh] md:h-auto md:w-[80vh]'
+                                    : 'w-[50vh] md:h-[80vh] md:w-auto'
+                            }
+                        />
+                    </div>
+                ) : (
+                    children
+                )}
             </div>
         </div>
     )

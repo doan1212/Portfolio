@@ -11,7 +11,10 @@ import Project2 from './Tabs/Projects/Project2'
 import Project3 from './Tabs/Projects/Project3'
 import Overlay from './Components/Overlay/Overlay'
 import Footer from './Components/Footer/Footer'
+import React from 'react'
+import resume from './Assets/Documents/sample.pdf'
 
+import 'react-photo-view/dist/react-photo-view.css';
 function App() {
     const [isOverlayVisible, setIsOverlayVisible] = useState(false)
 
@@ -42,7 +45,7 @@ function App() {
 
     return (
         <div>
-            <NavigationBar onResumeClick={toggleOverlay}/>
+            <NavigationBar onResumeClick={toggleOverlay} />
             <Routes>
                 <Route path={NavRoute.home} element={<Home />} />
                 <Route path={NavRoute.about} element={<About />} />
@@ -51,7 +54,18 @@ function App() {
                 <Route path={NavRoute.project2} element={<Project2 />} />
                 <Route path={NavRoute.project3} element={<Project3 />} />
             </Routes>
-            {isOverlayVisible && <Overlay onClose={toggleOverlay} />}
+            {isOverlayVisible && (
+                <Overlay onClose={toggleOverlay}>
+                    <iframe
+                        width="100%"
+                        height="100%"
+                        src={resume}
+                        type="application/pdf"
+                    >
+                        {' '}
+                    </iframe>
+                </Overlay>
+            )}
             <Footer />
         </div>
     )
