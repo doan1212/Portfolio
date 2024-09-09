@@ -49,11 +49,11 @@ const Project1 = () => {
 
     const [isFlying, setIsFlying] = useState(true)
 
-    useEffect(() => {
-        const flyingBarHeight =
-            document.getElementById('flyingBar').clientHeight
-        document.body.style.marginBottom = `${flyingBarHeight}px`
-    }, [])
+    // useEffect(() => {
+    //     const flyingBarHeight =
+    //         document.getElementById('flyingBar').clientHeight
+    //     document.body.style.marginBottom = `${flyingBarHeight}px`
+    // }, [])
 
     const sectionsDetails = [
         {

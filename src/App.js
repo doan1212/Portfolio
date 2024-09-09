@@ -10,6 +10,7 @@ import Project1 from './Tabs/Projects/Project1'
 import Project2 from './Tabs/Projects/Project2'
 import Project3 from './Tabs/Projects/Project3'
 import Overlay from './Components/Overlay/Overlay'
+import Footer from './Components/Footer/Footer'
 
 function App() {
     const [isOverlayVisible, setIsOverlayVisible] = useState(false)
@@ -51,7 +52,7 @@ function App() {
                 <Route path={NavRoute.project3} element={<Project3 />} />
             </Routes>
             {isOverlayVisible && <Overlay onClose={toggleOverlay} />}
-            
+            <Footer />
         </div>
     )
 }

@@ -28,6 +28,7 @@ import mod from '../../Assets/Image/mod.png'
 import aframe from '../../Assets/Image/aframe.png'
 import post from '../../Assets/Image/post.png'
 import processing from '../../Assets/Image/processing.png'
+import { FcLikePlaceholder } from 'react-icons/fc'
 
 const About = () => {
     const images = [
@@ -70,16 +71,22 @@ const About = () => {
                             About Me
                         </div>
 
-                        <div className="align-text-bottom font-eloquialight text-base text-emperor-700 md:text-xl">
-                            I'm Flora Sheen Lorem Ipsum is simply dummy text of
-                            the printing and typesetting industry. Lorem Ipsum
-                            has been the industry's standard dummy text ever
-                            since the 1500s, when an unknown printer took a
-                            galley of type and scrambled it to specimen book.
+                        <div className="flex flex-row align-text-bottom font-eloquialight text-base text-emperor-700 md:text-xl">
+                            <FcLikePlaceholder />
+                            Thanks for dropping by!
+                            <FcLikePlaceholder />
                         </div>
                         <div className="align-text-bottom font-eloquialight text-base text-emperor-700 md:text-xl">
-                            I'm Flora Sheen Lorem Ipsum is simply dummy text of
-                            the printing and typesetting industry.
+                            I'm Doan, a Frontend Developer and UI/UX Designer
+                            based in ATL. I am a senior at Georgia Tech! I’m
+                            graduating in December and I’m specializing in
+                            Computational Media, a unique field that bridges
+                            design and computer science, allowing me to create
+                            innovative digital experiences that blend creativity
+                            with technical expertise.
+                        </div>
+                        <div className="align-text-bottom font-eloquialight text-base text-emperor-700 md:text-xl">
+                            As a designer,
                         </div>
                     </div>
                 </div>
@@ -90,7 +97,6 @@ const About = () => {
             <SectionSecondary>
                 <Slider images={skills} className="justify-center"></Slider>
             </SectionSecondary>
-            <SectionPrimary></SectionPrimary>
         </div>
     )
 }

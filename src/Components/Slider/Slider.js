@@ -23,7 +23,7 @@ export const Slider = ({ images }) => {
     }
 
     return (
-        <div className="items-center gap-10">
+        <div className="items-center gap-10 justify-center">
             <div className="gap-10">
                 <Carousel
                     responsive={responsive}
@@ -33,12 +33,12 @@ export const Slider = ({ images }) => {
                     {images.map((image, index) => (
                         <div
                             key={index}
-                            className="h-1/2 w-1/2 px-2 md:h-full md:w-full"
+                            className="h-1/2 w-1/2 px-2 md:h-full md:w-full justify-center"
                         >
                             <img
                                 src={image.src}
                                 alt={image.alt}
-                                className="h-auto w-full"
+                                className="h-auto w-full items-center justify-center"
                             />
                         </div>
                     ))}
