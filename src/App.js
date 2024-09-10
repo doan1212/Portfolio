@@ -19,6 +19,7 @@ import laptopScreenIcon from './Assets/Image/LoadingIcons/laptopScreen.png'
 import officeMaterialIcon from './Assets/Image/LoadingIcons/officeMaterial.png'
 import shapesIcon from './Assets/Image/LoadingIcons/shapes.png'
 import heartIcon from './Assets/Image/LoadingIcons/heart.png'
+import ScrollToTop from './Components/Section/ScrollToTop'
 
 function Loading() {
     const messages = [
@@ -105,7 +106,7 @@ function App() {
     return (
         <div>
             <NavigationBar onResumeClick={toggleOverlay} />
-
+            <ScrollToTop />
             <Routes>
                 <Route path={NavRoute.home} element={<Home />} />
                 <Route path={NavRoute.about} element={<About />} />
