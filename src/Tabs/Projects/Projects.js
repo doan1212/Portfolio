@@ -9,6 +9,7 @@ import brochure from '../../Assets/Image/Brochure.png'
 import bookCover from '../../Assets/Image/BookCover.png'
 import business from '../../Assets/Image/Business card.png'
 import { PhotoProvider, PhotoView } from 'react-photo-view'
+import mood from '../../Assets/Image/Mood.png'
 
 const Projects = () => {
     const models = [
@@ -48,6 +49,16 @@ const Projects = () => {
                                 </div>
                             </PhotoProvider>
                         ))}
+                    </div>
+                    <div className="flex flex-col items-center justify-center gap-5 md:flex-row">
+                        <PhotoProvider>
+                            <div className="h-1/2 w-1/2 drop-shadow-md md:h-full md:w-full">
+                                <PhotoView src={mood}>
+                                    <img src={mood} alt="" />
+                                </PhotoView>
+                            </div>
+                        </PhotoProvider>
+                        
                     </div>
                 </SectionSecondary>
             </div>

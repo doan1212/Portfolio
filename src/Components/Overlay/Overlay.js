@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-
+import { Button } from './../../Components/Button/Button'
+import resume from '../../Assets/Documents/doantran_resume_09092024.pdf'
 
 const Overlay = ({ onClose, type, data, children }) => {
     const image = new Image()
@@ -19,32 +20,23 @@ const Overlay = ({ onClose, type, data, children }) => {
     }, [data, type])
 
     return (
-        <div className="fixed bottom-0 left-0 right-0 top-0 z-20 flex flex-col items-start justify-center bg-white">
-            <div className="flex w-full justify-end bg-nypink-50 px-5 py-3">
-                <button
+        <div className="fixed bottom-0 left-0 right-0 top-0 z-[2000] flex flex-col items-start justify-center bg-white">
+            <div className="flex w-full flex-row justify-end gap-3 bg-nypink-50 px-5 py-3">
+                <a href={resume} download="DoanTran_Resume.pdf">
+                    <Button
+                        type="solid-primary"
+                        size="smmd"
+                        children={'Download'}
+                    />
+                </a>
+                <Button
+                    type="solid-secondary"
+                    size="md"
+                    children={'Close'}
                     onClick={onClose}
-                    className="rounded bg-red-500 p-2 text-sm text-white"
-                >
-                    Close
-                </button>
+                />
             </div>
-            <div className="h-full w-full">
-                {type === 'img' ? (
-                    <div className="flex h-full w-full items-center justify-center">
-                        <img
-                            src={data}
-                            alt=""
-                            className={
-                                isLandscape
-                                    ? 'w-[100vh] md:h-auto md:w-[80vh]'
-                                    : 'w-[50vh] md:h-[80vh] md:w-auto'
-                            }
-                        />
-                    </div>
-                ) : (
-                    children
-                )}
-            </div>
+            <div className="h-full w-full">{children}</div>
         </div>
     )
 }
