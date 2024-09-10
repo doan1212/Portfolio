@@ -1,5 +1,5 @@
 import './App.css'
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link, Route, Routes, useLocation } from 'react-router-dom'
 import Home from './Tabs/Home/Home'
 import About from './Tabs/About/About'
 import { NavRoute } from './Constants/Routes'
@@ -13,10 +13,64 @@ import Overlay from './Components/Overlay/Overlay'
 import Footer from './Components/Footer/Footer'
 import React from 'react'
 import resume from './Assets/Documents/sample.pdf'
+import 'react-photo-view/dist/react-photo-view.css'
+import colorPaletteIcon from './Assets/Image/LoadingIcons/colorPalette.png'
+import laptopScreenIcon from './Assets/Image/LoadingIcons/laptopScreen.png'
+import officeMaterialIcon from './Assets/Image/LoadingIcons/officeMaterial.png'
+import shapesIcon from './Assets/Image/LoadingIcons/shapes.png'
+import heartIcon from './Assets/Image/LoadingIcons/heart.png'
 
-import 'react-photo-view/dist/react-photo-view.css';
+
+function Loading() {
+
+  const messages = [
+    "Prepping the goods",
+    "Polishing the details",
+    "Crafting your experience",
+    "Curating the showcase",
+    "Assembling brilliance",
+    "Bringing the vision to life",
+    "Finishing the touches",
+    "Loading the spotlight",
+    "Refining the masterpiece",
+    "Sharpening the presentation",
+    "Showcase on the way"
+  ];
+
+  const getRandomMessage = () => {
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    return messages[randomIndex];
+  };
+
+    return (
+        <div className="loading-screen">
+            <div className="loading-bg"></div>
+            <div className="loading-content flex font-bold justify-center font-laviossa text-[3rem] drop-shadow">
+                {getRandomMessage()}{"..."}
+            </div>
+            <div class="loadingIcon loadingIcon1">
+                <img src={colorPaletteIcon} />
+            </div>
+            <div class="loadingIcon loadingIcon2">
+                <img src={laptopScreenIcon} />
+            </div>
+            <div class="loadingIcon loadingIcon3">
+                <img src={officeMaterialIcon} />
+            </div>
+            <div class="loadingIcon loadingIcon4">
+                <img src={shapesIcon} />
+            </div>
+            <div class="loadingIcon loadingIcon5">
+                <img src={heartIcon} />
+            </div>
+        </div>
+    )
+}
+
 function App() {
     const [isOverlayVisible, setIsOverlayVisible] = useState(false)
+    const [loading, setLoading] = useState(true)
+    const location = useLocation()
 
     const handleScroll = () => {
         const navBar = document.getElementById('navbar')
@@ -37,7 +91,13 @@ function App() {
         window.onscroll = () => {
             handleScroll()
         }
-    }, [])
+        setLoading(true)
+        const timer = setTimeout(() => {
+            setLoading(false)
+        }, 3000)
+
+        return () => clearTimeout(timer)
+    }, [location])
 
     const toggleOverlay = () => {
         setIsOverlayVisible(!isOverlayVisible)
@@ -46,6 +106,7 @@ function App() {
     return (
         <div>
             <NavigationBar onResumeClick={toggleOverlay} />
+
             <Routes>
                 <Route path={NavRoute.home} element={<Home />} />
                 <Route path={NavRoute.about} element={<About />} />
@@ -54,6 +115,7 @@ function App() {
                 <Route path={NavRoute.project2} element={<Project2 />} />
                 <Route path={NavRoute.project3} element={<Project3 />} />
             </Routes>
+
             {isOverlayVisible && (
                 <Overlay onClose={toggleOverlay}>
                     <iframe
@@ -66,6 +128,8 @@ function App() {
                     </iframe>
                 </Overlay>
             )}
+
+            {loading && <Loading />}
             <Footer />
         </div>
     )

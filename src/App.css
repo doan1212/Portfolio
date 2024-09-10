@@ -11,7 +11,7 @@
 }
 
 body::before {
-    content: "";
+    content: '';
     height: 100px;
     display: block;
     background-color: var(--bgColor);
@@ -56,10 +56,204 @@ body {
     src: url('../public/fonts/ArsenalSC-Regular.ttf');
 }
 
-
 /* https://tailwindcss.com/docs/reusing-styles */
 /* @layer components {
     .btn-primary {
         @apply py-2 px-5 bg-violet-500 text-white font-semibold rounded-full shadow-md hover:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-400 focus:ring-opacity-75;
     }
 } */
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9998;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.loading-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #664a7f;
+    opacity: 1;
+    z-index: 9997;
+    animation: slideOut 2s forwards ease;
+}
+
+@keyframes slideOut {
+    0% {
+        left: 0;
+    }
+    40% {
+        left: 30vw;
+    }
+    50% {
+        left: 80vw;
+        background-color: #664a7f;
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        left: 100vw;
+        background-color: white;
+        opacity: 0;
+    }
+}
+
+.loading-content {
+    position: relative;
+    z-index: 9996;
+    background: linear-gradient(to right, #a687c5, #e48586);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.loadingIcon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+.loadingIcon1 {
+    animation-name: rotate1;
+}
+.loadingIcon2 {
+    animation-name: rotate2;
+}
+.loadingIcon3 {
+    animation-name: rotate3;
+}
+.loadingIcon4 {
+    animation-name: rotate4;
+}
+.loadingIcon5 {
+    animation-name: rotate5;
+}
+
+.container img {
+    width: 100%;
+}
+
+/* left low */
+@keyframes rotate1 {
+    40% {
+        transform: rotate(0deg);
+        translate: -50px -20px;
+        opacity: 0;
+    }
+    70% {
+        transform: rotate(250deg);
+        translate: -100px -80px;
+        opacity: 1;
+    }
+    90% {
+        transform: rotate(360deg);
+        translate: -150px -50px;
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        translate: -150px -50px;
+        opacity: 0;
+    }
+}
+
+/* right low */
+@keyframes rotate2 {
+    40% {
+        transform: rotate(0deg);
+        translate: 50px -20px;
+        opacity: 0;
+    }
+    70% {
+        transform: rotate(250deg);
+        translate: 150px -80px;
+        opacity: 1;
+    }
+    90% {
+        transform: rotate(360deg);
+        translate: 200px -50px;
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        translate: 200px -50px;
+        opacity: 0;
+    }
+}
+
+/* left high */
+@keyframes rotate3 {
+    40% {
+        transform: rotate(0deg);
+        translate:-50px -20px;
+        opacity: 0;
+    }
+    70% {
+        transform: rotate(250deg);
+        translate: -150px -100px;
+        opacity: 1;
+    }
+    90% {
+        transform: rotate(360deg);
+        translate: -200px -50px;
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        translate: -200px -50px;
+        opacity: 0;
+    }
+}
+
+/* right high */
+@keyframes rotate4 {
+    40% {
+        transform: rotate(0deg);
+        translate: 20px -20px;
+        opacity: 0;
+    }
+    70% {
+        transform: rotate(250deg);
+        translate: 50px -120px;
+        opacity: 1;
+    }
+    90% {
+        transform: rotate(360deg);
+        translate: 80px -50px;
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        translate: 80px -50px;
+        opacity: 0;
+    }
+}
+
+/* right high */
+@keyframes rotate5 {
+    30% {
+        translate: 0px 200px;
+        opacity: 0;
+        scale:0;
+    }
+    100% {
+        translate: 0px -200px;
+        opacity: 1;
+        scale: 1;
+    }
+}
