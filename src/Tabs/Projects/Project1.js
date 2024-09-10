@@ -30,6 +30,7 @@ import heuristic from '../../Assets/Image/heuristic.png'
 import final from '../../Assets/video/Final.mp4'
 import demo from '../../Assets/Image/Demo.png'
 import { useState, useEffect } from 'react'
+import { FaSquareGithub } from 'react-icons/fa6'
 
 const Project1 = () => {
     const images = [
@@ -278,9 +279,24 @@ const Project1 = () => {
                 />
                 <HorizontalTextBox
                     title={DATA.sections.development['final'].title}
-                    content={formatString(
-                        DATA.sections.development['final'].description
-                    )}
+                    content={
+                        <div>
+                            <div>
+                                <a href="https://github.com/ILUVUS">
+                                    <div className="mb-2 flex flex-row items-center gap-2 text-2xl text-wisteria-500 hover:underline">
+                                        <FaSquareGithub />
+                                        <span>Source code</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                {formatString(
+                                    DATA.sections.development['final']
+                                        .description
+                                )}
+                            </div>
+                        </div>
+                    }
                 />
                 <div
                     style={{
