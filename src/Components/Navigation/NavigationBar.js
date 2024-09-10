@@ -15,12 +15,12 @@ const NavigationBar = ({ onResumeClick }) => {
             className="basicTransition fixed top-0 z-10 flex w-full justify-center"
         >
             <div
-                className={`flex grid-rows-3 flex-row items-center justify-center gap-4 px-5 py-5 md:grid md:grid-cols-9 md:grid-rows-1 md:px-36 ${defaultStyle} `}
+                className={`flex grid-rows-3 flex-col items-center justify-center gap-4 px-5 py-5 md:grid md:grid-cols-9 md:grid-rows-1 md:px-36 ${defaultStyle} `}
             >
                 <div className="flex justify-start pl-5 md:col-span-2 md:col-start-1">
                     <NavigationHeaderLeft />
                 </div>
-                <ul className="flex flex-row justify-center gap-5 sm:gap-8 md:col-span-5 md:col-start-3 md:gap-10">
+                <ul className="flex flex-row justify-center gap-8 gap-8 md:col-span-5 md:col-start-3 md:gap-10">
                     {[
                         {
                             title: 'Home',
