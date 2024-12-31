@@ -61,6 +61,22 @@ const Projects = () => {
                         
                     </div>
                 </SectionSecondary>
+                <SectionPrimary title={'Game Project'}>
+                <div className="text-center font-eloquialight text-base text-emperor-700 md:text-xl">
+                            <h3>Check out my game project video!</h3>
+                </div>
+                <div className="flex flex-col items-center justify-center gap-5 md:flex-row">
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/R1TrMjT6ooI?si=JdfahU7J6v1Fed8-"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                </div>
+                        
+                </SectionPrimary>
             </div>
         </>
     )
