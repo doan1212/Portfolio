@@ -79,7 +79,7 @@ const About = () => {
                         <div className="align-text-bottom font-eloquialight text-base text-emperor-700 md:text-lg">
                             I'm Doan, a Frontend Developer and UI/UX Designer
                             based in ATL. I am a senior at Georgia Tech! I’m
-                            graduating in December and I’m specializing in
+                            graduated in December 2024 and I’m specializing in
                             Computational Media, a unique field that bridges
                             design and computer science, allowing me to create
                             innovative digital experiences that blend creativity
