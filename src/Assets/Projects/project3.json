@@ -1,32 +1,26 @@
 {
-    "name": "ILUVUS",
-    "shortDescription": "A social media platform provide a unique user experience that celebrates diversity.",
-    "overview": "ILUVUS was inspired to develop <b>a social mobile app</b> dedicated to posting categorical content, commenting, and <b>celebrating the achievements</b>, and stories of <b>LGBTQ individuals</b> and <b>diverse communities</b>.",
+    "name": "Plannee",
+    "shortDescription": "An app providing quick and easy options for casual hangouts without the hassle of detailed planning.",
+    "overview": "Plannee is a personalized activity recommendation platform designed to help users quickly find fun and engaging things to do based on their current location, available time, and personal preferences. Whether users are looking to fill a short window of free time after work or plan a casual outing over the weekend, the app simplifies decision-making by offering customized, spontaneous suggestions.",
     "refinedScope": "Our focus to create a space that <b>prioritizes</b> these communities' accomplishments, offering a <b>unique user experience</b> while ensuring a safe and positive environment.",
     "roles": ["UX Designer", "UI Designer", "Front End Developer"],
-    "timeline": ["Develop 5 week sprint", "Research 3+ weeks", "Design 2+ weeks"],
+    "timeline": ["Ongoing project"],
     "tools": [
         "Figma",
         "React Native",
-        "MongoDB",
-        "Spring Boot",
+        "Rust",
         "Cloud Firestore"
     ],
-    "process": ["Discovery", "Ideation", "Design", "Development", "Relection"],
+    "process": ["Discovery", "Ideation"],
     "platform": ["iOS", "Android"],
     "sections": {
         "discovery": {
             "id": "discovery",
             "title": "Discovery",
-            "clientResearch": {
-                "title": "Client Research",
-                "description": "After meetings with our client, our team thoroughly discuss the users' needs, along with the vision that the client had for this project. We learned we need to identify what matters most to our users. Do they prioritize diversity, user-friendliness, content quality, or something else? This question will help us to polish the application’s user experience to align with their preferences."
-            },
-            "userResearch": {
-                "title": "User Research",
-                "description": "We conducted a user interview and survey to understand the users' needs, preferences, and pain points. The research findings we collected from the compilation of the survey revealed that our users want a platform that prioritizes a user-friendly interface, effective content moderation, and robust privacy settings, offers a unique user experience, and ensures a safe and positive environment."
+            "competitiveAnalysis": {
+                "title": "Competitive Analysis",
+                "description": "Yelp and Tripadvisor are well-established platforms that cater to different types of users looking for activity suggestions. I decided to conduct a competitive analysis of both Yelp and Tripadvisor to determine how our app compares to theirs in terms of features, user experience, and the types of activities suggested. This helps us identify areas where our app can excel and differentiate itself."
             }
-            
         },
         "ideation": {
             "id": "ideation",

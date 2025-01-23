@@ -9,7 +9,7 @@ import { InfoCard, ReverseInfoCard } from '../../Components/InfoCard/InfoCard'
 import { IndexTitle } from '../../Components/InfoCard/Title'
 import MockImage1 from '../../Assets/mock_1.png'
 import MockImage2 from '../../Assets/mock_2.png'
-import MockImage3 from '../../Assets/mock_3.jpg'
+import MockImage3 from '../../Assets/mock_3.png'
 import { NavRoute } from '../../Constants/Routes'
 
 const Home = () => {
@@ -26,6 +26,12 @@ const Home = () => {
             link: NavRoute.project2,
             content: `UI/UX Design | Redesigned |An website travel agency offering a comprehensive platform for booking flights, hotels, and vacation packages.`,
         },
+        {
+            title: 'Plannee',
+            image: MockImage3,
+            link: NavRoute.project3,
+            content: `UI/UX Design | Frontend Development | A mobile app provides personalized activity recommendations based on users' location, time, and preferences. | Ongoing.`,
+        }
     ]
 
     return (
@@ -92,6 +98,14 @@ const Home = () => {
                         content={projects[1].content}
                         image={projects[1].image}
                         link={projects[1].link}
+                    />
+                    <InfoCard
+                        title={
+                            <IndexTitle index="03" title={projects[2].title} />
+                        }
+                        content={projects[2].content}
+                        image={projects[2].image}
+                        link={projects[2].link}
                     />
                 </div>
             </SectionPrimary>

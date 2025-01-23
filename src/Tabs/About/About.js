@@ -109,7 +109,7 @@ const About = () => {
                     </div>
                 </div>
             </SectionPrimary>
-            <SectionSecondary title={'Skillse & Tools'}>
+            <SectionSecondary title={'Skills & Tools'}>
                 <Slider images={images} className="justify-center"></Slider>
             </SectionSecondary>
             <SectionSecondary>

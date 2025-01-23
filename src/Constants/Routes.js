@@ -9,4 +9,5 @@ export const NavRoute = {
     projects: '/projects',
     project1: '/projects/iluvus',
     project2: '/projects/traveloka',
+    project3: '/projects/plannee',
 }
