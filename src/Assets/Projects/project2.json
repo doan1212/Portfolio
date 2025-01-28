@@ -8,7 +8,7 @@
     "tools": [
         "Figma"
     ],
-    "process": ["Discovery", "Ideation", "Design", "Relection"],
+    "process": ["Discovery", "Ideation", "Design", "Reflection"],
     "platform": ["Website"],
     "sections": {
         "discovery": {
