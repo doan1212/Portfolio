@@ -5,8 +5,8 @@ import {
 import banner from '../../Assets/Image/banner.png'
 import mock3 from '../../Assets/Image/mock_3.png'
 import ScrollToSection from '../../Components/Section/ScrollToSection'
-import personas1 from '../../Assets/Image/Persona1.png'
-import personas2 from '../../Assets/Image/Persona2.png'
+import Wireframe from '../../Assets/Image/wireframep3.jpg'
+
 import comparative from '../../Assets/Image/CAproject3.png'
 import DATA from '../../Assets/Projects/project3.json'
 import { formatString } from '../../Utils/stringHelper'
@@ -200,15 +200,15 @@ const Project3 = () => {
             >
                 <HorizontalTextBox
                     title={DATA.sections.ideation['Wireframe'].title}
-                    // content={
-                    //     <TwoImageCardWithDescription
-                    //         content={formatString(
-                    //             DATA.sections.ideation['Wireframe'].description
-                    //         )}
-                    //         img1={personas1}
-                    //         img2={personas2}
-                    //     />
-                    // }
+                    content={
+                        <ImageCardWithDescription
+                            content={formatString(
+                                DATA.sections.ideation.Wireframe.
+                                    description
+                            )}
+                            img={Wireframe}
+                        />
+                    }
                 />
             </SectionSecondary>
             <SectionSecondary
