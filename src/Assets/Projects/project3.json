@@ -1,8 +1,8 @@
 {
     "name": "Plannee",
     "shortDescription": "An app providing quick and easy options for casual hangouts without the hassle of detailed planning.",
-    "overview": "Plannee is a personalized activity recommendation platform designed to help users quickly find fun and engaging things to do based on their current location, available time, and personal preferences. Whether users are looking to fill a short window of free time after work or plan a casual outing over the weekend, the app simplifies decision-making by offering customized, spontaneous suggestions.",
-    "refinedScope": "Our focus to create a space that <b>prioritizes</b> these communities' accomplishments, offering a <b>unique user experience</b> while ensuring a safe and positive environment.",
+    "overview": "In today's fast-paced world, many people struggle with finding quick and tailored activity recommendations for their free time. User relying on generic Google searches like ''interesting places to go near me'' often yields overwhelming, and generic results. This result creates frustration for users who just want easy, curated suggestions for spontaneous outings or casual plans.",
+    "refinedScope": "Plannee is a personalized activity recommendation platform designed to help users quickly find fun and engaging things to do based on their current location, available time, and personal preferences, simplifying spontaneous planning for casual outings or weekend getaways.",
     "roles": ["UX Designer", "UI Designer", "Front End Developer"],
     "timeline": ["Ongoing project"],
     "tools": [
@@ -19,14 +19,15 @@
             "title": "Discovery",
             "competitiveAnalysis": {
                 "title": "Competitive Analysis",
-                "description": "Yelp and Tripadvisor are well-established platforms that cater to different types of users looking for activity suggestions. I decided to conduct a competitive analysis of both Yelp and Tripadvisor to determine how our app compares to theirs in terms of features, user experience, and the types of activities suggested. This helps us identify areas where our app can excel and differentiate itself."
+                "description": "Yelp and Tripadvisor are well-established platforms that cater to different types of users looking for activity suggestions. I decided to conduct a competitive analysis of both Yelp and Tripadvisor to determine how our app compares to theirs in terms of features, user experience, and the types of activities suggested. This helps us identify areas where our app can excel and differentiate itself.",
+                "summary": "<b>Here’s my summary of the findings from comparative analysis: </b> Tripadvisor is ideal for detailed, long-term travel planning, while Yelp excels at providing fast, local business recommendations. Plannee differentiates itself by simplifying the user flow like Yelp but offering richer, personalized recommendations similar to Tripadvisor."
             }
         },
         "ideation": {
             "id": "ideation",
             "title": "Ideation",
-            "personas": {
-                "title": "Persona",
+            "Wireframe": {
+                "title": "Wireframe",
                 "description": "After grouping similar responses from the survey and meeting with the client to discuss why ILUVUS was created. Our team focused on two main user groups: professional users and regular users. Our insights gathered from research led to the creation of the following personas with our user-centered approach."
             },
             "dynamic": {

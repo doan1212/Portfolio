@@ -7,7 +7,7 @@ import mock3 from '../../Assets/Image/mock_3.png'
 import ScrollToSection from '../../Components/Section/ScrollToSection'
 import personas1 from '../../Assets/Image/Persona1.png'
 import personas2 from '../../Assets/Image/Persona2.png'
-import dynamic from '../../Assets/Image/dynamic.png'
+import comparative from '../../Assets/Image/CAproject3.png'
 import DATA from '../../Assets/Projects/project3.json'
 import { formatString } from '../../Utils/stringHelper'
 import {
@@ -103,12 +103,15 @@ const Project3 = () => {
                 </div>
             </SectionPrimary>
             <SectionSecondary>
-                <div className="flex flex-row items-start md:grid-cols-2 md:flex-row">
+                <div className="grid grid-cols-1 items-start gap-5 md:grid-cols-2 md:flex-row">
                     <HorizontalTextBox
-                        title="Overview"
+                        title="Problem"
                         content={formatString(DATA.overview)}
                     />
-                    
+                    <HorizontalTextBox
+                        title="Solution"
+                        content={formatString(DATA.refinedScope)}
+                    />
                 </div>
             </SectionSecondary>
             <SectionPrimary>
@@ -177,43 +180,36 @@ const Project3 = () => {
                 id={DATA.sections.discovery.id}
                 title={DATA.sections.discovery.title}
             >
-                
                 <VerticalTextBox
                     title={DATA.sections.discovery.competitiveAnalysis.title}
                     content={formatString(
                         DATA.sections.discovery.competitiveAnalysis.description
                     )}
                 />
-                
+                <ImageCardWithDescription
+                    content={formatString(
+                        DATA.sections.discovery.competitiveAnalysis.summary
+                    )}
+                    img={comparative}
+                />
             </SectionSecondary>
-            
+
             <SectionSecondary
                 id={DATA.sections.ideation.id}
                 title={DATA.sections.ideation.title}
             >
-                {/* <HorizontalTextBox
-                    title={DATA.sections.ideation['personas'].title}
-                    content={
-                        <TwoImageCardWithDescription
-                            content={formatString(
-                                DATA.sections.ideation['personas'].description
-                            )}
-                            img1={personas1}
-                            img2={personas2}
-                        />
-                    }
-                />
                 <HorizontalTextBox
-                    title={DATA.sections.ideation['dynamic'].title}
-                    content={
-                        <ImageCardWithDescription
-                            content={formatString(
-                                DATA.sections.ideation['dynamic'].description
-                            )}
-                            img={dynamic}
-                        />
-                    }
-                /> */}
+                    title={DATA.sections.ideation['Wireframe'].title}
+                    // content={
+                    //     <TwoImageCardWithDescription
+                    //         content={formatString(
+                    //             DATA.sections.ideation['Wireframe'].description
+                    //         )}
+                    //         img1={personas1}
+                    //         img2={personas2}
+                    //     />
+                    // }
+                />
             </SectionSecondary>
             <SectionSecondary
                 id={DATA.sections.design.id}
@@ -303,7 +299,7 @@ const Project3 = () => {
                         <source src={final} type="video/mp4" />
                     </video>
                 </div> */}
-            </SectionSecondary> 
+            </SectionSecondary>
 
             <SectionSecondary
                 id={DATA.sections.reflection.id}
@@ -351,7 +347,7 @@ const Project3 = () => {
                         img={demo}
                     />
                 </div> */}
-            </SectionSecondary> 
+            </SectionSecondary>
         </div>
     )
 }
