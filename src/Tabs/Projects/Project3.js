@@ -8,6 +8,7 @@ import ScrollToSection from '../../Components/Section/ScrollToSection'
 import Wireframe from '../../Assets/Image/wireframep3.jpg'
 
 import comparative from '../../Assets/Image/CAproject3.png'
+import styleGuide from '../../Assets/Image/StyleGuide3.png'
 import DATA from '../../Assets/Projects/project3.json'
 import { formatString } from '../../Utils/stringHelper'
 import {
@@ -203,8 +204,7 @@ const Project3 = () => {
                     content={
                         <ImageCardWithDescription
                             content={formatString(
-                                DATA.sections.ideation.Wireframe.
-                                    description
+                                DATA.sections.ideation.Wireframe.description
                             )}
                             img={Wireframe}
                         />
@@ -215,14 +215,6 @@ const Project3 = () => {
                 id={DATA.sections.design.id}
                 title={DATA.sections.design.title}
             >
-                {/* <HorizontalTextBox
-                    title={DATA.sections.design['sketches'].title}
-                    content={formatString(
-                        DATA.sections.design['sketches'].description
-                    )}
-                />
-                <ImageSlider images={images}> </ImageSlider>
-
                 <HorizontalTextBox
                     title={DATA.sections.design['styleGuide'].title}
                     content={formatString(
@@ -230,7 +222,12 @@ const Project3 = () => {
                     )}
                 />
 
-                <ImageSlider images={guides}> </ImageSlider> */}
+                <ImageCardWithDescription
+                    content={formatString(
+                        DATA.sections.design.styleGuide.title
+                    )}
+                    img={styleGuide}
+                />
             </SectionSecondary>
 
             <SectionSecondary
