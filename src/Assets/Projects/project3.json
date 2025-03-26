@@ -30,10 +30,16 @@
                 "title": "Wireframe",
                 "description": "I created wireframes to visualize the app's layout and features. The wireframes helped us understand the app's flow and functionality, allowing us to discuss the app's design and features with team members. This is the main flow of the app when the user first opens the app and quickly finds a place to go."
             },
-            "dynamic": {
-                "title": "Dynamic Diagram",
-                "description": "We also created a dynamic diagram to illustrate the step-by-step process of creating a new community, a main feature available exclusively to professional users. The diagram highlights the interactions between the user interface, controller, and database, understanding the app's flow and how users would interact with the app."
+            "Userpersonas": {
+                "title": "User Persona",
+                "description": "Here is the user personas I created for Plannee, a busy professional who want to enjoys spontaneous outings but has limited free time, and a social butterfly who loves planning hangouts but dislikes decision fatigue. These personas looking for an app that can provide quick and easy options for casual hangouts without the hassle of detailed planning."
+            },
+            "Note": {
+                "title": "Note",
+                "description": "This is the preferred features I gathered from the user personas and the main flow of the app."
             }
+
+
         },
         "design": {
             "id": "design",

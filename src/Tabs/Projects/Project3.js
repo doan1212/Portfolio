@@ -33,6 +33,9 @@ import final from '../../Assets/video/Final.mp4'
 import demo from '../../Assets/Image/Demo.png'
 import { useState, useEffect } from 'react'
 import { FaSquareGithub } from 'react-icons/fa6'
+import UserPersona1 from '../../Assets/Image/UserPersona1.png'
+import UserPersona2 from '../../Assets/Image/UserPersona2.png'
+import note1 from '../../Assets/Image/Note1.png'
 
 const Project3 = () => {
     const images = [
@@ -200,6 +203,20 @@ const Project3 = () => {
                 title={DATA.sections.ideation.title}
             >
                 <HorizontalTextBox
+                    title={DATA.sections.ideation['Userpersonas'].title}
+                    content={
+                        <TwoImageCardWithDescription
+                            content={formatString(
+                                DATA.sections.ideation['Userpersonas']
+                                    .description
+                            )}
+                            img1={UserPersona1}
+                            img2={UserPersona2}
+                        />
+                    }
+                />
+
+                <HorizontalTextBox
                     title={DATA.sections.ideation['Wireframe'].title}
                     content={
                         <ImageCardWithDescription
@@ -209,6 +226,13 @@ const Project3 = () => {
                             img={Wireframe}
                         />
                     }
+                />
+
+                <ImageCardWithDescription
+                    content={formatString(
+                        DATA.sections.ideation['Note'].description
+                    )}
+                    img={note1}
                 />
             </SectionSecondary>
             <SectionSecondary
