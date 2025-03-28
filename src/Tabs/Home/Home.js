@@ -21,16 +21,16 @@ const Home = () => {
             content: `UI/UX Design | Frontend Development | A mobile app create a space for users to connect, share, and celebrate achievements.`,
         },
         {
-            title: 'Traveloka',
-            image: MockImage2,
-            link: NavRoute.project2,
-            content: `UI/UX Design | Redesigned |An website travel agency offering a comprehensive platform for booking flights, hotels, and vacation packages.`,
-        },
-        {
             title: 'Plannee',
             image: MockImage3,
             link: NavRoute.project3,
             content: `UI/UX Design | Frontend Development | A mobile app provides personalized activity recommendations based on users' location, time, and preferences. | Ongoing.`,
+        },
+        {
+            title: 'Traveloka',
+            image: MockImage2,
+            link: NavRoute.project2,
+            content: `UI/UX Design | Redesigned |An website travel agency offering a comprehensive platform for booking flights, hotels, and vacation packages.`,
         }
     ]
 
