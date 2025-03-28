@@ -85,7 +85,7 @@ const Project1 = () => {
                 <div className="gap-5 lg:grid lg:grid-cols-8">
                     <div className="lg:col-span-3 lg:col-start-1">
                         <div className="flex h-full flex-col items-center justify-center p-5 lg:items-start">
-                            <div className="font-laviossa text-5xl text-wisteria-600">
+                            <div className="font-eloquiabold text-5xl text-wisteria-600">
                                 {DATA.name}
                             </div>
                             <div className="w-96 font-eloquialight text-xl text-emperor-700">

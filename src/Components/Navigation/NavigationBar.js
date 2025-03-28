@@ -12,7 +12,7 @@ const NavigationBar = ({ onResumeClick }) => {
     return (
         <nav
             id="navbar"
-            className="basicTransition fixed top-0 z-10 flex w-full justify-center"
+            className="basicTransition fixed top-0 z-10 flex w-full justify-center "
         >
             <div
                 className={`flex grid-rows-3 flex-col items-center justify-center gap-4 px-5 py-5 md:grid md:grid-cols-9 md:grid-rows-1 md:px-36 ${defaultStyle} `}
