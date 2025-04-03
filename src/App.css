@@ -7,7 +7,7 @@
 @import './Tabs/Home/style.css';
 
 :root {
-    --bgColor: #fff8f5;
+    --bgColor: #FAF7F0;
 }
 
 body::before {

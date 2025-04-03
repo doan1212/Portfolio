@@ -1,7 +1,20 @@
 import React, { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Button, OutlineGradientButton } from '../../Components/Button/Button'
 import avatar from '../../Assets/Image/avatar.png'
-import { SectionPrimary } from '../../Components/Section/Section'
+import {
+    SectionPrimary,
+    SectionSecondary,
+} from '../../Components/Section/Section'
+import { InfoCard, ReverseInfoCard } from '../../Components/InfoCard/InfoCard'
+import { IndexTitle } from '../../Components/InfoCard/Title'
+import MockImage1 from '../../Assets/mock_1.png'
+import MockImage2 from '../../Assets/mock_2.png'
+import MockImage3 from '../../Assets/mock_3.png'
+import { NavRoute } from '../../Constants/Routes'
+import { TextBox } from '../../Components/TextBox/TextBox'
+
+
 
 const Home = () => {
     const roles = [
@@ -17,6 +30,29 @@ const Home = () => {
         }, 3000) // Switch every 3 seconds
         return () => clearInterval(interval)
     }, [])
+
+    const projects = [
+        {
+            title: 'ILUVUS Application',
+            image: MockImage1,
+            link: NavRoute.project1,
+            content: `UI/UX Design | Frontend Development | A mobile app creating a space for users to connect, share, and celebrate achievements.`,
+        },
+        {
+            title: 'Plannee',
+            image: MockImage3,
+            link: NavRoute.project3,
+            content: `UI/UX Design | Frontend Development | A mobile app providing personalized activity recommendations based on users' location, time, and preferences. | Ongoing.`,
+        },
+        {
+            title: 'Traveloka',
+            image: MockImage2,
+            link: NavRoute.project2,
+            content: `UI/UX Design | Redesigned | A website travel agency offering a comprehensive platform for booking flights, hotels, and vacation packages.`,
+        }
+    ]
+    
+
 
     return (
         <div>
@@ -58,6 +94,34 @@ const Home = () => {
                     <div className="order-1 h-1/2 w-1/2 md:order-2 md:h-full md:w-full">
                         <img src={avatar} alt="avatar" className="rounded-full" />
                     </div>
+                </div>
+            </SectionPrimary>
+            <SectionPrimary title={'Projects'}>
+                <div className="flex flex-col items-center gap-y-52 md:gap-y-5">
+                    <InfoCard
+                        title={
+                            <IndexTitle index="01" title={projects[0].title} />
+                        }
+                        content={projects[0].content}
+                        image={projects[0].image}
+                        link={projects[0].link}
+                    />
+                    <ReverseInfoCard
+                        title={
+                            <IndexTitle index="02" title={projects[1].title} />
+                        }
+                        content={projects[1].content}
+                        image={projects[1].image}
+                        link={projects[1].link}
+                    />
+                    <InfoCard
+                        title={
+                            <IndexTitle index="03" title={projects[2].title} />
+                        }
+                        content={projects[2].content}
+                        image={projects[2].image}
+                        link={projects[2].link}
+                    />
                 </div>
             </SectionPrimary>
         </div>
