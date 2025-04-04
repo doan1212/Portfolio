@@ -12,7 +12,7 @@ const Section = ({ title, id, children, className, isFlying }) => {
         >
             <Container isFlying={isFlying}>
                 {title && (
-                    <div className="flex justify-center font-laviossa text-4xl text-wisteria-600">
+                    <div className="flex justify-center font-laviossa text-4xl text-emperor-600">
                         {title}
                     </div>
                 )}

@@ -13,13 +13,23 @@ import MockImage2 from '../../Assets/mock_2.png'
 import MockImage3 from '../../Assets/mock_3.png'
 import { NavRoute } from '../../Constants/Routes'
 import { TextBox } from '../../Components/TextBox/TextBox'
-
-
+import daisy from '../../Assets/Image/daisy.png'
+import flowerPot from '../../Assets/Image/pot.png'
 
 const Home = () => {
     const roles = [
-        { text1: 'UI/UX', text2: 'Designer', color1: 'text-fantasy-50 stroke', color2: 'text-nypink-400' },
-        { text1: 'Frontend', text2: 'Developer', color1: 'text-nypink-400', color2: 'text-fantasy-50 stroke' }
+        {
+            text1: 'UI/UX',
+            text2: 'Designer',
+            color1: 'text-fantasy-50 stroke',
+            color2: 'text-nypink-400',
+        },
+        {
+            text1: 'Frontend',
+            text2: 'Developer',
+            color1: 'text-nypink-400',
+            color2: 'text-fantasy-50 stroke',
+        },
     ]
 
     const [index, setIndex] = useState(0)
@@ -49,10 +59,8 @@ const Home = () => {
             image: MockImage2,
             link: NavRoute.project2,
             content: `UI/UX Design | Redesigned | A website travel agency offering a comprehensive platform for booking flights, hotels, and vacation packages.`,
-        }
+        },
     ]
-    
-
 
     return (
         <div>
@@ -77,10 +85,14 @@ const Home = () => {
                                 transition={{ duration: 0.6 }}
                                 className="flex gap-2"
                             >
-                                <span className={`font-eloquiabold text-3xl md:text-5xl ${roles[index].color1}`}>
+                                <span
+                                    className={`font-eloquiabold text-3xl md:text-5xl ${roles[index].color1}`}
+                                >
                                     {roles[index].text1}
                                 </span>
-                                <span className={`font-eloquiabold text-3xl md:text-5xl ${roles[index].color2}`}>
+                                <span
+                                    className={`font-eloquiabold text-3xl md:text-5xl ${roles[index].color2}`}
+                                >
                                     {roles[index].text2}
                                 </span>
                             </motion.div>
@@ -88,12 +100,33 @@ const Home = () => {
                         <br />
                         <br />
                         <span className="font-eloquialight text-lg text-emperor-500 md:text-base">
-                            I'm passionate about creating seamless, user-centered designs that blend creativity with functionality, always exploring new ways to enhance the user experience through innovative solutions.
+                            I'm passionate about creating seamless,
+                            user-centered designs that blend creativity with
+                            functionality, always exploring new ways to enhance
+                            the user experience through innovative solutions.
                         </span>
                     </div>
+
                     <div className="order-1 h-1/2 w-1/2 md:order-2 md:h-full md:w-full">
-                        <img src={avatar} alt="avatar" className="rounded-full" />
+                        {/* <img
+                            src={avatar}
+                            alt="avatar"
+                            className="rounded-full"
+                        /> */}
+                        <motion.img
+                            src={daisy}
+                            alt="daisy flower"
+                            className=" md:right-80 z-5 right-10 h-fit w-fit md:h-full md:w-full"
+                            animate={{ y: [0, -15, 0] }} // Bounce up and down
+                            transition={{
+                                repeat: Infinity,
+                                repeatType: 'loop',
+                                duration: 1.5,
+                                ease: 'easeInOut',
+                            }}
+                        />
                     </div>
+    
                 </div>
             </SectionPrimary>
             <SectionPrimary title={'Projects'}>
