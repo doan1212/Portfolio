@@ -116,8 +116,8 @@ const Home = () => {
                         <motion.img
                             src={daisy}
                             alt="daisy flower"
-                            className=" md:right-80 z-5 right-10 h-fit w-fit md:h-full md:w-full"
-                            animate={{ y: [0, -15, 0] }} // Bounce up and down
+                            className="z-5 right-10 -mt-16 h-fit w-fit md:right-80 md:h-full md:w-full" // move it up
+                            animate={{ y: [0, -15, 0] }}
                             transition={{
                                 repeat: Infinity,
                                 repeatType: 'loop',
@@ -126,7 +126,6 @@ const Home = () => {
                             }}
                         />
                     </div>
-    
                 </div>
             </SectionPrimary>
             <SectionPrimary title={'Projects'}>
