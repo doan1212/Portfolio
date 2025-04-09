@@ -65,7 +65,7 @@ const Home = () => {
     return (
         <div>
             <SectionPrimary>
-                <div className="flex flex-col items-center gap-5 md:flex-row">
+                <div className="flex flex-col items-center gap-5 md:grid md:grid-cols-2">
                     <div className="order-2 items-center justify-center px-10 md:order-1">
                         <div className="flex flex-row items-end gap-3">
                             <span className="align-text-bottom font-eloquialight text-xl text-emperor-700 md:text-3xl">
@@ -116,7 +116,7 @@ const Home = () => {
                         <motion.img
                             src={daisy}
                             alt="daisy flower"
-                            className="z-5 right-10 -mt-16 h-fit w-fit md:right-80 md:h-full md:w-full" // move it up
+                            className="z-5 right-60 h-full w-full md:right-80 md:h-full md:w-full" // move it up
                             animate={{ y: [0, -15, 0] }}
                             transition={{
                                 repeat: Infinity,
