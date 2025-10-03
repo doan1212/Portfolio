@@ -28,6 +28,14 @@ import guide2 from '../../Assets/Image/guide2.png'
 import guide3 from '../../Assets/Image/guide3.png'
 import guide4 from '../../Assets/Image/guide4.png'
 import guide5 from '../../Assets/Image/guide5.png'
+import prototype1 from '../../Assets/Image/prototype1.png'
+import prototype2 from '../../Assets/Image/prototype2.png'
+import prototype3 from '../../Assets/Image/prototype3.png'
+import prototype4 from '../../Assets/Image/prototype4.png'
+import prototype5 from '../../Assets/Image/prototype5.png'
+import prototype6 from '../../Assets/Image/prototype6.png'
+import prototype7 from '../../Assets/Image/prototype7.png'
+import prototype12 from '../../Assets/Image/prototype12.png'
 import heuristic from '../../Assets/Image/heuristic.png'
 import final from '../../Assets/video/Final.mp4'
 import demo from '../../Assets/Image/Demo.png'
@@ -36,6 +44,7 @@ import { FaSquareGithub } from 'react-icons/fa6'
 import UserPersona1 from '../../Assets/Image/UserPersona1.png'
 import UserPersona2 from '../../Assets/Image/UserPersona2.png'
 import note1 from '../../Assets/Image/Note1.png'
+import { i } from 'framer-motion/client'
 
 const Project3 = () => {
     const images = [
@@ -51,6 +60,16 @@ const Project3 = () => {
         { src: guide3, alt: 'Guide3' },
         { src: guide4, alt: 'Guide4' },
         { src: guide5, alt: 'Guide5' },
+    ]
+    const prototypes = [
+        { src: prototype12, alt: 'Prototype12' },
+        { src: prototype1, alt: 'Prototype1' },
+        { src: prototype2, alt: 'Prototype2' },
+        { src: prototype3, alt: 'Prototype3' },
+        { src: prototype4, alt: 'Prototype4' },
+        { src: prototype5, alt: 'Prototype5' },
+        { src: prototype6, alt: 'Prototype6' },
+        { src: prototype7, alt: 'Prototype7' },
     ]
 
     const [isFlying, setIsFlying] = useState(true)
@@ -258,12 +277,23 @@ const Project3 = () => {
                 id={DATA.sections.development.id}
                 title={DATA.sections.development.title}
             >
-                {/* <HorizontalTextBox
+                <HorizontalTextBox
                     title={DATA.sections.development['prototype'].title}
                     content={formatString(
                         DATA.sections.development['prototype'].description
                     )}
                 />
+                <div className="flex justify-center">
+                    <div
+                        style={{
+                            transform: 'scale(0.4)',
+                            transformOrigin: 'top',
+                        }}
+                    >
+                        <ImageSlider images={prototypes} />
+                    </div>
+                </div>
+                {/* 
                 <iframe
                     src={DATA.sections.development.prototype.src}
                     className="flex md:w-full"
