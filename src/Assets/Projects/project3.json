@@ -4,7 +4,7 @@
     "overview": "In today's fast-paced world, many people struggle with finding quick and tailored activity recommendations for their free time. User relying on generic Google searches like ''interesting places to go near me'' often yields overwhelming, and generic results. This result creates frustration for users who just want easy, curated suggestions for spontaneous outings or casual plans.",
     "refinedScope": "Plannee is a personalized activity recommendation platform designed to help users quickly find fun and engaging things to do based on their current location, available time, and personal preferences, simplifying spontaneous planning for casual outings or weekend getaways.",
     "roles": ["UX Designer", "UI Designer", "Front End Developer"],
-    "timeline": ["Ongoing project"],
+    "timeline": ["4-week"],
     "tools": [
         "Figma",
         "React Native",
@@ -59,8 +59,8 @@
             "title": "Development",
             "prototype": {
                 "title": "Prototype",
-                "description": "I created a high-fidelity prototype to demonstrate the app's functionality and user flow. The prototype was used to test the app's usability and gather feedback from the client and potential users.",
-                "src": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F69hpY77FJXsQwIhoRzQVNe%2FILUVUS-on-iOS%3Fnode-id%3D2972-1717%26t%3DvQFmbzQkldB9iIGn-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D2303%253A6898%26starting-point-node-id%3D2972%253A1717%26show-proto-sidebar%3D1"
+                "description": "I created a high-fidelity prototype to demonstrate the app's functionality and user flow. This interactive prototype showcases how users will discover personalized activities, navigate through recommendations, and effortlessly plan their next adventure. Through realistic interactions, you'll experience firsthand how Plannee transforms the frustration of endless searching into the joy of instant suggestions. ",
+                "src": "https://embed.figma.com/proto/7LVgkk3R7G11Mk1Jawtwr8/Plannee?node-id=11-9&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=11%3A9&embed-host=share"
             },
             "heuristic": {
                 "title": "Heuristic Evaluation",
@@ -82,18 +82,18 @@
             "title": "Reflection",
             "lookingback": {
                 "title": "Looking Back.",
-                "description": "In a 2-week design & a 5-week sprint:",
+                "description": "In a 4-week design:",
                 "list": [
+                    "I conducted a <b>competitive analysis</b> of existing activity recommendation platforms",
+                    "I create two <b>personas</b> to guide design decisions",
                     "I designed a <b>style guide</b> and <b>wireframes</b>",
-                    "I produced a <b>high-fidelity prototype</b>",
-                    "We conducted <b>30 team meetings</b>",
-                    "We developed the app on both <b>iOS</b> and <b>Android</b> platforms"
+                    "I produced a <b>high-fidelity prototype</b>"
                 ],
-                 "reflection": "I am proud of the work we accomplished. We were able to create a unique social media platform that start from scratch. This is my first time using React Native to build the front-end to integrate with the backend StringBoot. It was challenging, but the learning curve was rewarding as I gained a deeper understanding of how these technologies work together to create a seamless user experience. I am grateful for the opportunity to work on this project and collaborate with my team to bring the client's vision to life."
+                 "reflection": "I am proud of creating Plannee from scratch. This was my first time designing a location-based personalization platform, and balancing simplicity with functionality was challenging but rewarding. I gained a deeper understanding of designing for spontaneous use cases and creating intuitive user experiences that solve real problems."
             },
             "lookingforward": {
                 "title": "Looking Forward.",
-                "description": "At the moment, we already hand off to the project to client and I hope to see ILUVUS grow and expand its scope. Through this group project, I have learned about <b>collaboration</b> and <b>professional development</b> while working with my team to develop a complex software project. This was also my first opportunity to work with a real client, developing a social media platform in a professional setting, following <b>agile methodology</b>.<br> What I’m most proud of from this project is <b>the design of the logo</b> and UI of the app. My clients mentioned that it perfectly matched the vision they had for the app when they first started making it. <br>Overall, <b>I learned to always learn</b>. This project has been a valuable learning experience, and I look forward to applying the skills and knowledge I have gained to future projects. "
+                "description": "The prototype is ready for user testing, and I hope to gather feedback to refine Plannee further. Through this project, I learned the importance of user-centered design and solving real problems rather than just creating visually appealing interfaces. What I'm most proud of is the clean, intuitive interface that makes activity discovery feel effortless. Overall, I learned to always prioritize the user, and I look forward to applying these skills to future design challenges."
             },
             "demo": {
                 "title": "Demo",

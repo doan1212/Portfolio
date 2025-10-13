@@ -283,7 +283,7 @@ const Project3 = () => {
                         DATA.sections.development['prototype'].description
                     )}
                 />
-                <div className="flex justify-center">
+                {/* <div className="flex justify-center">
                     <div
                         style={{
                             transform: 'scale(0.4)',
@@ -292,8 +292,8 @@ const Project3 = () => {
                     >
                         <ImageSlider images={prototypes} />
                     </div>
-                </div>
-                {/* 
+                </div> */}
+                
                 <iframe
                     src={DATA.sections.development.prototype.src}
                     className="flex md:w-full"
@@ -301,62 +301,13 @@ const Project3 = () => {
                     title="iframe"
                     allowfullscreen="true"
                 />
-
-                <QuoteTextBox
-                    title={DATA.sections.development['heuristic'].title}
-                    content={DATA.sections.development.heuristic.feedback.map(
-                        (role, index) => (
-                            <ul key={index}>{formatString(role)}</ul>
-                        )
-                    )}
-                    className={'italic'}
-                />
-
-                <ImageCardWithDescription
-                    content={formatString(
-                        DATA.sections.development['heuristic'].description
-                    )}
-                    img={heuristic}
-                />
-                <HorizontalTextBox
-                    title={DATA.sections.development['final'].title}
-                    content={
-                        <div>
-                            <div>
-                                <a href="https://github.com/ILUVUS">
-                                    <div className="mb-2 flex flex-row items-center gap-2 text-2xl text-wisteria-500 hover:underline">
-                                        <FaSquareGithub />
-                                        <span>Source code</span>
-                                    </div>
-                                </a>
-                            </div>
-                            <div>
-                                {formatString(
-                                    DATA.sections.development['final']
-                                        .description
-                                )}
-                            </div>
-                        </div>
-                    }
-                />
-                <div
-                    style={{
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                    }}
-                >
-                    <video width="320" height="240" controls>
-                        <source src={final} type="video/mp4" />
-                    </video>
-                </div> */}
             </SectionSecondary>
 
             <SectionSecondary
                 id={DATA.sections.reflection.id}
                 title={DATA.sections.reflection.title}
             >
-                {/* <div className="grid grid-cols-1 items-start gap-5 md:grid-cols-2 md:flex-row">
+                 <div className="grid grid-cols-1 items-start gap-5 md:grid-cols-2 md:flex-row">
                     <HorizontalTextBox
                         title={DATA.sections.reflection['lookingback'].title}
                         content={
@@ -390,14 +341,6 @@ const Project3 = () => {
                     />
                 </div>
 
-                <div className="flex items-center justify-center">
-                    <ImageCardWithDescription
-                        content={formatString(
-                            DATA.sections.reflection['demo'].description
-                        )}
-                        img={demo}
-                    />
-                </div> */}
             </SectionSecondary>
         </div>
     )
