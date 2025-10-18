@@ -146,14 +146,14 @@ const Home = () => {
                         image={projects[1].image}
                         link={projects[1].link}
                     />
-                     <InfoCard
+                     {/* <InfoCard
                         title={
                             <IndexTitle index="03" title={projects[2].title} />
                         }
                         content={projects[2].content}
                         image={projects[2].image}
                         link={projects[2].link}
-                    /> 
+                    />  */}
                 </div>
             </SectionPrimary>
         </div>
