@@ -11,7 +11,7 @@
         "Rust",
         "Cloud Firestore"
     ],
-    "process": ["Discovery", "Ideation"],
+    "process": ["Discovery", "Ideation", "Design", "Development", "Reflection"],
     "platform": ["iOS", "Android"],
     "sections": {
         "discovery": {

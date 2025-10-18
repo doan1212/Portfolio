@@ -1,37 +1,55 @@
 {
     "name": "Campfy",
-    "shortDescription": "An app for buying all types of camping and outdoor supplies, prioritizing a fast and convenient shopping experience.",
-    "overview": "In today's fast-paced world, many people struggle with finding quick and tailored activity recommendations for their free time. User relying on generic Google searches like ''interesting places to go near me'' often yields overwhelming, and generic results. This result creates frustration for users who just want easy, curated suggestions for spontaneous outings or casual plans.",
-    "refinedScope": "Plannee is a personalized activity recommendation platform designed to help users quickly find fun and engaging things to do based on their current location, available time, and personal preferences, simplifying spontaneous planning for casual outings or weekend getaways.",
-    "roles": ["UX Designer", "UI Designer", "Front End Developer"],
-    "timeline": ["4-week"],
-    "tools": ["Figma", "React Native", "Rust", "Cloud Firestore"],
-    "process": ["Discovery", "Ideation"],
+    "shortDescription": "An app for buying all types of camping supplies, prioritizing a fast and convenient shopping experience.",
+    "overview": "Camping is a popular outdoor activity that requires specialized gear and equipment. However, finding camping supplies can be time-consuming and frustrating, especially for beginners. Many existing platforms have <b>complex navigation </b>, <b>overwhelming product selections </b>, and <b>lack personalized recommendations</b>, making it difficult for users to find what they need quickly. This often leads to decision fatigue and a less enjoyable shopping experience.",
+    "refinedScope": "Campfy is an e-commerce platform designed to streamline the process of purchasing camping supplies. It features a <b> Suggestive flow </b> with curated gear packages to reduce decision fatigue, a powerful product <b> Compare tool</b> for fast evaluation, and a simplified, <b>three-step </b> checkout. Campfy ensures users can quickly acquire necessary supplies through an <b>intuitive </b> and <b>accessible </b> interface.",
+    "roles": ["UX Designer", "UI Designer"],
+    "timeline": ["On-going"],
+    "tools": ["Figma"],
+    "process": ["Discovery", "Ideation", "Design"],
     "platform": ["iOS", "Android"],
     "sections": {
         "discovery": {
             "id": "discovery",
             "title": "Discovery",
+            "goalStatement": {
+                "title": "Goal Statement",
+                "description": "Our camping supply app will let users browse and discover essential gear through organized categories and utilize the compare feature to save time on research. This will specifically affect new campers who need to find essential gear for a trip. We will measure effectiveness by tracking first-time users when they sign up."
+            },
+            "userStory": {
+                "title": "User Story",
+                "description": "To better understand the needs and pain points of our target users, I created a user story that outlines the typical experience of someone looking to buy camping supplies. This user story helped me empathize with the users and identify key areas where our app can provide value. By focusing on the user's journey, I was able to design features that address their specific needs and enhance their overall shopping experience."
+            },
             "competitiveAnalysis": {
                 "title": "Competitive Analysis",
-                "description": "Yelp and Tripadvisor are well-established platforms that cater to different types of users looking for activity suggestions. I decided to conduct a competitive analysis of both Yelp and Tripadvisor to determine how our app compares to theirs in terms of features, user experience, and the types of activities suggested. This helps us identify areas where our app can excel and differentiate itself.",
-                "summary": "<b>Here’s my summary of the findings from comparative analysis: </b> Tripadvisor is ideal for detailed, long-term travel planning, while Yelp excels at providing fast, local business recommendations. Plannee differentiates itself by simplifying the user flow like Yelp but offering richer, personalized recommendations similar to Tripadvisor."
+                "description": "I conducted a competitive analysis of existing camping supply platforms to identify strengths, weaknesses, and opportunities for improvement. This analysis helped me understand the current market landscape and informed the design decisions for our app. By evaluating competitors, I was able to identify gaps in the market and develop features that differentiate our app from others."
+            },
+            "userJourney": {
+                "title": "User Journey",
+                "description": "I mapped out the user journey to visualize the steps users take when interacting with our app. This journey map helped me identify pain points and opportunities for improvement at each stage of the user's experience. By understanding the user journey, I was able to design features that enhance usability and provide a seamless shopping experience."
+            },
+            "Userpersonas": {
+                "title": "User Persona",
+                "description": "Based on user research, I developed three user personas to represent the target audience for Campfy. A newbie camper who is new to camping and needs guidance on essential gear and equipment, an adventure mom on the go who wants to plan fun activities for her family, and an experienced camper who values convenience and efficiency when purchasing camping supplies.  These personas are looking for an app that can provide a streamlined shopping experience with personalized recommendations based on their camping needs."
             }
+
         },
         "ideation": {
             "id": "ideation",
             "title": "Ideation",
-            "Wireframe": {
-                "title": "Wireframe",
-                "description": "I created wireframes to visualize the app's layout and features. The wireframes helped us understand the app's flow and functionality, allowing us to discuss the app's design and features with team members. This is the main flow of the app when the user first opens the app and quickly finds a place to go."
+            "Brainstorming": {
+                "title": "Brainstorming",
+                "src": "https://embed.figma.com/board/MtwH8eQAY4zMhinynSt9j4/Google-Project?node-id=0-1&embed-host=share",
+                "description": 
+                    "During the brainstorming phase, I generated <b>a wide range of ideas </b>for features and functionalities that could enhance the user experience of our camping supply app. I focused on creating solutions that address the pain points identified in the discovery phase, such as simplifying slow navigation and complex checkout processes, while integrating guidance to combat the feeling of being overwhelmed by choices."
             },
-            "Userpersonas": {
-                "title": "User Persona",
-                "description": "Here is the user personas I created for Plannee, a busy professional who want to enjoys spontaneous outings but has limited free time, and a social butterfly who loves planning hangouts but dislikes decision fatigue. These personas looking for an app that can provide quick and easy options for casual hangouts without the hassle of detailed planning."
+            "siteMap": {
+                "title": "Site Map",
+                "description": "I created a site map to outline the structure and organization of our camping supply app. This site map shows the four main categories: Suggestive, Shop, User, and Cart. Each category contains subcategories that help users navigate the app and find the products they need quickly. The site map also highlights key features such as the Compare tool and streamlined checkout process, which are designed to enhance the user experience and make shopping for camping supplies more efficient."
             },
-            "Note": {
-                "title": "Note",
-                "description": "This is the preferred features I gathered from the user personas and the main flow of the app."
+            "userFlow": {
+                "title": "User Flow",
+                "description": "I developed user flows to visualize the steps users take when interacting with our camping supply app. These flows helped me identify key touchpoints and interactions that are critical to the user experience. By mapping out the user flows, I was able to design features that enhance usability and provide a seamless shopping experience."
             }
         },
         "design": {
@@ -39,11 +57,16 @@
             "title": "Design",
             "styleGuide": {
                 "title": "Style Guide",
-                "description": "I created a style guide to define the app's visual identity- <b>quick, easy, effective </b> in the color palette, typography, and iconography. In the Plannee logo, I used a warm red-to-yellow gradient to convey energy,  fun, social connection, and quick planning, making it a great fit for a hangout planning app. It creates a welcoming and dynamic visual appeal. The paper plane symbolizes movement, communication, and seamless coordination—core values of the Plannee app. It visually represents the idea of sending plans effortlessly between friends, just like a paper plane flying from one person to another. In terms of typography, to make the app as easy to click and as simple as possible, I used a rounded and modern font choice, which reflects simplicity and minimalist. "
+                "description": "The Campfy Style Guide establishes a visual identity based on natural, earthy tones (Dark Olive, Pale Green, Taupe) to evoke stability and comfort, reflecting the brand's goal of making camping preparation easy and stress-free. The logo prominently features two stylized mountains to anchor the brand in the outdoors, while the use of the Poppins and Afacad typefaces ensures both a clear brand presence and high readability for all product information."
             },
-            "sketches": {
-                "title": "Sketches & Wireframe",
-                "description": "We created sketches to visualize the app's layout and features. I made low-fidelity wireframes for 3-4 other screens based on the main user flow.  We used these sketches to discuss the app's flow and functionality with the client and team members. "
+            "Digital Wireframe": {
+                "title": "Digital Wireframe",
+                "description": "After creating paper wireframes, I developed digital wireframes to provide a more detailed representation of the app's design. The digital wireframes allowed us to refine the app's layout and features, making it easier to visualize the final product. This digital wireframe showcases the main user flow, from discovering personalized activities to planning the next adventure with friends.",
+                "src": "https://embed.figma.com/proto/Acilgp9GreVOpBfNM9fWZQ/Google-Campfy?node-id=6-412&p=f&scaling=scale-down&content-scaling=fixed&page-id=3%3A167&starting-point-node-id=3%3A169&embed-host=share"
+            },
+            "Wireframe": {
+                "title": "Paper Wireframe",
+                "description": "I started the design phase by creating paper wireframes to quickly visualize the app's layout and features. I draw five quick-sketch versions for the home screen. Then I selected the best elements from each sketch to create a final paper wireframe. These wireframes helped me communicate my ideas with the team and gather feedback before moving on to digital designs."
             }
         },
         "development": {
@@ -52,6 +75,7 @@
             "prototype": {
                 "title": "Prototype",
                 "description": "I created a high-fidelity prototype to demonstrate the app's functionality and user flow. This interactive prototype showcases how users will discover personalized activities, navigate through recommendations, and effortlessly plan their next adventure. Through realistic interactions, you'll experience firsthand how Plannee transforms the frustration of endless searching into the joy of instant suggestions. ",
+                
                 "src": "https://embed.figma.com/proto/7LVgkk3R7G11Mk1Jawtwr8/Plannee?node-id=11-9&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=11%3A9&embed-host=share"
             },
             "heuristic": {
