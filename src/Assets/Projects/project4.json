@@ -1,0 +1,95 @@
+{
+    "name": "Campfy",
+    "shortDescription": "An app for buying all types of camping and outdoor supplies, prioritizing a fast and convenient shopping experience.",
+    "overview": "In today's fast-paced world, many people struggle with finding quick and tailored activity recommendations for their free time. User relying on generic Google searches like ''interesting places to go near me'' often yields overwhelming, and generic results. This result creates frustration for users who just want easy, curated suggestions for spontaneous outings or casual plans.",
+    "refinedScope": "Plannee is a personalized activity recommendation platform designed to help users quickly find fun and engaging things to do based on their current location, available time, and personal preferences, simplifying spontaneous planning for casual outings or weekend getaways.",
+    "roles": ["UX Designer", "UI Designer", "Front End Developer"],
+    "timeline": ["4-week"],
+    "tools": ["Figma", "React Native", "Rust", "Cloud Firestore"],
+    "process": ["Discovery", "Ideation"],
+    "platform": ["iOS", "Android"],
+    "sections": {
+        "discovery": {
+            "id": "discovery",
+            "title": "Discovery",
+            "competitiveAnalysis": {
+                "title": "Competitive Analysis",
+                "description": "Yelp and Tripadvisor are well-established platforms that cater to different types of users looking for activity suggestions. I decided to conduct a competitive analysis of both Yelp and Tripadvisor to determine how our app compares to theirs in terms of features, user experience, and the types of activities suggested. This helps us identify areas where our app can excel and differentiate itself.",
+                "summary": "<b>Here’s my summary of the findings from comparative analysis: </b> Tripadvisor is ideal for detailed, long-term travel planning, while Yelp excels at providing fast, local business recommendations. Plannee differentiates itself by simplifying the user flow like Yelp but offering richer, personalized recommendations similar to Tripadvisor."
+            }
+        },
+        "ideation": {
+            "id": "ideation",
+            "title": "Ideation",
+            "Wireframe": {
+                "title": "Wireframe",
+                "description": "I created wireframes to visualize the app's layout and features. The wireframes helped us understand the app's flow and functionality, allowing us to discuss the app's design and features with team members. This is the main flow of the app when the user first opens the app and quickly finds a place to go."
+            },
+            "Userpersonas": {
+                "title": "User Persona",
+                "description": "Here is the user personas I created for Plannee, a busy professional who want to enjoys spontaneous outings but has limited free time, and a social butterfly who loves planning hangouts but dislikes decision fatigue. These personas looking for an app that can provide quick and easy options for casual hangouts without the hassle of detailed planning."
+            },
+            "Note": {
+                "title": "Note",
+                "description": "This is the preferred features I gathered from the user personas and the main flow of the app."
+            }
+        },
+        "design": {
+            "id": "design",
+            "title": "Design",
+            "styleGuide": {
+                "title": "Style Guide",
+                "description": "I created a style guide to define the app's visual identity- <b>quick, easy, effective </b> in the color palette, typography, and iconography. In the Plannee logo, I used a warm red-to-yellow gradient to convey energy,  fun, social connection, and quick planning, making it a great fit for a hangout planning app. It creates a welcoming and dynamic visual appeal. The paper plane symbolizes movement, communication, and seamless coordination—core values of the Plannee app. It visually represents the idea of sending plans effortlessly between friends, just like a paper plane flying from one person to another. In terms of typography, to make the app as easy to click and as simple as possible, I used a rounded and modern font choice, which reflects simplicity and minimalist. "
+            },
+            "sketches": {
+                "title": "Sketches & Wireframe",
+                "description": "We created sketches to visualize the app's layout and features. I made low-fidelity wireframes for 3-4 other screens based on the main user flow.  We used these sketches to discuss the app's flow and functionality with the client and team members. "
+            }
+        },
+        "development": {
+            "id": "development",
+            "title": "Development",
+            "prototype": {
+                "title": "Prototype",
+                "description": "I created a high-fidelity prototype to demonstrate the app's functionality and user flow. This interactive prototype showcases how users will discover personalized activities, navigate through recommendations, and effortlessly plan their next adventure. Through realistic interactions, you'll experience firsthand how Plannee transforms the frustration of endless searching into the joy of instant suggestions. ",
+                "src": "https://embed.figma.com/proto/7LVgkk3R7G11Mk1Jawtwr8/Plannee?node-id=11-9&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=11%3A9&embed-host=share"
+            },
+            "heuristic": {
+                "title": "Heuristic Evaluation",
+                "description": "After we conducted a heuristic evaluation, the prototype needed a little adjustment to enhance the usability and user experience of the system and make it more user-friendly.",
+                "feedback": [
+                    "“However, some buttons were <b>difficult</b> to initially find. For example, the “Add Post” button was not seen during the first to attempt to complete the first task. ”",
+                    "“ The aesthetic of the app is <b>intuitive</b>, and <b>realistic</b>, coinciding with real-world social media applications the white, purple, and soft yellow accents work well together, creating a <b>clean</b>, and <b>welcoming</b> social media platform. ”",
+                    "“ In most cases, <b>user control</b> and <b>freedom</b> were implemented well. There were multiple cases in which mistakes and incorrect navigation could be reversed easily.  ”"
+                ]
+            },
+            "final": {
+                "title": "Final Product",
+                "description": " After working with my team, the final product was developed using React Native, with backend features in Java SpringBoot and a user-friendly interface designed with Tailwind CSS. The app was launched on both iOS and Android platforms. Feel free to explore the app and see the features we developed."
+            }
+        },
+        "reflection": {
+            "id": "reflection",
+            "title": "Reflection",
+            "lookingback": {
+                "title": "Looking Back.",
+                "description": "In a 4-week design:",
+                "list": [
+                    "I conducted a <b>competitive analysis</b> of existing activity recommendation platforms",
+                    "I create two <b>personas</b> to guide design decisions",
+                    "I designed a <b>style guide</b> and <b>wireframes</b>",
+                    "I produced a <b>high-fidelity prototype</b>"
+                ],
+                "reflection": "I am proud of creating Plannee from scratch. This was my first time designing a location-based personalization platform, and balancing simplicity with functionality was challenging but rewarding. I gained a deeper understanding of designing for spontaneous use cases and creating intuitive user experiences that solve real problems."
+            },
+            "lookingforward": {
+                "title": "Looking Forward.",
+                "description": "The prototype is ready for user testing, and I hope to gather feedback to refine Plannee further. Through this project, I learned the importance of user-centered design and solving real problems rather than just creating visually appealing interfaces. What I'm most proud of is the clean, intuitive interface that makes activity discovery feel effortless. Overall, I learned to always prioritize the user, and I look forward to applying these skills to future design challenges."
+            },
+            "demo": {
+                "title": "Demo",
+                "description": "Expo day for demo the app to the client and potential users."
+            }
+        }
+    }
+}

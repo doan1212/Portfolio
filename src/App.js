@@ -9,6 +9,7 @@ import { useEffect, useState } from 'react'
 import Project1 from './Tabs/Projects/Project1'
 import Project2 from './Tabs/Projects/Project2'
 import Project3 from './Tabs/Projects/Project3'
+import Project4 from './Tabs/Projects/Project4'
 import Overlay from './Components/Overlay/Overlay'
 import Footer from './Components/Footer/Footer'
 import React from 'react'
@@ -92,11 +93,50 @@ function App() {
             handleScroll()
         }
         setLoading(true)
-        const timer = setTimeout(() => {
-            setLoading(false)
-        }, 3000)
 
-        return () => clearTimeout(timer)
+        // Track resource loading
+        const handleResourcesLoaded = () => {
+            // Check if all images are loaded
+            const images = document.querySelectorAll('img')
+            const imagePromises = Array.from(images).map((img) => {
+                if (img.complete) return Promise.resolve()
+                return new Promise((resolve) => {
+                    img.onload = resolve
+                    img.onerror = resolve // Resolve even on error to prevent hanging
+                })
+            })
+
+            // Wait for all images to load
+            Promise.all(imagePromises).then(() => {
+                // Add minimum loading time (e.g., 1 second) for UX
+                const minLoadTime = 1000
+                const startTime = Date.now()
+
+                setTimeout(
+                    () => {
+                        setLoading(false)
+                    },
+                    Math.max(0, minLoadTime - (Date.now() - startTime))
+                )
+            })
+        }
+
+        // Wait for DOM to be ready, then check resources
+        if (document.readyState === 'complete') {
+            handleResourcesLoaded()
+        } else {
+            window.addEventListener('load', handleResourcesLoaded)
+        }
+
+        // Fallback timeout to prevent infinite loading
+        const fallbackTimer = setTimeout(() => {
+            setLoading(false)
+        }, 10000) // 10 second max
+
+        return () => {
+            clearTimeout(fallbackTimer)
+            window.removeEventListener('load', handleResourcesLoaded)
+        }
     }, [location])
 
     const toggleOverlay = () => {
@@ -114,6 +154,7 @@ function App() {
                 <Route path={NavRoute.project1} element={<Project1 />} />
                 <Route path={NavRoute.project2} element={<Project2 />} />
                 <Route path={NavRoute.project3} element={<Project3 />} />
+                <Route path={NavRoute.project4} element={<Project4 />} />
             </Routes>
 
             {isOverlayVisible && (

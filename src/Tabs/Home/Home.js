@@ -9,7 +9,7 @@ import {
 import { InfoCard, ReverseInfoCard } from '../../Components/InfoCard/InfoCard'
 import { IndexTitle } from '../../Components/InfoCard/Title'
 import MockImage1 from '../../Assets/mock_1.png'
-import MockImage2 from '../../Assets/mock_2.png'
+import MockImage2 from '../../Assets/mock_4.png'
 import MockImage3 from '../../Assets/mock_3.png'
 import { NavRoute } from '../../Constants/Routes'
 import { TextBox } from '../../Components/TextBox/TextBox'
@@ -55,10 +55,10 @@ const Home = () => {
             content: `UI/UX Design | Frontend Development | A mobile app providing personalized activity recommendations based on users' location, time, and preferences. | Ongoing.`,
         },
         {
-            title: 'Traveloka',
+            title: 'Campfy',
             image: MockImage2,
-            link: NavRoute.project2,
-            content: `UI/UX Design | Redesigned | A website travel agency offering a comprehensive platform for booking flights, hotels, and vacation packages.`,
+            link: NavRoute.project4,
+            content: `UI/UX Design | A camping supply app providing a seamless shopping experience for high-quality gear—from tents and sleeping bags to specialty tools.`,
         },
     ]
 
@@ -146,14 +146,14 @@ const Home = () => {
                         image={projects[1].image}
                         link={projects[1].link}
                     />
-                    {/* <InfoCard
+                     <InfoCard
                         title={
                             <IndexTitle index="03" title={projects[2].title} />
                         }
                         content={projects[2].content}
                         image={projects[2].image}
                         link={projects[2].link}
-                    /> */}
+                    /> 
                 </div>
             </SectionPrimary>
         </div>
