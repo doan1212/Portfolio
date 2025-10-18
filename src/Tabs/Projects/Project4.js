@@ -191,7 +191,9 @@ const Project4 = () => {
                             .description
                     )}
                 />
-
+                <a href={DATA.sections.discovery.competitiveAnalysis.src} target="_blank" rel="noopener noreferrer" className="underline text-nypink-500 mb-5">
+                    View Competitive Analysis Chart here.
+                </a>
                 <HorizontalTextBox
                     title={DATA.sections.discovery['Userpersonas'].title}
                     content={DATA.sections.discovery.Userpersonas.description}
