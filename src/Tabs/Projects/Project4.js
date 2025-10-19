@@ -80,24 +80,15 @@ const Project4 = () => {
     return (
         <div>
             <SectionPrimary>
-                <div className="gap-5 lg:grid lg:grid-cols-8">
-                    <div className="lg:col-span-3 lg:col-start-1">
-                        <div className="flex h-full flex-col items-center justify-center p-5 lg:items-start">
-                            <div className="font-eloquiabold text-5xl text-wisteria-600">
-                                {DATA.name}
-                            </div>
-                            <div className="w-96 font-eloquialight text-xl text-emperor-700">
-                                {DATA.shortDescription}
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex items-center justify-center lg:col-span-5 lg:col-start-4">
+                <div className="flex flex-col items-center justify-center gap-5 p-5 lg:flex-row">
+                    <div className="lg:w-1/2">
                         <img
                             className="h-full w-auto"
                             src={mock4}
-                            alt="Plannee"
+                            alt="Google Campfy"
                         />
-                    </div>
+                        </div>
+                   
                 </div>
             </SectionPrimary>
             <SectionSecondary>

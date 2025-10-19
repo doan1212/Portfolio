@@ -82,10 +82,10 @@ const Project1 = () => {
     return (
         <div>
             <SectionPrimary>
-                <div className="gap-5 lg:grid lg:grid-cols-8">
+                {/* <div className="gap-5 lg:grid lg:grid-cols-8">
                     <div className="lg:col-span-3 lg:col-start-1">
                         <div className="flex h-full flex-col items-center justify-center p-5 lg:items-start">
-                            <div className="font-eloquiabold text-5xl text-wisteria-600">
+                            <div className="font-eloquiabold text-5xl text-emperor-800">
                                 {DATA.name}
                             </div>
                             <div className="w-96 font-eloquialight text-xl text-emperor-700">
@@ -100,6 +100,16 @@ const Project1 = () => {
                             alt="ILUVUS"
                         />
                     </div>
+                </div> */}
+                <div className="flex flex-col items-center justify-center gap-5 p-5 lg:flex-row">
+                    <div className="lg:w-1/2">
+                        <img
+                            className="h-full w-auto"
+                            src={banner}
+                            alt="ILUVUS"
+                        />
+                        </div>
+                   
                 </div>
             </SectionPrimary>
             <SectionSecondary>
