@@ -29,10 +29,13 @@ import DATA from '../../Assets/Projects/project4.json'
 import userJourney1 from '../../Assets/Image/userJourney1.png'
 import { s, u } from 'framer-motion/client'
 import userflow from '../../Assets/Image/userflow.png'
+import prototype1 from '../../Assets/Image/3stepscheckout.png'
+import prototype2 from '../../Assets/Image/BeginnerPackage.png'
+import prototype3 from '../../Assets/Image/comparison.png'
+import prototype4 from '../../Assets/Image/suggestion.png'
+
 
 const Project4 = () => {
-    
-
     const UserPersonas = [
         { src: UserPersona1, alt: 'UserPersona1' },
         { src: UserPersona2, alt: 'UserPersona2' },
@@ -87,8 +90,7 @@ const Project4 = () => {
                             src={mock4}
                             alt="Google Campfy"
                         />
-                        </div>
-                   
+                    </div>
                 </div>
             </SectionPrimary>
             <SectionSecondary>
@@ -182,7 +184,12 @@ const Project4 = () => {
                             .description
                     )}
                 />
-                <a href={DATA.sections.discovery.competitiveAnalysis.src} target="_blank" rel="noopener noreferrer" className="underline text-nypink-500 mb-5">
+                <a
+                    href={DATA.sections.discovery.competitiveAnalysis.src}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mb-5 text-nypink-500 underline"
+                >
                     View Competitive Analysis Chart here.
                 </a>
                 <HorizontalTextBox
@@ -213,10 +220,9 @@ const Project4 = () => {
             >
                 <HorizontalTextBox
                     title={DATA.sections.ideation.Brainstorming.title}
-                    content={
-                        formatString(
-                            DATA.sections.ideation.Brainstorming.description
-                        )}
+                    content={formatString(
+                        DATA.sections.ideation.Brainstorming.description
+                    )}
                 />
                 <iframe
                     src={DATA.sections.ideation.Brainstorming.src}
@@ -227,26 +233,28 @@ const Project4 = () => {
                 />
                 <HorizontalTextBox
                     title={DATA.sections.ideation.siteMap.title}
-                    content={ <ImageCardWithDescription
-                    content={formatString(
-                        DATA.sections.ideation.siteMap.description
-                    )}
-                    img={sitemap}
-                /> }
+                    content={
+                        <ImageCardWithDescription
+                            content={formatString(
+                                DATA.sections.ideation.siteMap.description
+                            )}
+                            img={sitemap}
+                        />
+                    }
                 />
                 <HorizontalTextBox
                     title={DATA.sections.ideation.userFlow.title}
-                    content={ <ImageCardWithDescription
-                    content={formatString(
-                        DATA.sections.ideation.userFlow.description
-                    )}
-                    img={userflow}
-                /> }
+                    content={
+                        <ImageCardWithDescription
+                            content={formatString(
+                                DATA.sections.ideation.userFlow.description
+                            )}
+                            img={userflow}
+                        />
+                    }
                 />
-                
-            
             </SectionSecondary>
-        
+
             <SectionSecondary
                 id={DATA.sections.design.id}
                 title={DATA.sections.design.title}
@@ -263,7 +271,6 @@ const Project4 = () => {
                         { src: paperWireframe2, alt: 'PaperWireframe2' },
                     ]}
                 />
-
 
                 <HorizontalTextBox
                     title={DATA.sections.design['Digital Wireframe'].title}
@@ -297,30 +304,47 @@ const Project4 = () => {
                 id={DATA.sections.development.id}
                 title={DATA.sections.development.title}
             >
-                {/* <HorizontalTextBox
+                <HorizontalTextBox
                     title={DATA.sections.development['prototype'].title}
                     content={formatString(
                         DATA.sections.development['prototype'].description
                     )}
                 />
-                 <div className="flex justify-center">
-                    <div
-                        style={{
-                            transform: 'scale(0.4)',
-                            transformOrigin: 'top',
-                        }}
-                    >
-                        <ImageSlider images={prototypes} />
-                    </div>
-                </div> 
+                <div className="flex justify-center">
+                   <ImageCardWithDescription
+                            content={formatString(
+                                DATA.sections.development['prototype'].feature1
+                            )}
+                            img={prototype1}
+                        />
+                </div>
+                
+                <div className="flex justify-center ">
+                   <ImageCardWithDescription
+                            content={formatString(
+                                DATA.sections.development['prototype'].feature2
+                            )}
+                            img={prototype2}
 
-                <iframe
-                    src={DATA.sections.development.prototype.src}
-                    className="flex md:w-full"
-                    height={700}
-                    title="iframe"
-                    allowfullscreen="true"
-                />  */}
+
+                        />
+                </div>
+                <div className="flex justify-center ">
+                   <ImageCardWithDescription
+                            content={formatString(
+                                DATA.sections.development['prototype'].feature3
+                            )}
+                            img={prototype3}
+                        />
+                </div>
+                <div className="flex justify-center ">
+                   <ImageCardWithDescription
+                            content={formatString(
+                                DATA.sections.development['prototype'].feature4
+                            )}
+                            img={prototype4}
+                        />
+                </div>
             </SectionSecondary>
 
             <SectionSecondary
