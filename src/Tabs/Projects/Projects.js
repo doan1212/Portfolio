@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
 import {
     SectionPrimary,
     SectionSecondary,
 } from '../../Components/Section/Section'
-import Model3D from '../../Components/Models/Model3D'
 import poster from '../../Assets/Image/Poster.png'
 import brochure from '../../Assets/Image/Brochure.png'
 import bookCover from '../../Assets/Image/BookCover.png'

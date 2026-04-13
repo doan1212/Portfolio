@@ -29,7 +29,7 @@ import guide5 from '../../Assets/Image/guide5.png'
 import heuristic from '../../Assets/Image/heuristic.png'
 import final from '../../Assets/video/Final.mp4'
 import demo from '../../Assets/Image/Demo.png'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { FaSquareGithub } from 'react-icons/fa6'
 
 const Project1 = () => {

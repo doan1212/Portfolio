@@ -14,20 +14,16 @@ import { formatString } from '../../Utils/stringHelper'
 import {
     VerticalTextBox,
     HorizontalTextBox,
-    QuoteTextBox,
 } from '../../Components/TextBox/TextBox'
 import { ImageCardWithDescription } from '../../Components/ImageCard/ImageCard'
-import { TwoImageCardWithDescription } from '../../Components/ImageCard/ImageCard'
 import { ImageSlider } from '../../Components/ImageCard/ImageSlider'
-import { useState, useEffect } from 'react'
-import { FaSquareGithub } from 'react-icons/fa6'
+import { useState } from 'react'
 import UserPersona1 from '../../Assets/Image/user1.png'
 import UserPersona2 from '../../Assets/Image/user2.png'
 import UserPersona3 from '../../Assets/Image/user3.png'
 import sitemap from '../../Assets/Image/sitemap.jpg'
 import DATA from '../../Assets/Projects/project4.json'
 import userJourney1 from '../../Assets/Image/userJourney1.png'
-import { s, u } from 'framer-motion/client'
 import userflow from '../../Assets/Image/userflow.png'
 import prototype1 from '../../Assets/Image/3stepscheckout.png'
 import prototype2 from '../../Assets/Image/BeginnerPackage.png'

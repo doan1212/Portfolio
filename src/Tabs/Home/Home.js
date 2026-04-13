@@ -1,10 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Button, OutlineGradientButton } from '../../Components/Button/Button'
-import avatar from '../../Assets/Image/avatar.png'
 import {
     SectionPrimary,
-    SectionSecondary,
 } from '../../Components/Section/Section'
 import { InfoCard, ReverseInfoCard } from '../../Components/InfoCard/InfoCard'
 import { IndexTitle } from '../../Components/InfoCard/Title'
@@ -12,9 +9,7 @@ import MockImage1 from '../../Assets/mock_1.png'
 import MockImage2 from '../../Assets/mock_4.png'
 import MockImage3 from '../../Assets/mock_3.png'
 import { NavRoute } from '../../Constants/Routes'
-import { TextBox } from '../../Components/TextBox/TextBox'
 import daisy from '../../Assets/Image/daisy.png'
-import flowerPot from '../../Assets/Image/pot.png'
 
 const Home = () => {
     const roles = [

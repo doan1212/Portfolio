@@ -2,7 +2,6 @@ import {
     SectionPrimary,
     SectionSecondary,
 } from '../../Components/Section/Section'
-import banner from '../../Assets/Image/banner.png'
 import mock3 from '../../Assets/mock_3.png'
 import ScrollToSection from '../../Components/Section/ScrollToSection'
 import Wireframe from '../../Assets/Image/wireframep3.jpg'
@@ -14,11 +13,9 @@ import { formatString } from '../../Utils/stringHelper'
 import {
     VerticalTextBox,
     HorizontalTextBox,
-    QuoteTextBox,
 } from '../../Components/TextBox/TextBox'
 import { ImageCardWithDescription } from '../../Components/ImageCard/ImageCard'
 import { TwoImageCardWithDescription } from '../../Components/ImageCard/ImageCard'
-import { ImageSlider } from '../../Components/ImageCard/ImageSlider'
 import userflow1 from '../../Assets/Image/userflow1.png'
 import userflow2 from '../../Assets/Image/userflow2.png'
 import userflow3 from '../../Assets/Image/userflow3.png'
@@ -36,15 +33,10 @@ import prototype5 from '../../Assets/Image/prototype5.png'
 import prototype6 from '../../Assets/Image/prototype6.png'
 import prototype7 from '../../Assets/Image/prototype7.png'
 import prototype12 from '../../Assets/Image/prototype12.png'
-import heuristic from '../../Assets/Image/heuristic.png'
-import final from '../../Assets/video/Final.mp4'
-import demo from '../../Assets/Image/Demo.png'
-import { useState, useEffect } from 'react'
-import { FaSquareGithub } from 'react-icons/fa6'
+import { useState } from 'react'
 import UserPersona1 from '../../Assets/Image/UserPersona1.png'
 import UserPersona2 from '../../Assets/Image/UserPersona2.png'
 import note1 from '../../Assets/Image/Note1.png'
-import { i } from 'framer-motion/client'
 
 const Project3 = () => {
     const images = [

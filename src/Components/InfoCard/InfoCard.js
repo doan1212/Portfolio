@@ -1,4 +1,3 @@
-import NavigationButton from '../Navigation/NavigationButton'
 import { Link } from 'react-router-dom'
 
 const InfoCard = ({ title, content, image, ...props }) => {
