@@ -351,39 +351,6 @@ const Project4 = () => {
                 id={DATA.sections.reflection.id}
                 title={DATA.sections.reflection.title}
             >
-                {/* <div className="grid grid-cols-1 items-start gap-5 md:grid-cols-2 md:flex-row">
-                    <HorizontalTextBox
-                        title={DATA.sections.reflection['lookingback'].title}
-                        content={
-                            <div className="gap-5">
-                                {formatString(
-                                    DATA.sections.reflection['lookingback']
-                                        .description
-                                )}
-                                <ul className="mx-10 list-disc">
-                                    {DATA.sections.reflection[
-                                        'lookingback'
-                                    ].list.map((role, index) => (
-                                        <li key={index}>
-                                            {formatString(role)}
-                                        </li>
-                                    ))}
-                                </ul>
-                                {formatString(
-                                    DATA.sections.reflection['lookingback']
-                                        .reflection
-                                )}
-                            </div>
-                        }
-                    />
-                    <HorizontalTextBox
-                        title={DATA.sections.reflection['lookingforward'].title}
-                        content={formatString(
-                            DATA.sections.reflection['lookingforward']
-                                .description
-                        )}
-                    />
-                </div> */}
             </SectionSecondary>
         </div>
     )
