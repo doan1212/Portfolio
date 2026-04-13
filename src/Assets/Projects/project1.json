@@ -1,5 +1,24 @@
 {
     "name": "ILUVUS",
+    "slug": "iluvus",
+    "routePath": "/projects/iluvus",
+    "imageMap": {
+        "banner": "/Assets/Image/banner.png",
+        "userflow1": "/Assets/Image/userflow1.png",
+        "userflow2": "/Assets/Image/userflow2.png",
+        "userflow3": "/Assets/Image/userflow3.png",
+        "userflow4": "/Assets/Image/userflow4.png",
+        "guide1": "/Assets/Image/guide1.png",
+        "guide2": "/Assets/Image/guide2.png",
+        "guide3": "/Assets/Image/guide3.png",
+        "guide4": "/Assets/Image/guide4.png",
+        "guide5": "/Assets/Image/guide5.png",
+        "personas1": "/Assets/Image/Persona1.png",
+        "personas2": "/Assets/Image/Persona2.png",
+        "dynamic": "/Assets/Image/dynamic.png",
+        "heuristic": "/Assets/Image/heuristic.png",
+        "demo": "/Assets/Image/Demo.png"
+    },
     "shortDescription": "A social media platform provide a unique user experience that celebrates diversity.",
     "overview": "ILUVUS was inspired to develop <b>a social mobile app</b> dedicated to posting categorical content, commenting, and <b>celebrating the achievements</b>, and stories of <b>LGBTQ individuals</b> and <b>diverse communities</b>.",
     "refinedScope": "Our focus to create a space that <b>prioritizes</b> these communities' accomplishments, offering a <b>unique user experience</b> while ensuring a safe and positive environment.",
@@ -14,90 +33,132 @@
     ],
     "process": ["Discovery", "Ideation", "Design", "Development", "Relection"],
     "platform": ["iOS", "Android"],
-    "sections": {
-        "discovery": {
+    "sections": [
+        {
             "id": "discovery",
             "title": "Discovery",
-            "clientResearch": {
-                "title": "Client Research",
-                "description": "After meetings with our client, our team thoroughly discuss the users' needs, along with the vision that the client had for this project. We learned we need to identify what matters most to our users. Do they prioritize diversity, user-friendliness, content quality, or something else? This question will help us to polish the application’s user experience to align with their preferences."
-            },
-            "userResearch": {
-                "title": "User Research",
-                "description": "We conducted a user interview and survey to understand the users' needs, preferences, and pain points. The research findings we collected from the compilation of the survey revealed that our users want a platform that prioritizes a user-friendly interface, effective content moderation, and robust privacy settings, offers a unique user experience, and ensures a safe and positive environment."
-            }
-            
+            "componentType": "SectionSecondary",
+            "children": [
+                {
+                    "componentType": "VerticalTextBox",
+                    "title": "Client Research",
+                    "content": "After meetings with our client, our team thoroughly discuss the users' needs, along with the vision that the client had for this project. We learned we need to identify what matters most to our users. Do they prioritize diversity, user-friendliness, content quality, or something else? This question will help us to polish the application's user experience to align with their preferences."
+                },
+                {
+                    "componentType": "VerticalTextBox",
+                    "title": "User Research",
+                    "content": "We conducted a user interview and survey to understand the users' needs, preferences, and pain points. The research findings we collected from the compilation of the survey revealed that our users want a platform that prioritizes a user-friendly interface, effective content moderation, and robust privacy settings, offers a unique user experience, and ensures a safe and positive environment."
+                }
+            ]
         },
-        "ideation": {
+        {
             "id": "ideation",
             "title": "Ideation",
-            "personas": {
-                "title": "Persona",
-                "description": "After grouping similar responses from the survey and meeting with the client to discuss why ILUVUS was created. Our team focused on two main user groups: professional users and regular users. Our insights gathered from research led to the creation of the following personas with our user-centered approach."
-            },
-            "dynamic": {
-                "title": "Dynamic Diagram",
-                "description": "We also created a dynamic diagram to illustrate the step-by-step process of creating a new community, a main feature available exclusively to professional users. The diagram highlights the interactions between the user interface, controller, and database, understanding the app's flow and how users would interact with the app."
-            }
+            "componentType": "SectionSecondary",
+            "children": [
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Persona",
+                    "content": {
+                        "componentType": "TwoImageCardWithDescription",
+                        "text": "After grouping similar responses from the survey and meeting with the client to discuss why ILUVUS was created. Our team focused on two main user groups: professional users and regular users. Our insights gathered from research led to the creation of the following personas with our user-centered approach.",
+                        "imageId1": "personas1",
+                        "imageId2": "personas2"
+                    }
+                },
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Dynamic Diagram",
+                    "content": {
+                        "componentType": "ImageCardWithDescription",
+                        "text": "We also created a dynamic diagram to illustrate the step-by-step process of creating a new community, a main feature available exclusively to professional users. The diagram highlights the interactions between the user interface, controller, and database, understanding the app's flow and how users would interact with the app.",
+                        "imageId": "dynamic"
+                    }
+                }
+            ]
         },
-        "design": {
+        {
             "id": "design",
             "title": "Design",
-            "styleGuide": {
-                "title": "Style Guide",
-                "description": "As a designer in the team, I worked on the mood board to gather unique ideas and optimize a color palette through a style guide that authentically represents the core value of celebrating LGBTQ+ individuals and diverse communities. I wanted to make the calm and supportive UI to evoke the desired emotions and create a compelling user experience aligned with the brand's values and objectives."
-            },
-            "sketches": {
-                "title": "Sketches & Wireframe",
-                "description": "We created sketches to visualize the app's layout and features. I made low-fidelity wireframes for 3-4 other screens based on the main user flow.  We used these sketches to discuss the app's flow and functionality with the client and team members. "
-            }
+            "componentType": "SectionSecondary",
+            "children": [
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Sketches & Wireframe",
+                    "content": "We created sketches to visualize the app's layout and features. I made low-fidelity wireframes for 3-4 other screens based on the main user flow.  We used these sketches to discuss the app's flow and functionality with the client and team members. "
+                },
+                {
+                    "componentType": "ImageSlider",
+                    "imageIds": ["userflow1", "userflow2", "userflow3", "userflow4"]
+                },
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Style Guide",
+                    "content": "As a designer in the team, I worked on the mood board to gather unique ideas and optimize a color palette through a style guide that authentically represents the core value of celebrating LGBTQ+ individuals and diverse communities. I wanted to make the calm and supportive UI to evoke the desired emotions and create a compelling user experience aligned with the brand's values and objectives."
+                },
+                {
+                    "componentType": "ImageSlider",
+                    "imageIds": ["guide1", "guide2", "guide3", "guide4", "guide5"]
+                }
+            ]
         },
-        "development": {
+        {
             "id": "development",
             "title": "Development",
-            "prototype": {
-                "title": "Prototype",
-                "description": "I created a high-fidelity prototype to demonstrate the app's functionality and user flow. The prototype was used to test the app's usability and gather feedback from the client and potential users.",
-                "src": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F69hpY77FJXsQwIhoRzQVNe%2FILUVUS-on-iOS%3Fnode-id%3D2972-1717%26t%3DvQFmbzQkldB9iIGn-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D2303%253A6898%26starting-point-node-id%3D2972%253A1717%26show-proto-sidebar%3D1"
-            },
-            "heuristic": {
-                "title": "Heuristic Evaluation",
-                "description": "After we conducted a heuristic evaluation, the prototype needed a little adjustment to enhance the usability and user experience of the system and make it more user-friendly.",
-                "feedback": [
-                    "“However, some buttons were <b>difficult</b> to initially find. For example, the “Add Post” button was not seen during the first to attempt to complete the first task. ”",
-                    "“ The aesthetic of the app is <b>intuitive</b>, and <b>realistic</b>, coinciding with real-world social media applications the white, purple, and soft yellow accents work well together, creating a <b>clean</b>, and <b>welcoming</b> social media platform. ”",
-                    "“ In most cases, <b>user control</b> and <b>freedom</b> were implemented well. There were multiple cases in which mistakes and incorrect navigation could be reversed easily.  ”"
-                ]
-            },
-            "final": {
-                "title": "Final Product",
-                "description": " After working with my team, the final product was developed using React Native, with backend features in Java SpringBoot and a user-friendly interface designed with Tailwind CSS. The app was launched on both iOS and Android platforms. Feel free to explore the app and see the features we developed."
-            }
-            
+            "componentType": "SectionSecondary",
+            "children": [
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Prototype",
+                    "content": "I created a high-fidelity prototype to demonstrate the app's functionality and user flow. The prototype was used to test the app's usability and gather feedback from the client and potential users."
+                },
+                {
+                    "componentType": "IFrameEmbed",
+                    "src": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F69hpY77FJXsQwIhoRzQVNe%2FILUVUS-on-iOS%3Fnode-id%3D2972-1717%26t%3DvQFmbzQkldB9iIGn-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D2303%253A6898%26starting-point-node-id%3D2972%253A1717%26show-proto-sidebar%3D1"
+                },
+                {
+                    "componentType": "QuoteTextBox",
+                    "title": "Heuristic Evaluation",
+                    "content": [
+                        "However, some buttons were <b>difficult</b> to initially find. For example, the \"Add Post\" button was not seen during the first to attempt to complete the first task.",
+                        "The aesthetic of the app is <b>intuitive</b>, and <b>realistic</b>, coinciding with real-world social media applications the white, purple, and soft yellow accents work well together, creating a <b>clean</b>, and <b>welcoming</b> social media platform.",
+                        "In most cases, <b>user control</b> and <b>freedom</b> were implemented well. There were multiple cases in which mistakes and incorrect navigation could be reversed easily."
+                    ],
+                    "className": "italic"
+                },
+                {
+                    "componentType": "ImageCardWithDescription",
+                    "text": "After we conducted a heuristic evaluation, the prototype needed a little adjustment to enhance the usability and user experience of the system and make it more user-friendly.",
+                    "imageId": "heuristic"
+                },
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Final Product",
+                    "content": "After working with my team, the final product was developed using React Native, with backend features in Java SpringBoot and a user-friendly interface designed with Tailwind CSS. The app was launched on both iOS and Android platforms. Feel free to explore the app and see the features we developed."
+                }
+            ]
         },
-        "reflection": {
+        {
             "id": "reflection",
             "title": "Reflection",
-            "lookingback": {
-                "title": "Looking Back.",
-                "description": "In a 2-week design & a 5-week sprint:",
-                "list": [
-                    "I designed a <b>style guide</b> and <b>wireframes</b>",
-                    "I produced a <b>high-fidelity prototype</b>",
-                    "We conducted <b>30 team meetings</b>",
-                    "We developed the app on both <b>iOS</b> and <b>Android</b> platforms"
-                ],
-                 "reflection": "I am proud of the work we accomplished. We were able to create a unique social media platform that start from scratch. This is my first time using React Native to build the front-end to integrate with the backend StringBoot. It was challenging, but the learning curve was rewarding as I gained a deeper understanding of how these technologies work together to create a seamless user experience. I am grateful for the opportunity to work on this project and collaborate with my team to bring the client's vision to life."
-            },
-            "lookingforward": {
-                "title": "Looking Forward.",
-                "description": "At the moment, we already hand off to the project to client and I hope to see ILUVUS grow and expand its scope. Through this group project, I have learned about <b>collaboration</b> and <b>professional development</b> while working with my team to develop a complex software project. This was also my first opportunity to work with a real client, developing a social media platform in a professional setting, following <b>agile methodology</b>.<br> What I’m most proud of from this project is <b>the design of the logo</b> and UI of the app. My clients mentioned that it perfectly matched the vision they had for the app when they first started making it. <br>Overall, <b>I learned to always learn</b>. This project has been a valuable learning experience, and I look forward to applying the skills and knowledge I have gained to future projects. "
-            },
-            "demo": {
-                "title": "Demo",
-                "description": "Expo day for demo the app to the client and potential users."
-            }
-
+            "componentType": "SectionSecondary",
+            "children": [
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Looking Back.",
+                    "content": "In a 2-week design & a 5-week sprint:\n- I designed a <b>style guide</b> and <b>wireframes</b>\n- I produced a <b>high-fidelity prototype</b>\n- We conducted <b>30 team meetings</b>\n- We developed the app on both <b>iOS</b> and <b>Android</b> platforms\n\nI am proud of the work we accomplished. We were able to create a unique social media platform that start from scratch. This is my first time using React Native to build the front-end to integrate with the backend StringBoot. It was challenging, but the learning curve was rewarding as I gained a deeper understanding of how these technologies work together to create a seamless user experience. I am grateful for the opportunity to work on this project and collaborate with my team to bring the client's vision to life."
+                },
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Looking Forward.",
+                    "content": "At the moment, we already hand off to the project to client and I hope to see ILUVUS grow and expand its scope. Through this group project, I have learned about <b>collaboration</b> and <b>professional development</b> while working with my team to develop a complex software project. This was also my first opportunity to work with a real client, developing a social media platform in a professional setting, following <b>agile methodology</b>.<br> What I'm most proud of from this project is <b>the design of the logo</b> and UI of the app. My clients mentioned that it perfectly matched the vision they had for the app when they first started making it. <br>Overall, <b>I learned to always learn</b>. This project has been a valuable learning experience, and I look forward to applying the skills and knowledge I have gained to future projects. "
+                },
+                {
+                    "componentType": "ImageCardWithDescription",
+                    "text": "Expo day for demo the app to the client and potential users.",
+                    "imageId": "demo"
+                }
+            ]
         }
-    }
+    ]
 }

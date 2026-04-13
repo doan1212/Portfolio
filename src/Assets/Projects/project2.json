@@ -1,72 +1,133 @@
 {
     "name": "Traveloka",
+    "slug": "traveloka",
+    "routePath": "/projects/traveloka",
+    "imageMap": {
+        "mock_2": "/Assets/mock_2.png",
+        "guide_t1": "/Assets/Image/guide_t1.png",
+        "guide_t2": "/Assets/Image/guide_t2.png",
+        "guide_t3": "/Assets/Image/guide_t3.png",
+        "guide_t4": "/Assets/Image/guide_t4.png",
+        "guide_t5": "/Assets/Image/guide_t5.png",
+        "brandIdentity": "/Assets/Image/BrandIdentity.png",
+        "expedia": "/Assets/Image/Expedia.png",
+        "expedia2": "/Assets/Image/Expedia2.png",
+        "logo1": "/Assets/Image/logo1.jpg",
+        "personas": "/Assets/Image/personas3.png"
+    },
     "shortDescription": "An online booking app providing reliable, and all-in-one solutions for travelers and adventurers.",
     "overview": "Traveloka aims a <b> comprehensive platform </b> that provides a wide range of <b> travel services </b> including booking flights, hotels, and other travel-related products. Its primary goal is to <b>simplify the process of travel planning</b> and booking by offering a <b> one-stop solution </b> for all travel needs. ",
     "refinedScope": "I redesigned the <b>logo</b> and <b>website</b> to align with Traveloka's brand identity, aiming to create a fresh and <b>captivating</b> look. My goal was to introduce a new level of innovation to the brand while enhancing <b>user engagement</b>, offering a more <b>visually appealing</b> and <b>user-friendly</b> experience.",
     "roles": ["UX/UI Designer", "Visual Designer"],
     "timeline": ["Design 5+ weeks"],
-    "tools": [
-        "Figma"
-    ],
+    "tools": ["Figma"],
     "process": ["Discovery", "Ideation", "Design", "Reflection"],
     "platform": ["Website"],
-    "sections": {
-        "discovery": {
+    "sections": [
+        {
             "id": "discovery",
             "title": "Discovery",
-            "heuristic": {
-                "title": "Heuristic Evaluation",
-                "description": "Before I redesigned the logo and the website, I went for hands-on experience to try out the website myself as first-time users. A few notes into heuristics are:",
-                "feedback": [
-                    "Traveloka’s logo is simple and the bird symbol is effective, but some users unfamiliar with the brand might not immediately associate it with travel.",
-                    "The website’s layout is clean and easy to navigate, but the color scheme could be more visually appealing.",
-                    "Consistency and Standards: the components are consistent but too crowded and the text too small, making it difficult to read on the main content."
-                ]
-            },
-            "brandIdentity": {
-                "title": "Brand Identity Prism",
-                "description": "I conducted a competitive analysis to understand the brand's competitors and identify Traveloka's unique selling points. I also analyzed the brand's current logo and website to identify areas for improvement and align the brand's visual identity with its core values and objectives."
-            },
-            "competitiveAnalysis": {
-                "title": "Competitive Analysis",
-                "description": "I chose Expedia to conduct a competitive analysis because it is one of Traveloka's main competitors. I analyzed Expedia's logo and website to identify areas for improvement and gain insights into how Traveloka could differentiate itself from its competitors. I discovered Traveloka can focus on improving logo recognition, streamlining its user interface, and offering enhanced personalization and loyalty programs to stand out in the competitive travel industry."
-            }
+            "componentType": "SectionSecondary",
+            "children": [
+                {
+                    "componentType": "VerticalTextBox",
+                    "title": "Heuristic Evaluation",
+                    "content": "Before I redesigned the logo and the website, I went for hands-on experience to try out the website myself as first-time users. A few notes into heuristics are:"
+                },
+                {
+                    "componentType": "QuoteTextBox",
+                    "title": "",
+                    "content": [
+                        "Traveloka's logo is simple and the bird symbol is effective, but some users unfamiliar with the brand might not immediately associate it with travel.",
+                        "The website's layout is clean and easy to navigate, but the color scheme could be more visually appealing.",
+                        "Consistency and Standards: the components are consistent but too crowded and the text too small, making it difficult to read on the main content."
+                    ]
+                },
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Brand Identity Prism",
+                    "content": "I conducted a competitive analysis to understand the brand's competitors and identify Traveloka's unique selling points. I also analyzed the brand's current logo and website to identify areas for improvement and align the brand's visual identity with its core values and objectives."
+                },
+                {
+                    "componentType": "ImageCardWithDescription",
+                    "text": "",
+                    "imageId": "brandIdentity"
+                },
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Competitive Analysis",
+                    "content": {
+                        "componentType": "TwoImageCardWithDescription",
+                        "text": "I chose Expedia to conduct a competitive analysis because it is one of Traveloka's main competitors. I analyzed Expedia's logo and website to identify areas for improvement and gain insights into how Traveloka could differentiate itself from its competitors. I discovered Traveloka can focus on improving logo recognition, streamlining its user interface, and offering enhanced personalization and loyalty programs to stand out in the competitive travel industry.",
+                        "imageId1": "expedia",
+                        "imageId2": "expedia2"
+                    }
+                }
+            ]
         },
-        "ideation": {
+        {
             "id": "ideation",
             "title": "Ideation",
-            "personas": {
-                "title": "Persona",
-                "description": "To understand more about the user needs, I created a persona named Sarah, a 25-year-old traveler who enjoys exploring new destinations and booking flights and hotels online. Sarah is tech-savvy and values convenience and efficiency when planning her trips. I used Sarah's persona to guide my design decisions and ensure that the redesigned website meets the needs and preferences of Traveloka's target audience."
-            },
-            "logo": {
-                "title": "Logo Redesign",
-                "description": "At first, I brainstormed and sketched many variations of the logo that reflect the brand's core values and objectives. Traveloka's main logo is the blue bird icon doesn’t immediately evoke travel for users unfamiliar with the brand. Many users might associate the bird symbol with the old Twitter logo. I wanted to create a simple, memorable, and versatile logo that makes the logo’s purpose clearer to new users while maintaining its modern design. "
-            }
+            "componentType": "SectionSecondary",
+            "children": [
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Persona",
+                    "content": "To understand more about the user needs, I created a persona named Sarah, a 25-year-old traveler who enjoys exploring new destinations and booking flights and hotels online. Sarah is tech-savvy and values convenience and efficiency when planning her trips. I used Sarah's persona to guide my design decisions and ensure that the redesigned website meets the needs and preferences of Traveloka's target audience."
+                },
+                {
+                    "componentType": "ImageCardWithDescription",
+                    "text": "",
+                    "imageId": "personas"
+                },
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Logo Redesign",
+                    "content": {
+                        "componentType": "ImageCardWithDescription",
+                        "text": "At first, I brainstormed and sketched many variations of the logo that reflect the brand's core values and objectives. Traveloka's main logo is the blue bird icon doesn't immediately evoke travel for users unfamiliar with the brand. Many users might associate the bird symbol with the old Twitter logo. I wanted to create a simple, memorable, and versatile logo that makes the logo's purpose clearer to new users while maintaining its modern design. ",
+                        "imageId": "logo1"
+                    }
+                }
+            ]
         },
-        "design": {
+        {
             "id": "design",
             "title": "Design",
-            "styleGuide": {
-                "title": "Style Guide",
-                "description": "For the brand identity, I chose a vibrant and pastel color scheme inspired by the blue of the ocean, reflecting the excitement of vacation and travel. I'm focusing on using bold, dynamic shapes that evoke a sense of movement and adventure. I want the typography to be clean and highly readable, featuring a sans-serif font to give the brand a modern, contemporary feel while ensuring clarity and professionalism."
-            },
-            "finalDesign": {
-                "title": "Final Design",
-                "description": "I created a high-fidelity prototype of the redesigned website using Figma. The final design features a new logo that is more visually appealing and user-friendly, a cleaner and more modern layout, and a more visually appealing color scheme. The redesigned website aims to enhance user engagement and offer a more visually appealing and user-friendly experience."
-            }
+            "componentType": "SectionSecondary",
+            "children": [
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Style Guide",
+                    "content": "For the brand identity, I chose a vibrant and pastel color scheme inspired by the blue of the ocean, reflecting the excitement of vacation and travel. I'm focusing on using bold, dynamic shapes that evoke a sense of movement and adventure. I want the typography to be clean and highly readable, featuring a sans-serif font to give the brand a modern, contemporary feel while ensuring clarity and professionalism."
+                },
+                {
+                    "componentType": "ImageSlider",
+                    "imageIds": ["guide_t1", "guide_t2", "guide_t3", "guide_t4", "guide_t5"]
+                },
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Final Design",
+                    "content": "I created a high-fidelity prototype of the redesigned website using Figma. The final design features a new logo that is more visually appealing and user-friendly, a cleaner and more modern layout, and a more visually appealing color scheme. The redesigned website aims to enhance user engagement and offer a more visually appealing and user-friendly experience."
+                }
+            ]
         },
-        "reflection": {
+        {
             "id": "reflection",
             "title": "Reflection",
-            "challenges": {
-                "title": "Challenges",
-                "description": "As a solo designer, one of the main challenges I faced during this project was <b>finding a balance</b> between maintaining Traveloka's existing brand identity and introducing new elements to enhance the <b>brand's visual appeal</b> and <b>user engagement</b>. I also had to ensure that the redesigned website was user-friendly and easy to navigate while offering a visually appealing and engaging experience. "
-            },
-            "learnings": {
-                "title": "Learnings",
-                "description": "Through this project, <b>I learned the importance of conducting thorough research and analysis</b> to understand a brand's core values and objectives. I gained valuable insights into the importance of <b> user needs</b> and <b>experiences </b> that shaping design decisions and ensuring that the redesigned website aligned with the target audience's preferences. <b>Moving forward</b>,  I will continue to conduct user testing. I want to see if my ideas are well-delivered to users and if the redesigned screens are intuitively used. Overall, this project helped me develop my skills as a UX/UI designer and <b>gain valuable experience in branding and visual design</b>."
-            }
+            "componentType": "SectionSecondary",
+            "children": [
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Challenges",
+                    "content": "As a solo designer, one of the main challenges I faced during this project was <b>finding a balance</b> between maintaining Traveloka's existing brand identity and introducing new elements to enhance the <b>brand's visual appeal</b> and <b>user engagement</b>. I also had to ensure that the redesigned website was user-friendly and easy to navigate while offering a visually appealing and engaging experience. "
+                },
+                {
+                    "componentType": "HorizontalTextBox",
+                    "title": "Learnings",
+                    "content": "Through this project, <b>I learned the importance of conducting thorough research and analysis</b> to understand a brand's core values and objectives. I gained valuable insights into the importance of <b> user needs</b> and <b>experiences </b> that shaping design decisions and ensuring that the redesigned website aligned with the target audience's preferences. <b>Moving forward</b>,  I will continue to conduct user testing. I want to see if my ideas are well-delivered to users and if the redesigned screens are intuitively used. Overall, this project helped me develop my skills as a UX/UI designer and <b>gain valuable experience in branding and visual design</b>."
+                }
+            ]
         }
-    }
+    ]
 }

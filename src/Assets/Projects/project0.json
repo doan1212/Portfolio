@@ -1,0 +1,92 @@
+{
+    "name": "Creative Projects",
+    "slug": "creative-projects",
+    "routePath": "/projects",
+    "imageMap": {
+        "poster": "/Assets/Image/Poster.png",
+        "brochure": "/Assets/Image/Brochure.png",
+        "bookCover": "/Assets/Image/BookCover.png",
+        "business": "/Assets/Image/Business card.png",
+        "mood": "/Assets/Image/Mood.png"
+    },
+    "shortDescription": "3D Models, Creative Designs, and Game Projects",
+    "overview": "This page showcases my creative outlets including 3D models, graphic design work, and game development projects.",
+    "sections": [
+        {
+            "id": "3d-models",
+            "title": "3D Models",
+            "componentType": "SectionPrimary",
+            "children": [
+                {
+                    "componentType": "IFrameEmbed",
+                    "embedUrl": "https://sketchfab.com/models/f8b73802f6a84daaa09b570ac19a5c89/embed",
+                    "title": "3D Model 1"
+                },
+                {
+                    "componentType": "IFrameEmbed",
+                    "embedUrl": "https://sketchfab.com/models/696cb98464644b9386a72387654c374b/embed",
+                    "title": "3D Model 2"
+                },
+                {
+                    "componentType": "IFrameEmbed",
+                    "embedUrl": "https://sketchfab.com/models/0af3fafb6525472fa47e3c4cc715a06f/embed",
+                    "title": "3D Model 3"
+                },
+                {
+                    "componentType": "IFrameEmbed",
+                    "embedUrl": "https://sketchfab.com/models/8db71c61029d4b0599971aa9d462cd5e/embed",
+                    "title": "3D Model 4"
+                }
+            ]
+        },
+        {
+            "id": "creative-outlets",
+            "title": "Other Creative Outlets",
+            "componentType": "SectionSecondary",
+            "children": [
+                {
+                    "componentType": "ImageCardWithDescription",
+                    "text": "Design work showcase",
+                    "imageId": "poster"
+                },
+                {
+                    "componentType": "ImageCardWithDescription",
+                    "text": "Brochure design",
+                    "imageId": "brochure"
+                },
+                {
+                    "componentType": "ImageCardWithDescription",
+                    "text": "Book cover design",
+                    "imageId": "bookCover"
+                },
+                {
+                    "componentType": "ImageCardWithDescription",
+                    "text": "Business card design",
+                    "imageId": "business"
+                },
+                {
+                    "componentType": "ImageCardWithDescription",
+                    "text": "Mood board",
+                    "imageId": "mood"
+                }
+            ]
+        },
+        {
+            "id": "game-project",
+            "title": "Game Project",
+            "componentType": "SectionPrimary",
+            "children": [
+                {
+                    "componentType": "VerticalTextBox",
+                    "title": "Check out my game project video!",
+                    "content": "Explore my game development work through this video demonstration."
+                },
+                {
+                    "componentType": "VideoPlayer",
+                    "videoUrl": "https://www.youtube.com/embed/R1TrMjT6ooI?si=JdfahU7J6v1Fed8-",
+                    "title": "Game Project Demo"
+                }
+            ]
+        }
+    ]
+}
